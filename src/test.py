@@ -17,9 +17,11 @@ tmp_root ='../test'
 util.train_test_split(tmp_root,split=(0.75,0.25))
 train_data = DataSet.ImageDataset(tmp_root,transform=transforms.ToTensor())
 train_loader = DataLoader(dataset=train_data, shuffle=True)
-to_image = transforms.ToPILImage()
-# for x_batch, y_batch in train_loader:
-#     print(x_batch.shape)
-#     image =to_image(x_batch[0])
-#     util.showImage(image)
-#     print(y_batch)
+
+for x_batch, y_batch in train_loader:
+    print(x_batch.shape)
+    to_image = transforms.ToPILImage()
+    image =to_image(x_batch[0])
+    util.showImage(image)
+    print(train_data.class_to_idx)
+    print(y_batch)
