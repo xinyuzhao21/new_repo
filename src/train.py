@@ -1,27 +1,20 @@
 import torch, os
 from torchvision.transforms import ToTensor, Compose, Resize, Grayscale
 from torch.utils import tensorboard as tb
-from src.model.sketchanet import SketchANet,Net
-import src.data.dataset as DataSet
+from model.sketchanet import SketchANet,Net
+import data.dataset as DataSet
 from torch.utils.data import DataLoader
 from torchvision.datasets import ImageFolder
 from torchvision import transforms
-import src.data.datautil as util
+import data.datautil as util
 import torchvision
 def main( ):
-    # quickdraw_trainds = ImageFolder(args.traindata, transform=Compose([Resize([225, 225]), Grayscale(), ToTensor()]))
-    # train_dataloader = DataLoader(quickdraw_trainds, batch_size=args.batch_size, pin_memory=True, num_workers=os.cpu_count(),
-    #     shuffle=True, drop_last=True)
-    #
-    # quickdraw_testds = ImageFolder(args.testdata, transform=Compose([Resize([225, 225]), Grayscale(), ToTensor()]))
-    # test_dataloader = DataLoader(quickdraw_testds, batch_size=args.batch_size * 2, pin_memory=True, num_workers=os.cpu_count(),
-    #     shuffle=True, drop_last=True)
     batch_size = 200
-    batch_size = 4
+    batch_size = 1
     print("here")
     sk_root = '../rendered_256x256/256x256/sketch/tx_000000000000'
-    # sk_root ='../test'
-    train_dataset = ImageFolder(sk_root, transform=Compose([Resize([225, 225]), ToTensor()]))
+    sk_root ='../test'
+    train_dataset = ImageFolder(sk_root, transform=Compose([Resize(225), ToTensor()]))
     train_dataloader = DataLoader(train_dataset, batch_size=batch_size, pin_memory=True, num_workers=os.cpu_count(),
                          shuffle=True, drop_last=True)
 
@@ -33,12 +26,12 @@ def main( ):
     #                                         download=True, transform=transform)
     # train_dataloader = torch.utils.data.DataLoader(train_dataset, batch_size=4,
     #                                           shuffle=True, num_workers=2)
-    test_dataset = DataSet.ImageDataset(sk_root, transform=Compose([Resize([225, 225]), ToTensor()]),train=False)
-    test_dataloader = DataLoader(test_dataset, batch_size=batch_size, pin_memory=True, num_workers=os.cpu_count(),
-                         shuffle=True, drop_last=True)
+    # test_dataset = DataSet.ImageDataset(sk_root, transform=Compose([Resize([225, 225]), ToTensor()]),train=False)
+    # test_dataloader = DataLoader(test_dataset, batch_size=batch_size, pin_memory=True, num_workers=os.cpu_count(),
+    #                      shuffle=True, drop_last=True)
 
 
-    model = SketchANet(num_classes=125)
+    model = SketchANet(num_classes=3)
     # model = Net()
     if torch.cuda.is_available():
         model = model.cuda()
@@ -50,8 +43,8 @@ def main( ):
     # writer = tb.SummaryWriter('./logs')
 
     count = 0
-    epochs = 20
-    prints_interval = 1000
+    epochs = 200
+    prints_interval = 1
     for e in range(epochs):
         for i, (X, Y) in enumerate(train_dataloader):
 
@@ -65,6 +58,7 @@ def main( ):
             # print(train_dataset.class_to_idx)
             # print(Y)
             output = model(X)
+            print(output,Y)
             loss = crit(output, Y)
             
             if i % prints_interval == 0:
