@@ -9,12 +9,10 @@ from torchvision import transforms
 import data.datautil as util
 import torchvision
 def main( ):
-    batch_size = 100
-   # batch_size = 1
     print("here")
     sk_root = '../256x256/sketch/tx_000000000000'
-   # sk_root ='../test'
-    train_dataset = ImageFolder(sk_root, transform=Compose([Resize(225), ToTensor()]))
+    sk_root ='../test'
+    train_dataset = DataSet.ImageDataset(sk_root, transform=Compose([Resize(225), ToTensor()]))
     train_dataloader = DataLoader(train_dataset, batch_size=batch_size, pin_memory=True, num_workers=os.cpu_count(),
                          shuffle=True, drop_last=True)
 
@@ -26,12 +24,12 @@ def main( ):
     #                                         download=True, transform=transform)
     # train_dataloader = torch.utils.data.DataLoader(train_dataset, batch_size=4,
     #                                           shuffle=True, num_workers=2)
-    # test_dataset = DataSet.ImageDataset(sk_root, transform=Compose([Resize([225, 225]), ToTensor()]),train=False)
-    # test_dataloader = DataLoader(test_dataset, batch_size=batch_size, pin_memory=True, num_workers=os.cpu_count(),
-    #                      shuffle=True, drop_last=True)
+    test_dataset = DataSet.ImageDataset(sk_root, transform=Compose([Resize([225, 225]), ToTensor()]),train=False)
+    test_dataloader = DataLoader(test_dataset, batch_size=batch_size, pin_memory=True, num_workers=os.cpu_count(),
+                         shuffle=True, drop_last=True)
 
 
-    model = SketchANet(num_classes=125)
+    model = SketchANet(num_classes=3)
     # model = Net()
     if torch.cuda.is_available():
         model = model.cuda()
@@ -71,21 +69,20 @@ def main( ):
 
             count += 1
         print('epoch',e,'loss',loss.item())
-        # correct, total, accuracy= 0, 0, 0
-        # for i, (X, Y) in enumerate(test_dataloader):
-        #     # Binarizing 'X'
-        #     X[X < 1.] = 0.; X = 1. - X
-        #
-        #     if torch.cuda.is_available():
-        #         X, Y = X.cuda(), Y.cuda()
-        #     output = model(X)
-        #     _, predicted = torch.max(output, 1)
-        #     total += Y.size(0)
-        #     correct += (predicted == Y).sum().item()
-        #     accuracy = (correct / total) * 100
-        #
-        # print(f'[Testing] -/{e}/{epochs} -> Accuracy: {accuracy} %')
-        # writer.add_scalar('test-accuracy', accuracy/100., e)
+        correct, total, accuracy= 0, 0, 0
+        for i, (X, Y) in enumerate(test_dataloader):
+            # Binarizing 'X'
+            X[X < 1.] = 0.; X = 1. - X
+
+            if torch.cuda.is_available():
+                X, Y = X.cuda(), Y.cuda()
+            output = model(X)
+            _, predicted = torch.max(output, 1)
+            total += Y.size(0)
+            correct += (predicted == Y).sum().item()
+        accuracy = (correct / total) * 100
+
+        print(f'[Testing] -/{e}/{epochs} -> Accuracy: {accuracy} %',total,correct)
 
 if __name__ == '__main__':
 #     import argparse

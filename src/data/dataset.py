@@ -29,6 +29,7 @@ class PairedDataset(torch.utils.data.Dataset):
 
 class ImageDataset(torchvision.datasets.ImageFolder):
     def __init__(self, image_root, transform=None, labels=None,train=True):
+    def __init__(self, image_root, transform=None, labels=None,train=1):
         self.image_root = image_root
         self.train_paths = []
         self.test_paths = []
