@@ -1,6 +1,6 @@
 import torch, os
 from torchvision.transforms import ToTensor, Compose, Resize, Grayscale
-from torch.utils import tensorboard as tb
+#from torch.utils import tensorboard as tb
 from model.sketchanet import SketchANet,Net
 import data.dataset as DataSet
 from torch.utils.data import DataLoader
@@ -9,11 +9,11 @@ from torchvision import transforms
 import data.datautil as util
 import torchvision
 def main( ):
-    batch_size = 200
-    batch_size = 1
+    batch_size = 100
+   # batch_size = 1
     print("here")
-    sk_root = '../rendered_256x256/256x256/sketch/tx_000000000000'
-    sk_root ='../test'
+    sk_root = '../256x256/sketch/tx_000000000000'
+   # sk_root ='../test'
     train_dataset = ImageFolder(sk_root, transform=Compose([Resize(225), ToTensor()]))
     train_dataloader = DataLoader(train_dataset, batch_size=batch_size, pin_memory=True, num_workers=os.cpu_count(),
                          shuffle=True, drop_last=True)
@@ -31,7 +31,7 @@ def main( ):
     #                      shuffle=True, drop_last=True)
 
 
-    model = SketchANet(num_classes=3)
+    model = SketchANet(num_classes=125)
     # model = Net()
     if torch.cuda.is_available():
         model = model.cuda()
@@ -44,8 +44,9 @@ def main( ):
 
     count = 0
     epochs = 200
-    prints_interval = 1
+    prints_interval = 100
     for e in range(epochs):
+        print('epoch',e,'started')
         for i, (X, Y) in enumerate(train_dataloader):
 
             if torch.cuda.is_available():
@@ -58,7 +59,7 @@ def main( ):
             # print(train_dataset.class_to_idx)
             # print(Y)
             output = model(X)
-            print(output,Y)
+            #print(output,Y)
             loss = crit(output, Y)
             
             if i % prints_interval == 0:
@@ -69,7 +70,7 @@ def main( ):
             optim.step()
 
             count += 1
-
+        print('epoch',e,'loss',loss.item())
         # correct, total, accuracy= 0, 0, 0
         # for i, (X, Y) in enumerate(test_dataloader):
         #     # Binarizing 'X'
