@@ -9,6 +9,8 @@ from torchvision import transforms
 import data.datautil as util
 import torchvision
 def main( ):
+    # batch_size = 100
+    batch_size = 1
     print("here")
     sk_root = '../256x256/sketch/tx_000000000000'
     sk_root ='../test'
@@ -30,7 +32,8 @@ def main( ):
 
 
     model = SketchANet(num_classes=3)
-    # model = Net()
+    model = Net()
+    model.train()
     if torch.cuda.is_available():
         model = model.cuda()
     
@@ -42,7 +45,7 @@ def main( ):
 
     count = 0
     epochs = 200
-    prints_interval = 100
+    prints_interval = 1
     for e in range(epochs):
         print('epoch',e,'started')
         for i, (X, Y) in enumerate(train_dataloader):
@@ -51,11 +54,11 @@ def main( ):
                 X, Y = X.cuda(), Y.cuda()
 
             optim.zero_grad()
-            # to_image = transforms.ToPILImage()
-            # image = to_image(X[0])
-            # util.showImage(image)
-            # print(train_dataset.class_to_idx)
-            # print(Y)
+            to_image = transforms.ToPILImage()
+            image = to_image(X[0])
+            util.showImage(image)
+            print(train_dataset.class_to_idx)
+            print(Y)
             output = model(X)
             #print(output,Y)
             loss = crit(output, Y)
@@ -63,27 +66,38 @@ def main( ):
             if i % prints_interval == 0:
                 print(f'[Training] {i}/{e}/{epochs} -> Loss: {loss.item()}')
                 # writer.add_scalar('train-loss', loss.item(), count)
-            
+
+            # to_image = transforms.ToPILImage()
+            # image = to_image(X[0])
+            # util.showImage(image)
+            # print(train_dataset.class_to_idx)
+            # print(Y)
             loss.backward()
+
             optim.step()
 
             count += 1
         print('epoch',e,'loss',loss.item())
         correct, total, accuracy= 0, 0, 0
+        # model.eval()
         for i, (X, Y) in enumerate(test_dataloader):
             # Binarizing 'X'
-            X[X < 1.] = 0.; X = 1. - X
-
             if torch.cuda.is_available():
                 X, Y = X.cuda(), Y.cuda()
             output = model(X)
             _, predicted = torch.max(output, 1)
             total += Y.size(0)
             correct += (predicted == Y).sum().item()
+
+            # image = to_image(X[0])
+            # util.showImage(image)
+            # print(train_dataset.class_to_idx)
+            # print(Y)
+
         accuracy = (correct / total) * 100
 
         print(f'[Testing] -/{e}/{epochs} -> Accuracy: {accuracy} %',total,correct)
-
+        # model.train()
 if __name__ == '__main__':
 #     import argparse
 #

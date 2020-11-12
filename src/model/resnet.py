@@ -1,0 +1,11 @@
+import torchvision.models as models
+import torch.nn as nn
+def getResnet(num_class = 125, pretain=False):
+    model = models.resnet18(pretrained=pretain)
+    # for name, child in model.named_children():
+    #     for name2, params in child.named_parameters():
+    #         print(name, name2)
+    model.fc = nn.Linear(model.fc.in_features,num_class)
+    return model
+
+model = getResnet()
