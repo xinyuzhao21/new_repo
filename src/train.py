@@ -1,14 +1,32 @@
 import torch, os
 from torchvision.transforms import ToTensor, Compose, Resize, Grayscale
-#from torch.utils import tensorboard as tb
+from torch.utils import tensorboard as tb
 from model.sketchanet import SketchANet,Net
 import data.dataset as DataSet
 from torch.utils.data import DataLoader
-from torchvision.datasets import ImageFolder
+
 from torchvision import transforms
 import data.datautil as util
-import torchvision
-def main( ):
+
+def set_checkpoint(epoch,model,optimizer,metric,loss,path):
+    torch.save({
+        'epoch': epoch,
+        'model_state_dict': model.state_dict(),
+        'optimizer_state_dict': optimizer.state_dict(),
+        'loss': loss,
+    }, path)
+
+def load_checkpoint(path,model,optimizer):
+    checkpoint = torch.load(path)
+    model.load_state_dict(checkpoint['model_state_dict'])
+    optimizer.load_state_dict(checkpoint['optimizer_state_dict'])
+    epoch = checkpoint['epoch']
+    loss = checkpoint['loss']
+    print("Checkpoint loaded",'epoch',epoch,'loss',loss)
+
+
+
+def main():
     # batch_size = 100
     batch_size = 1
     print("here")
@@ -18,14 +36,6 @@ def main( ):
     train_dataloader = DataLoader(train_dataset, batch_size=batch_size, pin_memory=True, num_workers=os.cpu_count(),
                          shuffle=True, drop_last=True)
 
-    # transform = transforms.Compose(
-    #     [Resize([225, 225]),
-    #      transforms.ToTensor(),
-    #      transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))])
-    # train_dataset = torchvision.datasets.CIFAR10(root='./data', train=True,
-    #                                         download=True, transform=transform)
-    # train_dataloader = torch.utils.data.DataLoader(train_dataset, batch_size=4,
-    #                                           shuffle=True, num_workers=2)
     test_dataset = DataSet.ImageDataset(sk_root, transform=Compose([Resize([225, 225]), ToTensor()]),train=False)
     test_dataloader = DataLoader(test_dataset, batch_size=batch_size, pin_memory=True, num_workers=os.cpu_count(),
                          shuffle=True, drop_last=True)
@@ -66,12 +76,6 @@ def main( ):
             if i % prints_interval == 0:
                 print(f'[Training] {i}/{e}/{epochs} -> Loss: {loss.item()}')
                 # writer.add_scalar('train-loss', loss.item(), count)
-
-            # to_image = transforms.ToPILImage()
-            # image = to_image(X[0])
-            # util.showImage(image)
-            # print(train_dataset.class_to_idx)
-            # print(Y)
             loss.backward()
 
             optim.step()
@@ -81,7 +85,7 @@ def main( ):
         correct, total, accuracy= 0, 0, 0
         # model.eval()
         for i, (X, Y) in enumerate(test_dataloader):
-            # Binarizing 'X'
+
             if torch.cuda.is_available():
                 X, Y = X.cuda(), Y.cuda()
             output = model(X)
@@ -89,10 +93,6 @@ def main( ):
             total += Y.size(0)
             correct += (predicted == Y).sum().item()
 
-            # image = to_image(X[0])
-            # util.showImage(image)
-            # print(train_dataset.class_to_idx)
-            # print(Y)
 
         accuracy = (correct / total) * 100
 
