@@ -61,6 +61,7 @@ def main():
     prints_interval = 100
     for e in range(epochs):
         print('epoch',e,'started')
+        avg_loss = 0
         for i, (X, Y) in enumerate(train_dataloader):
 
             if torch.cuda.is_available():
@@ -71,10 +72,11 @@ def main():
             output = model(X)
             #print(output,Y)
             loss = crit(output, Y)
+            avg_loss += loss.item()
             if i == 0:
                 print(loss)
             if i % prints_interval == 0:
-                print(f'[Training] {i}/{e}/{epochs} -> Loss: {loss.item()}')
+                print(f'[Training] {i}/{e}/{epochs} -> Loss: {avg_loss/(i+1)}')
                 # writer.add_scalar('train-loss', loss.item(), count)
             loss.backward()
 
