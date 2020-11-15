@@ -3,7 +3,7 @@ from loss.contrastive import ContrastiveLoss
 from torchvision.transforms import ToTensor, Compose, Resize, Grayscale
 # from torch.utils import tensorboard as tb
 from model.sketchanet import SketchANet, Net
-from model.siamesenet import SiameseNet,SiaClassNet
+from model.siamesenet import SiameseNet
 from model.resnet import getResnet
 import data.dataset as DataSet
 from torch.utils.data import DataLoader
@@ -46,20 +46,27 @@ def main():
     train_dataset = DataSet.PairedDataset(photo_root=tmp_root,sketch_root=sketch_root,transform=Compose([Resize(in_size), ToTensor()]),balanced=balanced)
     train_dataloader = DataLoader(train_dataset, batch_size=batch_size, pin_memory=True, num_workers=os.cpu_count(),
                                   shuffle=True, drop_last=True)
-
-    test_dataset = DataSet.ImageDataset(sketch_root, transform=Compose([Resize(in_size), ToTensor()]),train=False)
+    test_dataset = DataSet.PairedDataset(photo_root=tmp_root,sketch_root=sketch_root,transform=Compose([Resize(in_size), ToTensor()]),train=False)
     test_dataloader = DataLoader(test_dataset, batch_size=batch_size, pin_memory=True, num_workers=os.cpu_count(),
-                         shuffle=True, drop_last=True)
+                                  shuffle=True, drop_last=True)
 
     num_class = len(train_dataset.classes)
     embedding_size = 30
     net1 = getResnet(num_class=embedding_size,pretrain=True)
-    model = SiaClassNet(net1,net1,embedding_size,num_class)
+    margin = 1
+    model = SiameseNet(net1,net1)
 
+
+    method = 'metric'
     method = "classify"
-    crit = torch.nn.CrossEntropyLoss()
-    model.train()
 
+
+    if method is 'classify':
+        crit = torch.nn.CrossEntropyLoss()
+        classifier = ClassificationNet(embedding_size*2,num_class)
+    else:
+        crit = ContrastiveLoss(margin)
+    model.train()
     if torch.cuda.is_available():
         model = model.cuda()
 
@@ -71,7 +78,7 @@ def main():
     count = 0
     epochs = 200
     prints_interval = 100
-    prints_interval = 1
+    prints_interval = 100
     for e in range(epochs):
         print('epoch', e, 'started')
         avg_loss = 0
@@ -84,7 +91,13 @@ def main():
             to_image = transforms.ToPILImage()
             output = model(*X)
             # print(output,Y)
-            loss = crit(output, Y)
+            if method is 'classify':
+                output=classifier(*output)
+                loss = crit(output, Y)
+            else:
+                temp = Y
+                Y = torch.where(Y != 3, 1, 0)
+                loss = crit(*output,Y)
             # if loss == 0.0:
             #     print('here',Y)
             #     for i in range(sketch.shape[0]):
@@ -95,7 +108,7 @@ def main():
             #         print(train_dataset.classes)
             avg_loss+=loss.item()
             if i % prints_interval == 0:
-                print(output,Y)
+                # print(output,Y)
                 print(f'[Training] {i}/{e}/{epochs} -> Loss: {avg_loss/(i+1)}')
                 # writer.add_scalar('train-loss', loss.item(), count)
             loss.backward()
@@ -104,9 +117,10 @@ def main():
 
             count += 1
         print('epoch', e, 'Avg loss', avg_loss/len(train_dataloader))
-
-        eval_accu(test_dataloader,model,e,epochs)
-
+        if method is 'classify':
+            eval_accu(test_dataloader,model,e,epochs,classifier)
+        else:
+            eval_loss(test_dataloader,model,e,epochs,crit,train_dataset)
         # model.eval()
 
         # model.train()
@@ -127,13 +141,14 @@ def eval_loss(test_dataloader,model,e,epochs,crit,train_dataset):
 
 
 
-def eval_accu(test_dataloader,model,e,epochs):
+def eval_accu(test_dataloader,model,e,epochs,classifier):
     correct, total, accuracy = 0, 0, 0
     for i, (X, Y) in enumerate(test_dataloader):
 
         if torch.cuda.is_available():
             X, Y = X.cuda(), Y.cuda()
         output = model(*X)
+        output = classifier(*output)
         _, predicted = torch.max(output, 1)
         total += Y.size(0)
         correct += (predicted == Y).sum().item()

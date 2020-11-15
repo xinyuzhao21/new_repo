@@ -12,7 +12,7 @@ class ClassificationNet(nn.Module):
 
         )
 
-    def forward(self, output1,output2):
-        x = torch.cat((output1,output2),1)
+    def forward(self, x):
+        # x = torch.cat((output1,output2),1)
         output = self.net1(x)
         return output
