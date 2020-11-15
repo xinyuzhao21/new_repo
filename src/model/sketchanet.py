@@ -30,7 +30,7 @@ class SketchANet(torch.nn.Module):
         nn.MaxPool2d(kernel_size=3, stride=2),
         nn.AdaptiveAvgPool2d((7, 7)),
         )
-        self.net2=nn.Sequential(
+        self.classify=nn.Sequential(
         nn.Dropout(),
         nn.Linear(256 * 7 * 7, 4096),
         nn.ReLU(inplace=True),
