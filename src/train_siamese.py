@@ -34,23 +34,27 @@ def load_checkpoint(path, model, optimizer):
 
 def main():
     # batch_size = 100
-    batch_size = 100
+    batch_size = 1
     print("here")
     sk_root = '../256x256/sketch/tx_000000000000'
     # sk_root ='../test'
     in_size = 225
     in_size = 224
-    train_dataset = DataSet.ImageDataset(sk_root, transform=Compose([Resize(in_size), ToTensor()]))
+    tmp_root ='../test_pair/photo'
+    util.train_test_split(tmp_root,split=(1,0.,0.))
+    sketch_root = '../test_pair/sketch'
+    util.train_test_split(sketch_root, split=(1, 0, 0))
+    train_dataset = DataSet.PairedDataset(photo_root=tmp_root,sketch_root=sketch_root,transform=Compose([Resize(in_size), ToTensor()]))
     train_dataloader = DataLoader(train_dataset, batch_size=batch_size, pin_memory=True, num_workers=os.cpu_count(),
                                   shuffle=True, drop_last=True)
-
-    test_dataset = DataSet.ImageDataset(sk_root, transform=Compose([Resize(in_size), ToTensor()]), train=False)
-    test_dataloader = DataLoader(test_dataset, batch_size=batch_size, pin_memory=True, num_workers=os.cpu_count(),
-                                 shuffle=True, drop_last=True)
+    # test_dataset = DataSet.PairedDataset(photo_root=tmp_root,sketch_root=sketch_root,transform=Compose([Resize(in_size), ToTensor()]),train=False)
+    test_dataloader = DataLoader(train_dataset, batch_size=batch_size, pin_memory=True, num_workers=os.cpu_count(),
+                                  shuffle=True, drop_last=True)
 
     num_class = len(train_dataset.classes)
-    embedding_size = 300
+    embedding_size = 30
     net1 = getResnet(num_class=embedding_size,pretrain=True)
+    net1 = Net(num_class=embedding_size)
     margin = 1
     model = SiameseNet(net1,net1)
 
@@ -76,6 +80,7 @@ def main():
     count = 0
     epochs = 200
     prints_interval = 100
+    prints_interval = 1
     for e in range(epochs):
         print('epoch', e, 'started')
         avg_loss = 0
@@ -90,7 +95,9 @@ def main():
             # print(output,Y)
             if method is 'classify':
                 output=classifier(*output)
-            loss = crit(*output, Y)
+                loss = crit(output, Y)
+            else:
+                loss = crit(*output,Y)
             avg_loss+=loss.item()
             if i % prints_interval == 0:
                 print(f'[Training] {i}/{e}/{epochs} -> Loss: {avg_loss/(i+1)}')
@@ -102,13 +109,13 @@ def main():
             count += 1
         print('epoch', e, 'loss', avg_loss/len(train_dataloader))
         if method is 'classify':
-            eval_accu(test_dataloader,model,e,epochs,crit,classifier)
+            eval_accu(test_dataloader,model,e,epochs,classifier)
         else:
             eval_loss(test_dataloader,model,e,epochs)
         # model.eval()
 
         # model.train()
-def eval_loss(test_dataloader,model,e,epochs,crit,classifier):
+def eval_loss(test_dataloader,model,e,epochs,crit):
     avg_loss = 0
     for i, (X, Y) in enumerate(test_dataloader):
 
@@ -117,18 +124,19 @@ def eval_loss(test_dataloader,model,e,epochs,crit,classifier):
 
         to_image = transforms.ToPILImage()
         output = model(*X)
-        output = classifier(*output)
+
         # print(output,Y)
         loss = crit(*output, Y)
         avg_loss += loss.item()
     print('epoch', e, 'loss', avg_loss / len(test_dataloader))
 
-def eval_accu(test_dataloader,model,e,epochs):
+def eval_accu(test_dataloader,model,e,epochs,classifier):
     for i, (X, Y) in enumerate(test_dataloader):
         correct, total, accuracy = 0, 0, 0
         if torch.cuda.is_available():
             X, Y = X.cuda(), Y.cuda()
-        output = model(X)
+        output = model(*X)
+        output = classifier(*output)
         _, predicted = torch.max(output, 1)
         total += Y.size(0)
         correct += (predicted == Y).sum().item()

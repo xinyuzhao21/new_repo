@@ -53,6 +53,7 @@ class PairedDataset(torch.utils.data.Dataset):
 
         self.classes = []
         self.class_to_index = {}
+        self.length = 0
         if self.train:
             train_links= self.sketch_root+'/train.txt'
 
@@ -73,7 +74,7 @@ class PairedDataset(torch.utils.data.Dataset):
 
                     self.label_to_indx_sketch[label].append(i)
 
-
+            self.length = len(self.train_sketch)
             train_links= self.photo_root+'/train.txt'
             with open(train_links) as f:
                 for i,line in enumerate(f):
@@ -103,7 +104,7 @@ class PairedDataset(torch.utils.data.Dataset):
                         self.label_to_indx_sketch[label] = []
 
                     self.label_to_indx_sketch[label].append(i)
-
+            self.length = len(self.test_sketch)
             test_links = self.photo_root + '/test.txt'
             with open(test_links) as f:
                 for i, line in enumerate(f):
@@ -113,11 +114,6 @@ class PairedDataset(torch.utils.data.Dataset):
                         self.label_to_indx_photo[label] = []
                     self.label_to_indx_photo[label].append(i)
                     self.test_photo.append((label, path))
-            self.test_labels = self.classes
-            self.test_data = self.test_data
-            self.labels_set = set(self.test_labels.numpy())
-            self.label_to_indices = {label: np.where(self.test_labels.numpy() == label)[0]
-                                     for label in self.labels_set}
 
 
 
@@ -128,7 +124,7 @@ class PairedDataset(torch.utils.data.Dataset):
 
     def __len__(self):
         'Denotes the total number of samples'
-        return len(self.train_sketch)
+        return self.length
 
     def __getitem__(self, index):
         'Generates one sample of data'
