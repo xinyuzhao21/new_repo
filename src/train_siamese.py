@@ -37,21 +37,20 @@ def main():
     batch_size = 100
     balanced = True
     print("here")
-    sk_root = '../256x256/sketch/tx_000000000000'
     # sk_root ='../test'
     in_size = 225
     in_size = 224
-    tmp_root ='../test_pair/photo'
-    sketch_root = '../test_pair/sketch'
+    tmp_root = '../256x256/photo/tx_000000000000'
+    sketch_root = '../256x256/sketch/tx_000000000000'
     train_dataset = DataSet.PairedDataset(photo_root=tmp_root,sketch_root=sketch_root,transform=Compose([Resize(in_size), ToTensor()]),balanced=balanced)
     train_dataloader = DataLoader(train_dataset, batch_size=batch_size, pin_memory=True, num_workers=os.cpu_count(),
                                   shuffle=True, drop_last=True)
     test_dataset = DataSet.PairedDataset(photo_root=tmp_root,sketch_root=sketch_root,transform=Compose([Resize(in_size), ToTensor()]),train=False)
-    test_dataloader = DataLoader(test_dataset, batch_size=batch_size, pin_memory=True, num_workers=os.cpu_count(),
+    test_dataloader = DataLoader(test_datase t, batch_size=batch_size, pin_memory=True, num_workers=os.cpu_count(),
                                   shuffle=True, drop_last=True)
 
     num_class = len(train_dataset.classes)
-    embedding_size = 30
+    embedding_size = 200
     net1 = getResnet(num_class=embedding_size,pretrain=True)
     margin = 1
     model = SiameseNet(net1,net1)
