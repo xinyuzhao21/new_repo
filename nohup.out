@@ -1,0 +1,1724 @@
+Downloading: "https://download.pytorch.org/models/resnet18-5c106cde.pth" to /home/frfcdf03/.cache/torch/checkpoints/resnet18-5c106cde.pth
+  0%|          | 0.00/44.7M [00:00<?, ?B/s] 20%|██        | 8.98M/44.7M [00:00<00:00, 94.1MB/s] 27%|██▋       | 12.1M/44.7M [00:00<00:00, 60.3MB/s] 34%|███▎      | 15.0M/44.7M [00:00<00:01, 19.9MB/s] 38%|███▊      | 17.2M/44.7M [00:00<00:01, 15.2MB/s] 43%|████▎     | 19.0M/44.7M [00:00<00:01, 13.7MB/s] 46%|████▌     | 20.6M/44.7M [00:01<00:01, 14.1MB/s] 50%|████▉     | 22.1M/44.7M [00:01<00:01, 14.5MB/s] 53%|█████▎    | 23.7M/44.7M [00:01<00:01, 14.3MB/s] 56%|█████▋    | 25.1M/44.7M [00:01<00:01, 13.6MB/s] 60%|█████▉    | 26.6M/44.7M [00:01<00:01, 14.1MB/s] 63%|██████▎   | 28.2M/44.7M [00:01<00:01, 14.1MB/s] 67%|██████▋   | 29.9M/44.7M [00:01<00:01, 12.6MB/s] 70%|██████▉   | 31.2M/44.7M [00:01<00:01, 11.7MB/s] 72%|███████▏  | 32.3M/44.7M [00:02<00:01, 11.0MB/s] 75%|███████▌  | 33.7M/44.7M [00:02<00:00, 11.8MB/s] 78%|███████▊  | 34.9M/44.7M [00:02<00:00, 11.8MB/s] 81%|████████  | 36.0M/44.7M [00:02<00:00, 11.8MB/s] 83%|████████▎ | 37.2M/44.7M [00:02<00:00, 9.20MB/s] 86%|████████▋ | 38.6M/44.7M [00:02<00:00, 10.3MB/s] 89%|████████▉ | 39.8M/44.7M [00:02<00:00, 9.47MB/s] 92%|█████████▏| 41.0M/44.7M [00:02<00:00, 10.1MB/s] 94%|█████████▍| 42.0M/44.7M [00:03<00:00, 10.1MB/s] 98%|█████████▊| 43.6M/44.7M [00:03<00:00, 11.5MB/s]100%|██████████| 44.7M/44.7M [00:03<00:00, 14.4MB/s]here
+epoch 0 started
+
+tensor(4.9666, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/0/200 -> Loss: 4.966602325439453
+[Training] 100/0/200 -> Loss: 2.7276873092840215
+[Training] 200/0/200 -> Loss: 2.1947527756145346
+[Training] 300/0/200 -> Loss: 1.926776030332939
+[Training] 400/0/200 -> Loss: 1.7534345907166118
+[Training] 500/0/200 -> Loss: 1.6189482497597882
+epoch 0 loss 0.9529143571853638
+[Testing] -/0/200 -> Accuracy: 70.66666666666667 % 18900 13356
+epoch 1 started
+tensor(0.8027, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/1/200 -> Loss: 0.8026856184005737
+[Training] 100/1/200 -> Loss: 0.779494843270519
+[Training] 200/1/200 -> Loss: 0.7869762947310263
+[Training] 300/1/200 -> Loss: 0.7697940794534461
+[Training] 400/1/200 -> Loss: 0.7606982379928788
+[Training] 500/1/200 -> Loss: 0.752334047636824
+epoch 1 loss 0.9271076917648315
+[Testing] -/1/200 -> Accuracy: 76.64550264550265 % 18900 14486
+epoch 2 started
+tensor(0.5835, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/2/200 -> Loss: 0.5835478901863098
+[Training] 100/2/200 -> Loss: 0.4420522752374706
+[Training] 200/2/200 -> Loss: 0.4444990540618327
+[Training] 300/2/200 -> Loss: 0.47098058204714244
+[Training] 400/2/200 -> Loss: 0.4777235451184603
+[Training] 500/2/200 -> Loss: 0.48753595143972994
+epoch 2 loss 0.649442732334137
+[Testing] -/2/200 -> Accuracy: 80.05291005291005 % 18900 15130
+epoch 3 started
+tensor(0.2674, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/3/200 -> Loss: 0.26740527153015137
+[Training] 100/3/200 -> Loss: 0.2710537442771515
+[Training] 200/3/200 -> Loss: 0.27216099862435567
+[Training] 300/3/200 -> Loss: 0.2802646049728425
+[Training] 400/3/200 -> Loss: 0.2950196759659156
+[Training] 500/3/200 -> Loss: 0.3084750634408045
+epoch 3 loss 0.23507492244243622
+[Testing] -/3/200 -> Accuracy: 80.28042328042329 % 18900 15173
+epoch 4 started
+tensor(0.1440, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/4/200 -> Loss: 0.1440076231956482
+[Training] 100/4/200 -> Loss: 0.18161310122744873
+[Training] 200/4/200 -> Loss: 0.17577534497006617
+[Training] 300/4/200 -> Loss: 0.1812903942707369
+[Training] 400/4/200 -> Loss: 0.19630034905196425
+[Training] 500/4/200 -> Loss: 0.20898181625350032
+epoch 4 loss 0.19944719970226288
+[Testing] -/4/200 -> Accuracy: 80.04232804232804 % 18900 15128
+epoch 5 started
+tensor(0.1105, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/5/200 -> Loss: 0.11052553355693817
+[Training] 100/5/200 -> Loss: 0.12612070154288027
+[Training] 200/5/200 -> Loss: 0.12664218706574606
+[Training] 300/5/200 -> Loss: 0.13510143646716674
+[Training] 400/5/200 -> Loss: 0.14045221238696665
+[Training] 500/5/200 -> Loss: 0.14963414130394093
+epoch 5 loss 0.23319749534130096
+[Testing] -/5/200 -> Accuracy: 79.81481481481481 % 18900 15085
+epoch 6 started
+tensor(0.3492, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/6/200 -> Loss: 0.34917786717414856
+[Training] 100/6/200 -> Loss: 0.11713595970506126
+[Training] 200/6/200 -> Loss: 0.11049773348541699
+[Training] 300/6/200 -> Loss: 0.11699774241897949
+[Training] 400/6/200 -> Loss: 0.12497180443433603
+[Training] 500/6/200 -> Loss: 0.1323523683187193
+epoch 6 loss 0.19961559772491455
+[Testing] -/6/200 -> Accuracy: 80.48677248677248 % 18900 15212
+epoch 7 started
+tensor(0.0646, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/7/200 -> Loss: 0.06462545692920685
+[Training] 100/7/200 -> Loss: 0.10394078244150866
+[Training] 200/7/200 -> Loss: 0.09271415181235591
+[Training] 300/7/200 -> Loss: 0.09349057021120755
+[Training] 400/7/200 -> Loss: 0.09844087479296988
+[Training] 500/7/200 -> Loss: 0.10641736954175486
+epoch 7 loss 0.20289909839630127
+[Testing] -/7/200 -> Accuracy: 80.44973544973544 % 18900 15205
+epoch 8 started
+tensor(0.1197, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/8/200 -> Loss: 0.11969325691461563
+[Training] 100/8/200 -> Loss: 0.07635799196023162
+[Training] 200/8/200 -> Loss: 0.07776474849371916
+[Training] 300/8/200 -> Loss: 0.08209087893032652
+[Training] 400/8/200 -> Loss: 0.08782867413534413
+[Training] 500/8/200 -> Loss: 0.09625383964488785
+epoch 8 loss 0.08340559154748917
+[Testing] -/8/200 -> Accuracy: 79.47089947089947 % 18900 15020
+epoch 9 started
+tensor(0.1184, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/9/200 -> Loss: 0.11840221285820007
+[Training] 100/9/200 -> Loss: 0.0917746114848864
+[Training] 200/9/200 -> Loss: 0.08716680578405585
+[Training] 300/9/200 -> Loss: 0.08978337347136185
+[Training] 400/9/200 -> Loss: 0.09222315775318782
+[Training] 500/9/200 -> Loss: 0.09634111246127568
+epoch 9 loss 0.1781853437423706
+[Testing] -/9/200 -> Accuracy: 79.44444444444444 % 18900 15015
+epoch 10 started
+tensor(0.1223, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/10/200 -> Loss: 0.12229564785957336
+[Training] 100/10/200 -> Loss: 0.0866407577391013
+[Training] 200/10/200 -> Loss: 0.08212702244112444
+[Training] 300/10/200 -> Loss: 0.08044912236003186
+[Training] 400/10/200 -> Loss: 0.08602971086589772
+[Training] 500/10/200 -> Loss: 0.09036078526008272
+epoch 10 loss 0.14487838745117188
+[Testing] -/10/200 -> Accuracy: 79.94708994708995 % 18900 15110
+epoch 11 started
+tensor(0.0702, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/11/200 -> Loss: 0.07020645588636398
+[Training] 100/11/200 -> Loss: 0.06463788731235752
+[Training] 200/11/200 -> Loss: 0.05973100543267729
+[Training] 300/11/200 -> Loss: 0.06106931073946934
+[Training] 400/11/200 -> Loss: 0.0669323826804432
+[Training] 500/11/200 -> Loss: 0.06918326574619377
+epoch 11 loss 0.12624332308769226
+[Testing] -/11/200 -> Accuracy: 80.66137566137566 % 18900 15245
+epoch 12 started
+tensor(0.0546, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/12/200 -> Loss: 0.054561320692300797
+[Training] 100/12/200 -> Loss: 0.0716775384279761
+[Training] 200/12/200 -> Loss: 0.06440527501761617
+[Training] 300/12/200 -> Loss: 0.0635342209466866
+[Training] 400/12/200 -> Loss: 0.07037674327220703
+[Training] 500/12/200 -> Loss: 0.07726042587198541
+epoch 12 loss 0.05980781465768814
+[Testing] -/12/200 -> Accuracy: 80.63492063492063 % 18900 15240
+epoch 13 started
+tensor(0.0650, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/13/200 -> Loss: 0.06502160429954529
+[Training] 100/13/200 -> Loss: 0.07354150748452043
+[Training] 200/13/200 -> Loss: 0.06101972301634242
+[Training] 300/13/200 -> Loss: 0.05744035396898209
+[Training] 400/13/200 -> Loss: 0.05967508363270403
+[Training] 500/13/200 -> Loss: 0.06298622573928503
+epoch 13 loss 0.10040344297885895
+[Testing] -/13/200 -> Accuracy: 80.57142857142857 % 18900 15228
+epoch 14 started
+tensor(0.0347, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/14/200 -> Loss: 0.034708354622125626
+[Training] 100/14/200 -> Loss: 0.0486025828453205
+[Training] 200/14/200 -> Loss: 0.053718028749936995
+[Training] 300/14/200 -> Loss: 0.05940482583658095
+[Training] 400/14/200 -> Loss: 0.0631494260360568
+[Training] 500/14/200 -> Loss: 0.06826854554913983
+epoch 14 loss 0.0956578180193901
+[Testing] -/14/200 -> Accuracy: 80.28042328042329 % 18900 15173
+epoch 15 started
+tensor(0.0192, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/15/200 -> Loss: 0.019210536032915115
+[Training] 100/15/200 -> Loss: 0.05982111535486904
+[Training] 200/15/200 -> Loss: 0.06792352452355238
+[Training] 300/15/200 -> Loss: 0.06300514053083041
+[Training] 400/15/200 -> Loss: 0.06330903623011568
+[Training] 500/15/200 -> Loss: 0.0667622791465647
+epoch 15 loss 0.07505038380622864
+[Testing] -/15/200 -> Accuracy: 80.96296296296296 % 18900 15302
+epoch 16 started
+tensor(0.0278, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/16/200 -> Loss: 0.02780204266309738
+[Training] 100/16/200 -> Loss: 0.0475297173840169
+[Training] 200/16/200 -> Loss: 0.04566673209209607
+[Training] 300/16/200 -> Loss: 0.04662044846415644
+[Training] 400/16/200 -> Loss: 0.04618850552785835
+[Training] 500/16/200 -> Loss: 0.05049836357679969
+epoch 16 loss 0.05856899917125702
+[Testing] -/16/200 -> Accuracy: 80.15343915343915 % 18900 15149
+epoch 17 started
+tensor(0.0068, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/17/200 -> Loss: 0.006786985322833061
+[Training] 100/17/200 -> Loss: 0.056466018435277855
+[Training] 200/17/200 -> Loss: 0.046577868502429544
+[Training] 300/17/200 -> Loss: 0.04695238861444088
+[Training] 400/17/200 -> Loss: 0.05125252786615023
+[Training] 500/17/200 -> Loss: 0.05448177622857981
+epoch 17 loss 0.05189314857125282
+[Testing] -/17/200 -> Accuracy: 81.39153439153439 % 18900 15383
+epoch 18 started
+tensor(0.0823, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/18/200 -> Loss: 0.08225550502538681
+[Training] 100/18/200 -> Loss: 0.035302549237523705
+[Training] 200/18/200 -> Loss: 0.03997217084510502
+[Training] 300/18/200 -> Loss: 0.040618658937170385
+[Training] 400/18/200 -> Loss: 0.042091060498615544
+[Training] 500/18/200 -> Loss: 0.0437699577386794
+epoch 18 loss 0.013954361900687218
+[Testing] -/18/200 -> Accuracy: 79.56084656084657 % 18900 15037
+epoch 19 started
+tensor(0.0218, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/19/200 -> Loss: 0.02178245224058628
+[Training] 100/19/200 -> Loss: 0.06256901163902909
+[Training] 200/19/200 -> Loss: 0.05986756420420918
+[Training] 300/19/200 -> Loss: 0.06039900923584065
+[Training] 400/19/200 -> Loss: 0.06317813945597414
+[Training] 500/19/200 -> Loss: 0.06642414032511354
+epoch 19 loss 0.027119114995002747
+[Testing] -/19/200 -> Accuracy: 80.41269841269842 % 18900 15198
+epoch 20 started
+tensor(0.0462, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/20/200 -> Loss: 0.04617125913500786
+[Training] 100/20/200 -> Loss: 0.03412008484235347
+[Training] 200/20/200 -> Loss: 0.0326192257896909
+[Training] 300/20/200 -> Loss: 0.03343655823527269
+[Training] 400/20/200 -> Loss: 0.03498592003953511
+[Training] 500/20/200 -> Loss: 0.038625417860222985
+epoch 20 loss 0.029206227511167526
+[Testing] -/20/200 -> Accuracy: 80.82010582010582 % 18900 15275
+epoch 21 started
+tensor(0.0474, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/21/200 -> Loss: 0.04737383872270584
+[Training] 100/21/200 -> Loss: 0.03770651012234906
+[Training] 200/21/200 -> Loss: 0.03552021608289461
+[Training] 300/21/200 -> Loss: 0.03936534696274075
+[Training] 400/21/200 -> Loss: 0.04354199028906048
+[Training] 500/21/200 -> Loss: 0.04566858531795665
+epoch 21 loss 0.04712939262390137
+[Testing] -/21/200 -> Accuracy: 81.24867724867725 % 18900 15356
+epoch 22 started
+tensor(0.0661, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/22/200 -> Loss: 0.06605128943920135
+[Training] 100/22/200 -> Loss: 0.03393990278594417
+[Training] 200/22/200 -> Loss: 0.03464543792669342
+[Training] 300/22/200 -> Loss: 0.03655711484011696
+[Training] 400/22/200 -> Loss: 0.0399054820107022
+[Training] 500/22/200 -> Loss: 0.042637646799403316
+epoch 22 loss 0.037644267082214355
+[Testing] -/22/200 -> Accuracy: 79.78835978835978 % 18900 15080
+epoch 23 started
+tensor(0.0512, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/23/200 -> Loss: 0.051241353154182434
+[Training] 100/23/200 -> Loss: 0.04209440713287285
+[Training] 200/23/200 -> Loss: 0.04109642549478148
+[Training] 300/23/200 -> Loss: 0.04157958425770195
+[Training] 400/23/200 -> Loss: 0.04389645358398928
+[Training] 500/23/200 -> Loss: 0.04512688792598789
+epoch 23 loss 0.046474628150463104
+[Testing] -/23/200 -> Accuracy: 80.14285714285714 % 18900 15147
+epoch 24 started
+tensor(0.0588, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/24/200 -> Loss: 0.05878404527902603
+[Training] 100/24/200 -> Loss: 0.04689976822418889
+[Training] 200/24/200 -> Loss: 0.042761449998624586
+[Training] 300/24/200 -> Loss: 0.04110012956480325
+[Training] 400/24/200 -> Loss: 0.041897284159055935
+[Training] 500/24/200 -> Loss: 0.041426544576584026
+epoch 24 loss 0.11013072729110718
+[Testing] -/24/200 -> Accuracy: 80.23280423280423 % 18900 15164
+epoch 25 started
+tensor(0.0211, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/25/200 -> Loss: 0.02112307958304882
+[Training] 100/25/200 -> Loss: 0.04737244909260385
+[Training] 200/25/200 -> Loss: 0.041975985609854466
+[Training] 300/25/200 -> Loss: 0.040723709518552455
+[Training] 400/25/200 -> Loss: 0.04087727788723703
+[Training] 500/25/200 -> Loss: 0.03949741679736359
+epoch 25 loss 0.014239476062357426
+[Testing] -/25/200 -> Accuracy: 81.34391534391534 % 18900 15374
+epoch 26 started
+tensor(0.0178, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/26/200 -> Loss: 0.01775207370519638
+[Training] 100/26/200 -> Loss: 0.027995036705166544
+[Training] 200/26/200 -> Loss: 0.02676337737380411
+[Training] 300/26/200 -> Loss: 0.030032078789096896
+[Training] 400/26/200 -> Loss: 0.032327255714154034
+[Training] 500/26/200 -> Loss: 0.03447337078124363
+epoch 26 loss 0.027429359033703804
+[Testing] -/26/200 -> Accuracy: 80.65608465608466 % 18900 15244
+epoch 27 started
+tensor(0.0052, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/27/200 -> Loss: 0.005162219982594252
+[Training] 100/27/200 -> Loss: 0.03167298543128637
+[Training] 200/27/200 -> Loss: 0.030215888719690675
+[Training] 300/27/200 -> Loss: 0.03161108167687326
+[Training] 400/27/200 -> Loss: 0.033143973893060945
+[Training] 500/27/200 -> Loss: 0.03770918204558794
+epoch 27 loss 0.021984228864312172
+[Testing] -/27/200 -> Accuracy: 81.16402116402116 % 18900 15340
+epoch 28 started
+tensor(0.0017, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/28/200 -> Loss: 0.0017253922997042537
+[Training] 100/28/200 -> Loss: 0.028079343517656705
+[Training] 200/28/200 -> Loss: 0.032707397350219
+[Training] 300/28/200 -> Loss: 0.031336362026763334
+[Training] 400/28/200 -> Loss: 0.03279140071584576
+[Training] 500/28/200 -> Loss: 0.03521043760167572
+epoch 28 loss 0.03796953335404396
+[Testing] -/28/200 -> Accuracy: 81.63492063492063 % 18900 15429
+epoch 29 started
+tensor(0.0022, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/29/200 -> Loss: 0.0021607589442282915
+[Training] 100/29/200 -> Loss: 0.025471962912879554
+[Training] 200/29/200 -> Loss: 0.02608565662336531
+[Training] 300/29/200 -> Loss: 0.03360129569106398
+[Training] 400/29/200 -> Loss: 0.03579276202053779
+[Training] 500/29/200 -> Loss: 0.03557327209029369
+epoch 29 loss 0.04097650572657585
+[Testing] -/29/200 -> Accuracy: 81.35449735449735 % 18900 15376
+epoch 30 started
+tensor(0.0688, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/30/200 -> Loss: 0.06880789250135422
+[Training] 100/30/200 -> Loss: 0.02468187883865125
+[Training] 200/30/200 -> Loss: 0.021894339816378363
+[Training] 300/30/200 -> Loss: 0.025487698101557706
+[Training] 400/30/200 -> Loss: 0.030484314314368415
+[Training] 500/30/200 -> Loss: 0.034075501547315847
+epoch 30 loss 0.06447882950305939
+[Testing] -/30/200 -> Accuracy: 81.38095238095238 % 18900 15381
+epoch 31 started
+tensor(0.0401, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/31/200 -> Loss: 0.04006312042474747
+[Training] 100/31/200 -> Loss: 0.03290990838552779
+[Training] 200/31/200 -> Loss: 0.03672853230344669
+[Training] 300/31/200 -> Loss: 0.035291088794503496
+[Training] 400/31/200 -> Loss: 0.032121539751254716
+[Training] 500/31/200 -> Loss: 0.03537174488732428
+epoch 31 loss 0.00454229349270463
+[Testing] -/31/200 -> Accuracy: 81.14285714285714 % 18900 15336
+epoch 32 started
+tensor(0.0045, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/32/200 -> Loss: 0.004479949362576008
+[Training] 100/32/200 -> Loss: 0.03624329526936359
+[Training] 200/32/200 -> Loss: 0.03322174899113267
+[Training] 300/32/200 -> Loss: 0.0301932764801961
+[Training] 400/32/200 -> Loss: 0.029875901527557654
+[Training] 500/32/200 -> Loss: 0.03165744894364023
+epoch 32 loss 0.021701345220208168
+[Testing] -/32/200 -> Accuracy: 81.17989417989419 % 18900 15343
+epoch 33 started
+tensor(0.0195, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/33/200 -> Loss: 0.019475115463137627
+[Training] 100/33/200 -> Loss: 0.02358743356178298
+[Training] 200/33/200 -> Loss: 0.02408853817789929
+[Training] 300/33/200 -> Loss: 0.023625420591671352
+[Training] 400/33/200 -> Loss: 0.0259393034456051
+[Training] 500/33/200 -> Loss: 0.027386089990991576
+epoch 33 loss 0.03229576721787453
+[Testing] -/33/200 -> Accuracy: 80.98412698412699 % 18900 15306
+epoch 34 started
+tensor(0.0020, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/34/200 -> Loss: 0.002026256872341037
+[Training] 100/34/200 -> Loss: 0.032951487065033556
+[Training] 200/34/200 -> Loss: 0.03337136428217943
+[Training] 300/34/200 -> Loss: 0.03507194348913192
+[Training] 400/34/200 -> Loss: 0.03518880484360787
+[Training] 500/34/200 -> Loss: 0.03739267476436895
+epoch 34 loss 0.06635349243879318
+[Testing] -/34/200 -> Accuracy: 81.22751322751323 % 18900 15352
+epoch 35 started
+tensor(0.0959, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/35/200 -> Loss: 0.09590015560388565
+[Training] 100/35/200 -> Loss: 0.027121939404180624
+[Training] 200/35/200 -> Loss: 0.026219971030568286
+[Training] 300/35/200 -> Loss: 0.027076873674399322
+[Training] 400/35/200 -> Loss: 0.02692773937794352
+[Training] 500/35/200 -> Loss: 0.026326766183184823
+epoch 35 loss 0.034267447888851166
+[Testing] -/35/200 -> Accuracy: 81.53439153439153 % 18900 15410
+epoch 36 started
+tensor(0.0150, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/36/200 -> Loss: 0.014984139241278172
+[Training] 100/36/200 -> Loss: 0.024910924845550318
+[Training] 200/36/200 -> Loss: 0.024805591124589486
+[Training] 300/36/200 -> Loss: 0.02585711840759078
+[Training] 400/36/200 -> Loss: 0.024945599325274133
+[Training] 500/36/200 -> Loss: 0.024876672959109926
+epoch 36 loss 0.012198900803923607
+[Testing] -/36/200 -> Accuracy: 80.65608465608466 % 18900 15244
+epoch 37 started
+tensor(0.0276, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/37/200 -> Loss: 0.027575399726629257
+[Training] 100/37/200 -> Loss: 0.027998507121983585
+[Training] 200/37/200 -> Loss: 0.02404168329493546
+[Training] 300/37/200 -> Loss: 0.021882817402007863
+[Training] 400/37/200 -> Loss: 0.02383361128608852
+[Training] 500/37/200 -> Loss: 0.025605964193623904
+epoch 37 loss 0.016431696712970734
+[Testing] -/37/200 -> Accuracy: 81.26984126984127 % 18900 15360
+epoch 38 started
+tensor(0.0384, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/38/200 -> Loss: 0.03837035223841667
+[Training] 100/38/200 -> Loss: 0.017341912615154456
+[Training] 200/38/200 -> Loss: 0.01867476818632492
+[Training] 300/38/200 -> Loss: 0.019258375311803314
+[Training] 400/38/200 -> Loss: 0.021694569652299153
+[Training] 500/38/200 -> Loss: 0.02351339875392573
+epoch 38 loss 0.008665001019835472
+[Testing] -/38/200 -> Accuracy: 80.9047619047619 % 18900 15291
+epoch 39 started
+tensor(0.0135, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/39/200 -> Loss: 0.013483086600899696
+[Training] 100/39/200 -> Loss: 0.031162156624313774
+[Training] 200/39/200 -> Loss: 0.025987864509618736
+[Training] 300/39/200 -> Loss: 0.022393271578994095
+[Training] 400/39/200 -> Loss: 0.02220695175563201
+[Training] 500/39/200 -> Loss: 0.026143183269233122
+epoch 39 loss 0.03242231905460358
+[Testing] -/39/200 -> Accuracy: 80.35449735449735 % 18900 15187
+epoch 40 started
+tensor(0.0101, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/40/200 -> Loss: 0.010143177583813667
+[Training] 100/40/200 -> Loss: 0.036848261110982536
+[Training] 200/40/200 -> Loss: 0.037361330178969386
+[Training] 300/40/200 -> Loss: 0.036602352584551315
+[Training] 400/40/200 -> Loss: 0.03465461892356279
+[Training] 500/40/200 -> Loss: 0.03326493359710873
+epoch 40 loss 0.016138993203639984
+[Testing] -/40/200 -> Accuracy: 81.56613756613757 % 18900 15416
+epoch 41 started
+tensor(0.0273, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/41/200 -> Loss: 0.02728644385933876
+[Training] 100/41/200 -> Loss: 0.023066056303643636
+[Training] 200/41/200 -> Loss: 0.01813639993670041
+[Training] 300/41/200 -> Loss: 0.018876762777120006
+[Training] 400/41/200 -> Loss: 0.02157063901114427
+[Training] 500/41/200 -> Loss: 0.02303567461723412
+epoch 41 loss 0.07338930666446686
+[Testing] -/41/200 -> Accuracy: 81.95767195767196 % 18900 15490
+epoch 42 started
+tensor(0.0036, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/42/200 -> Loss: 0.0036197961308062077
+[Training] 100/42/200 -> Loss: 0.017935802613005807
+[Training] 200/42/200 -> Loss: 0.023128261569663258
+[Training] 300/42/200 -> Loss: 0.02439689181770772
+[Training] 400/42/200 -> Loss: 0.023451696136759355
+[Training] 500/42/200 -> Loss: 0.02249471366407462
+epoch 42 loss 0.053361620754003525
+[Testing] -/42/200 -> Accuracy: 81.92592592592592 % 18900 15484
+epoch 43 started
+tensor(0.0057, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/43/200 -> Loss: 0.0057303691282868385
+[Training] 100/43/200 -> Loss: 0.019390127581537304
+[Training] 200/43/200 -> Loss: 0.018184867719667895
+[Training] 300/43/200 -> Loss: 0.020359541849152764
+[Training] 400/43/200 -> Loss: 0.021238963154886045
+[Training] 500/43/200 -> Loss: 0.022143706212346785
+epoch 43 loss 0.06711146235466003
+[Testing] -/43/200 -> Accuracy: 81.98412698412699 % 18900 15495
+epoch 44 started
+tensor(0.0566, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/44/200 -> Loss: 0.05655200406908989
+[Training] 100/44/200 -> Loss: 0.018743341764444393
+[Training] 200/44/200 -> Loss: 0.021586853897880152
+[Training] 300/44/200 -> Loss: 0.025858441447805105
+[Training] 400/44/200 -> Loss: 0.026467671181380683
+[Training] 500/44/200 -> Loss: 0.02547107029884232
+epoch 44 loss 0.01090750191360712
+[Testing] -/44/200 -> Accuracy: 81.48677248677248 % 18900 15401
+epoch 45 started
+tensor(0.0634, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/45/200 -> Loss: 0.06343252956867218
+[Training] 100/45/200 -> Loss: 0.020664466993357656
+[Training] 200/45/200 -> Loss: 0.01997974362484682
+[Training] 300/45/200 -> Loss: 0.021476980887167388
+[Training] 400/45/200 -> Loss: 0.023215942231651125
+[Training] 500/45/200 -> Loss: 0.0242904825749221
+epoch 45 loss 0.013932747766375542
+[Testing] -/45/200 -> Accuracy: 81.74603174603175 % 18900 15450
+epoch 46 started
+tensor(0.0012, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/46/200 -> Loss: 0.001210525631904602
+[Training] 100/46/200 -> Loss: 0.01564328738106161
+[Training] 200/46/200 -> Loss: 0.014681255361699471
+[Training] 300/46/200 -> Loss: 0.017386100698713804
+[Training] 400/46/200 -> Loss: 0.02151277426028876
+[Training] 500/46/200 -> Loss: 0.022321518691738335
+epoch 46 loss 0.06888630241155624
+[Testing] -/46/200 -> Accuracy: 81.76190476190476 % 18900 15453
+epoch 47 started
+tensor(0.0318, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/47/200 -> Loss: 0.031848348677158356
+[Training] 100/47/200 -> Loss: 0.012447423911088672
+[Training] 200/47/200 -> Loss: 0.014858063934234767
+[Training] 300/47/200 -> Loss: 0.01625652347401866
+[Training] 400/47/200 -> Loss: 0.01989521226578449
+[Training] 500/47/200 -> Loss: 0.021419816119116527
+epoch 47 loss 0.010222804732620716
+[Testing] -/47/200 -> Accuracy: 81.69841269841271 % 18900 15441
+epoch 48 started
+tensor(0.0494, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/48/200 -> Loss: 0.049367550760507584
+[Training] 100/48/200 -> Loss: 0.0258341314283195
+[Training] 200/48/200 -> Loss: 0.023417334811905614
+[Training] 300/48/200 -> Loss: 0.023844962385970406
+[Training] 400/48/200 -> Loss: 0.022507377084005832
+[Training] 500/48/200 -> Loss: 0.023246468511379154
+epoch 48 loss 0.0071663702838122845
+[Testing] -/48/200 -> Accuracy: 81.50264550264549 % 18900 15404
+epoch 49 started
+tensor(0.0036, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/49/200 -> Loss: 0.0035711571108549833
+[Training] 100/49/200 -> Loss: 0.008851137561181855
+[Training] 200/49/200 -> Loss: 0.009608178182310467
+[Training] 300/49/200 -> Loss: 0.010614290360656824
+[Training] 400/49/200 -> Loss: 0.010650523229658329
+[Training] 500/49/200 -> Loss: 0.012006761403406967
+epoch 49 loss 0.0016805693740025163
+[Testing] -/49/200 -> Accuracy: 81.71957671957671 % 18900 15445
+epoch 50 started
+tensor(0.0016, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/50/200 -> Loss: 0.001619033864699304
+[Training] 100/50/200 -> Loss: 0.01529195618275138
+[Training] 200/50/200 -> Loss: 0.022270282907544667
+[Training] 300/50/200 -> Loss: 0.031971778792264934
+[Training] 400/50/200 -> Loss: 0.03251749047746201
+[Training] 500/50/200 -> Loss: 0.032520571502426106
+epoch 50 loss 0.052961841225624084
+[Testing] -/50/200 -> Accuracy: 80.87830687830689 % 18900 15286
+epoch 51 started
+tensor(0.0261, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/51/200 -> Loss: 0.0260669756680727
+[Training] 100/51/200 -> Loss: 0.01709351616152009
+[Training] 200/51/200 -> Loss: 0.017685015023563205
+[Training] 300/51/200 -> Loss: 0.01756190008047173
+[Training] 400/51/200 -> Loss: 0.017533633835683984
+[Training] 500/51/200 -> Loss: 0.0164856702501643
+epoch 51 loss 0.00792666431516409
+[Testing] -/51/200 -> Accuracy: 82.47619047619048 % 18900 15588
+epoch 52 started
+tensor(0.0021, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/52/200 -> Loss: 0.002085545100271702
+[Training] 100/52/200 -> Loss: 0.009002167892783228
+[Training] 200/52/200 -> Loss: 0.008398640025726349
+[Training] 300/52/200 -> Loss: 0.008796959678911542
+[Training] 400/52/200 -> Loss: 0.009643274687303964
+[Training] 500/52/200 -> Loss: 0.011855368716904544
+epoch 52 loss 0.01174609549343586
+[Testing] -/52/200 -> Accuracy: 81.11111111111111 % 18900 15330
+epoch 53 started
+tensor(0.0778, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/53/200 -> Loss: 0.07781347632408142
+[Training] 100/53/200 -> Loss: 0.0309938323772789
+[Training] 200/53/200 -> Loss: 0.028273179972502612
+[Training] 300/53/200 -> Loss: 0.0284858475625573
+[Training] 400/53/200 -> Loss: 0.030404617341444014
+[Training] 500/53/200 -> Loss: 0.02971835262808431
+epoch 53 loss 0.011747591197490692
+[Testing] -/53/200 -> Accuracy: 81.71428571428572 % 18900 15444
+epoch 54 started
+tensor(0.0141, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/54/200 -> Loss: 0.01411312073469162
+[Training] 100/54/200 -> Loss: 0.0145711115155701
+[Training] 200/54/200 -> Loss: 0.018017144228168996
+[Training] 300/54/200 -> Loss: 0.018563797990397004
+[Training] 400/54/200 -> Loss: 0.019704716671226277
+[Training] 500/54/200 -> Loss: 0.020305665626231033
+epoch 54 loss 0.0015477144625037909
+[Testing] -/54/200 -> Accuracy: 82.41798941798942 % 18900 15577
+epoch 55 started
+tensor(0.0457, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/55/200 -> Loss: 0.04566493630409241
+[Training] 100/55/200 -> Loss: 0.014728220347168114
+[Training] 200/55/200 -> Loss: 0.011575463084508063
+[Training] 300/55/200 -> Loss: 0.013026955982274144
+[Training] 400/55/200 -> Loss: 0.013693728005669446
+[Training] 500/55/200 -> Loss: 0.014490819663195565
+epoch 55 loss 0.025173798203468323
+[Testing] -/55/200 -> Accuracy: 81.56084656084656 % 18900 15415
+epoch 56 started
+tensor(0.0045, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/56/200 -> Loss: 0.004491374362260103
+[Training] 100/56/200 -> Loss: 0.0207635184191225
+[Training] 200/56/200 -> Loss: 0.02306523001473339
+[Training] 300/56/200 -> Loss: 0.025514106261220984
+[Training] 400/56/200 -> Loss: 0.02391825926852583
+[Training] 500/56/200 -> Loss: 0.02223846533422534
+epoch 56 loss 0.026140868663787842
+[Testing] -/56/200 -> Accuracy: 82.17460317460318 % 18900 15531
+epoch 57 started
+tensor(0.0007, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/57/200 -> Loss: 0.0007008075481280684
+[Training] 100/57/200 -> Loss: 0.01781108121890206
+[Training] 200/57/200 -> Loss: 0.017834602700794275
+[Training] 300/57/200 -> Loss: 0.017168539820810968
+[Training] 400/57/200 -> Loss: 0.016207041486726432
+[Training] 500/57/200 -> Loss: 0.017413127520019393
+epoch 57 loss 0.062396321445703506
+[Testing] -/57/200 -> Accuracy: 81.43915343915344 % 18900 15392
+epoch 58 started
+tensor(0.0009, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/58/200 -> Loss: 0.0009374046348966658
+[Training] 100/58/200 -> Loss: 0.014018959200671312
+[Training] 200/58/200 -> Loss: 0.015130754375473517
+[Training] 300/58/200 -> Loss: 0.015430293929930606
+[Training] 400/58/200 -> Loss: 0.015996558916909757
+[Training] 500/58/200 -> Loss: 0.015525964507592043
+epoch 58 loss 0.0008077615639194846
+[Testing] -/58/200 -> Accuracy: 82.25396825396825 % 18900 15546
+epoch 59 started
+tensor(0.0008, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/59/200 -> Loss: 0.0007544708205386996
+[Training] 100/59/200 -> Loss: 0.013045694974382491
+[Training] 200/59/200 -> Loss: 0.01736863804666907
+[Training] 300/59/200 -> Loss: 0.019568165926386695
+[Training] 400/59/200 -> Loss: 0.02083475795160283
+[Training] 500/59/200 -> Loss: 0.023399950237087873
+epoch 59 loss 0.007451223209500313
+[Testing] -/59/200 -> Accuracy: 81.34920634920636 % 18900 15375
+epoch 60 started
+tensor(0.0007, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/60/200 -> Loss: 0.0006736612413078547
+[Training] 100/60/200 -> Loss: 0.018756439558364046
+[Training] 200/60/200 -> Loss: 0.020164029261957976
+[Training] 300/60/200 -> Loss: 0.020506589192279424
+[Training] 400/60/200 -> Loss: 0.02092431868223138
+[Training] 500/60/200 -> Loss: 0.020830418881066765
+epoch 60 loss 0.011607804335653782
+[Testing] -/60/200 -> Accuracy: 81.06878306878306 % 18900 15322
+epoch 61 started
+tensor(0.0019, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/61/200 -> Loss: 0.0019189381273463368
+[Training] 100/61/200 -> Loss: 0.01982239686027008
+[Training] 200/61/200 -> Loss: 0.014990441746423623
+[Training] 300/61/200 -> Loss: 0.014261204977486935
+[Training] 400/61/200 -> Loss: 0.013286636334651165
+[Training] 500/61/200 -> Loss: 0.013574246350884835
+epoch 61 loss 0.022702466696500778
+[Testing] -/61/200 -> Accuracy: 82.08994708994709 % 18900 15515
+epoch 62 started
+tensor(0.0143, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/62/200 -> Loss: 0.014251640997827053
+[Training] 100/62/200 -> Loss: 0.006656727625493947
+[Training] 200/62/200 -> Loss: 0.01055094764493487
+[Training] 300/62/200 -> Loss: 0.01070443179194028
+[Training] 400/62/200 -> Loss: 0.011032775411922444
+[Training] 500/62/200 -> Loss: 0.011805771860026707
+epoch 62 loss 0.0031490614637732506
+[Testing] -/62/200 -> Accuracy: 81.61904761904762 % 18900 15426
+epoch 63 started
+tensor(0.0003, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/63/200 -> Loss: 0.00032602905412204564
+[Training] 100/63/200 -> Loss: 0.021354767727598752
+[Training] 200/63/200 -> Loss: 0.025110831045469184
+[Training] 300/63/200 -> Loss: 0.025311709998815206
+[Training] 400/63/200 -> Loss: 0.023940934586594756
+[Training] 500/63/200 -> Loss: 0.024343243462069356
+epoch 63 loss 0.0019294535741209984
+[Testing] -/63/200 -> Accuracy: 81.76190476190476 % 18900 15453
+epoch 64 started
+tensor(0.0007, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/64/200 -> Loss: 0.000658891221974045
+[Training] 100/64/200 -> Loss: 0.013833935599743002
+[Training] 200/64/200 -> Loss: 0.01640952769878311
+[Training] 300/64/200 -> Loss: 0.018837289103572536
+[Training] 400/64/200 -> Loss: 0.018184642765827493
+[Training] 500/64/200 -> Loss: 0.01799538669088914
+epoch 64 loss 0.012389716692268848
+[Testing] -/64/200 -> Accuracy: 82.17989417989418 % 18900 15532
+epoch 65 started
+tensor(0.0267, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/65/200 -> Loss: 0.02673654817044735
+[Training] 100/65/200 -> Loss: 0.0072502150610354405
+[Training] 200/65/200 -> Loss: 0.00851100359446646
+[Training] 300/65/200 -> Loss: 0.01138034218990811
+[Training] 400/65/200 -> Loss: 0.011126119821756106
+[Training] 500/65/200 -> Loss: 0.011521465256456411
+epoch 65 loss 0.010635330341756344
+[Testing] -/65/200 -> Accuracy: 82.03703703703704 % 18900 15505
+epoch 66 started
+tensor(0.0039, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/66/200 -> Loss: 0.0038638710975646973
+[Training] 100/66/200 -> Loss: 0.01413315322623579
+[Training] 200/66/200 -> Loss: 0.014121625972475882
+[Training] 300/66/200 -> Loss: 0.014071853341600677
+[Training] 400/66/200 -> Loss: 0.013137327154408537
+[Training] 500/66/200 -> Loss: 0.01411046349109934
+epoch 66 loss 0.017320776358246803
+[Testing] -/66/200 -> Accuracy: 82.15873015873015 % 18900 15528
+epoch 67 started
+tensor(0.0024, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/67/200 -> Loss: 0.002431333065032959
+[Training] 100/67/200 -> Loss: 0.011374032308000583
+[Training] 200/67/200 -> Loss: 0.010268624037080235
+[Training] 300/67/200 -> Loss: 0.009448201197524984
+[Training] 400/67/200 -> Loss: 0.009522513867879317
+[Training] 500/67/200 -> Loss: 0.010598984974541724
+epoch 67 loss 0.03273262828588486
+[Testing] -/67/200 -> Accuracy: 80.93650793650794 % 18900 15297
+epoch 68 started
+tensor(0.0133, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/68/200 -> Loss: 0.013292534276843071
+[Training] 100/68/200 -> Loss: 0.03189529288193617
+[Training] 200/68/200 -> Loss: 0.02955617403929511
+[Training] 300/68/200 -> Loss: 0.026095457790915287
+[Training] 400/68/200 -> Loss: 0.02639685821363254
+[Training] 500/68/200 -> Loss: 0.02457271336265649
+epoch 68 loss 0.0014060091925784945
+[Testing] -/68/200 -> Accuracy: 82.02116402116401 % 18900 15502
+epoch 69 started
+tensor(0.0034, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/69/200 -> Loss: 0.003429349744692445
+[Training] 100/69/200 -> Loss: 0.010040734715340198
+[Training] 200/69/200 -> Loss: 0.011128380802607417
+[Training] 300/69/200 -> Loss: 0.013015058856215553
+[Training] 400/69/200 -> Loss: 0.014878305987415904
+[Training] 500/69/200 -> Loss: 0.015669968298216607
+epoch 69 loss 0.05138911306858063
+[Testing] -/69/200 -> Accuracy: 81.9047619047619 % 18900 15480
+epoch 70 started
+tensor(0.0047, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/70/200 -> Loss: 0.0046867867931723595
+[Training] 100/70/200 -> Loss: 0.01112059335769523
+[Training] 200/70/200 -> Loss: 0.009771431864596052
+[Training] 300/70/200 -> Loss: 0.010741545661660341
+[Training] 400/70/200 -> Loss: 0.012007006621154817
+[Training] 500/70/200 -> Loss: 0.012232999464747867
+epoch 70 loss 0.09888233989477158
+[Testing] -/70/200 -> Accuracy: 81.80952380952381 % 18900 15462
+epoch 71 started
+tensor(0.0015, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/71/200 -> Loss: 0.0014925998402759433
+[Training] 100/71/200 -> Loss: 0.013897428422184237
+[Training] 200/71/200 -> Loss: 0.012104258739863828
+[Training] 300/71/200 -> Loss: 0.0116748704827461
+[Training] 400/71/200 -> Loss: 0.011066189848140295
+[Training] 500/71/200 -> Loss: 0.010305207676946431
+epoch 71 loss 0.00979914702475071
+[Testing] -/71/200 -> Accuracy: 81.66137566137566 % 18900 15434
+epoch 72 started
+tensor(0.0043, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/72/200 -> Loss: 0.0042548952624201775
+[Training] 100/72/200 -> Loss: 0.010673921757530696
+[Training] 200/72/200 -> Loss: 0.013293643840216505
+[Training] 300/72/200 -> Loss: 0.01419334447719029
+[Training] 400/72/200 -> Loss: 0.014943398037311206
+[Training] 500/72/200 -> Loss: 0.016506970838889686
+epoch 72 loss 0.08398481458425522
+[Testing] -/72/200 -> Accuracy: 81.96296296296296 % 18900 15491
+epoch 73 started
+tensor(0.0022, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/73/200 -> Loss: 0.0021654886659234762
+[Training] 100/73/200 -> Loss: 0.013089553675413163
+[Training] 200/73/200 -> Loss: 0.01601103588617847
+[Training] 300/73/200 -> Loss: 0.017467473978095494
+[Training] 400/73/200 -> Loss: 0.017112272929426624
+[Training] 500/73/200 -> Loss: 0.01827739881355773
+epoch 73 loss 0.0013374424306675792
+[Testing] -/73/200 -> Accuracy: 81.67724867724868 % 18900 15437
+epoch 74 started
+tensor(0.0620, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/74/200 -> Loss: 0.06198568642139435
+[Training] 100/74/200 -> Loss: 0.020905041767631215
+[Training] 200/74/200 -> Loss: 0.0181300287489585
+[Training] 300/74/200 -> Loss: 0.01670076421557868
+[Training] 400/74/200 -> Loss: 0.015563766496055896
+[Training] 500/74/200 -> Loss: 0.014267093054702477
+epoch 74 loss 0.0011802411172538996
+[Testing] -/74/200 -> Accuracy: 82.83068783068784 % 18900 15655
+epoch 75 started
+tensor(0.0019, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/75/200 -> Loss: 0.0018565583741292357
+[Training] 100/75/200 -> Loss: 0.006323223840376843
+[Training] 200/75/200 -> Loss: 0.009252406520173095
+[Training] 300/75/200 -> Loss: 0.011655340817304875
+[Training] 400/75/200 -> Loss: 0.011469573846607135
+[Training] 500/75/200 -> Loss: 0.011696844871319067
+epoch 75 loss 0.0005243933410383761
+[Testing] -/75/200 -> Accuracy: 81.71957671957671 % 18900 15445
+epoch 76 started
+tensor(0.0011, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/76/200 -> Loss: 0.0011020516976714134
+[Training] 100/76/200 -> Loss: 0.0057734325407839395
+[Training] 200/76/200 -> Loss: 0.0057366296407587525
+[Training] 300/76/200 -> Loss: 0.005569910896621539
+[Training] 400/76/200 -> Loss: 0.007565604538696217
+[Training] 500/76/200 -> Loss: 0.009587409914639645
+epoch 76 loss 0.0038582717534154654
+[Testing] -/76/200 -> Accuracy: 81.33862433862434 % 18900 15373
+epoch 77 started
+tensor(0.0081, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/77/200 -> Loss: 0.00805700570344925
+[Training] 100/77/200 -> Loss: 0.0246967482926626
+[Training] 200/77/200 -> Loss: 0.026889892698329903
+[Training] 300/77/200 -> Loss: 0.02291148305546486
+[Training] 400/77/200 -> Loss: 0.019995501422161218
+[Training] 500/77/200 -> Loss: 0.018251216434076335
+epoch 77 loss 0.01207592710852623
+[Testing] -/77/200 -> Accuracy: 80.82539682539682 % 18900 15276
+epoch 78 started
+tensor(0.0630, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/78/200 -> Loss: 0.0630156397819519
+[Training] 100/78/200 -> Loss: 0.01895299068816919
+[Training] 200/78/200 -> Loss: 0.01741808981148382
+[Training] 300/78/200 -> Loss: 0.016281347286212472
+[Training] 400/78/200 -> Loss: 0.015334390827194143
+[Training] 500/78/200 -> Loss: 0.0171189984846755
+epoch 78 loss 0.019795602187514305
+[Testing] -/78/200 -> Accuracy: 82.04761904761905 % 18900 15507
+epoch 79 started
+tensor(0.0002, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/79/200 -> Loss: 0.00018497704877518117
+[Training] 100/79/200 -> Loss: 0.018792602432452864
+[Training] 200/79/200 -> Loss: 0.013970079571256282
+[Training] 300/79/200 -> Loss: 0.01206445088102428
+[Training] 400/79/200 -> Loss: 0.011124745808600418
+[Training] 500/79/200 -> Loss: 0.010298380799910288
+epoch 79 loss 0.05373067408800125
+[Testing] -/79/200 -> Accuracy: 82.5925925925926 % 18900 15610
+epoch 80 started
+tensor(6.4008e-05, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/80/200 -> Loss: 6.400823622243479e-05
+[Training] 100/80/200 -> Loss: 0.005625884429439856
+[Training] 200/80/200 -> Loss: 0.005901624227119634
+[Training] 300/80/200 -> Loss: 0.005288643404512119
+[Training] 400/80/200 -> Loss: 0.005441214779384246
+[Training] 500/80/200 -> Loss: 0.006817803954246136
+epoch 80 loss 0.007047765422612429
+[Testing] -/80/200 -> Accuracy: 81.33333333333333 % 18900 15372
+epoch 81 started
+tensor(0.0126, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/81/200 -> Loss: 0.012601320631802082
+[Training] 100/81/200 -> Loss: 0.017087992910055978
+[Training] 200/81/200 -> Loss: 0.01901931212508393
+[Training] 300/81/200 -> Loss: 0.01770504293644718
+[Training] 400/81/200 -> Loss: 0.020734955243207603
+[Training] 500/81/200 -> Loss: 0.021221272627586156
+epoch 81 loss 0.015383278019726276
+[Testing] -/81/200 -> Accuracy: 81.8941798941799 % 18900 15478
+epoch 82 started
+tensor(0.0061, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/82/200 -> Loss: 0.0060515450313687325
+[Training] 100/82/200 -> Loss: 0.010905345926340208
+[Training] 200/82/200 -> Loss: 0.01037962657559619
+[Training] 300/82/200 -> Loss: 0.011680906022802355
+[Training] 400/82/200 -> Loss: 0.012472206418594244
+[Training] 500/82/200 -> Loss: 0.012598849113214646
+epoch 82 loss 0.0006244969554245472
+[Testing] -/82/200 -> Accuracy: 83.01587301587303 % 18900 15690
+epoch 83 started
+tensor(0.0009, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/83/200 -> Loss: 0.000934302806854248
+[Training] 100/83/200 -> Loss: 0.0034367452250746895
+[Training] 200/83/200 -> Loss: 0.0055828213363424565
+[Training] 300/83/200 -> Loss: 0.006506346204652945
+[Training] 400/83/200 -> Loss: 0.007296680222596234
+[Training] 500/83/200 -> Loss: 0.008333658990722652
+epoch 83 loss 0.0025841903407126665
+[Testing] -/83/200 -> Accuracy: 81.71428571428572 % 18900 15444
+epoch 84 started
+tensor(0.0037, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/84/200 -> Loss: 0.0037234651390463114
+[Training] 100/84/200 -> Loss: 0.009784129977651001
+[Training] 200/84/200 -> Loss: 0.011843899166036573
+[Training] 300/84/200 -> Loss: 0.012334054267688336
+[Training] 400/84/200 -> Loss: 0.012835124553452093
+[Training] 500/84/200 -> Loss: 0.013765350728683911
+epoch 84 loss 0.005742541514337063
+[Testing] -/84/200 -> Accuracy: 81.04761904761905 % 18900 15318
+epoch 85 started
+tensor(0.0097, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/85/200 -> Loss: 0.009674028493463993
+[Training] 100/85/200 -> Loss: 0.017861383377821047
+[Training] 200/85/200 -> Loss: 0.017677878648426675
+[Training] 300/85/200 -> Loss: 0.01760885134318834
+[Training] 400/85/200 -> Loss: 0.016796034370629438
+[Training] 500/85/200 -> Loss: 0.017439968714596493
+epoch 85 loss 0.05933967977762222
+[Testing] -/85/200 -> Accuracy: 81.95238095238095 % 18900 15489
+epoch 86 started
+tensor(0.0019, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/86/200 -> Loss: 0.001911320723593235
+[Training] 100/86/200 -> Loss: 0.010174561437128036
+[Training] 200/86/200 -> Loss: 0.007768206405472569
+[Training] 300/86/200 -> Loss: 0.006606599190115994
+[Training] 400/86/200 -> Loss: 0.007695919077790554
+[Training] 500/86/200 -> Loss: 0.00818865842470432
+epoch 86 loss 0.0026977681554853916
+[Testing] -/86/200 -> Accuracy: 82.44973544973546 % 18900 15583
+epoch 87 started
+tensor(0.0003, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/87/200 -> Loss: 0.0003397566033527255
+[Training] 100/87/200 -> Loss: 0.011160228444609992
+[Training] 200/87/200 -> Loss: 0.012698139219288685
+[Training] 300/87/200 -> Loss: 0.012617671036616799
+[Training] 400/87/200 -> Loss: 0.012935786651410909
+[Training] 500/87/200 -> Loss: 0.012099012744436335
+epoch 87 loss 0.0026479216758161783
+[Testing] -/87/200 -> Accuracy: 81.56084656084656 % 18900 15415
+epoch 88 started
+tensor(0.0014, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/88/200 -> Loss: 0.0013872325653210282
+[Training] 100/88/200 -> Loss: 0.01130336089725929
+[Training] 200/88/200 -> Loss: 0.00829125740312692
+[Training] 300/88/200 -> Loss: 0.008209852223909936
+[Training] 400/88/200 -> Loss: 0.008546559151118049
+[Training] 500/88/200 -> Loss: 0.009877432040206668
+epoch 88 loss 0.006622309796512127
+[Testing] -/88/200 -> Accuracy: 81.66137566137566 % 18900 15434
+epoch 89 started
+tensor(0.0036, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/89/200 -> Loss: 0.0035522643011063337
+[Training] 100/89/200 -> Loss: 0.018262949350029506
+[Training] 200/89/200 -> Loss: 0.017744048031389282
+[Training] 300/89/200 -> Loss: 0.015462478548535873
+[Training] 400/89/200 -> Loss: 0.013712320561786609
+[Training] 500/89/200 -> Loss: 0.012823755516201673
+epoch 89 loss 0.005313579924404621
+[Testing] -/89/200 -> Accuracy: 82.15873015873015 % 18900 15528
+epoch 90 started
+tensor(0.0004, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/90/200 -> Loss: 0.0003951072576455772
+[Training] 100/90/200 -> Loss: 0.008890567857354717
+[Training] 200/90/200 -> Loss: 0.008496070962113418
+[Training] 300/90/200 -> Loss: 0.010193971681120543
+[Training] 400/90/200 -> Loss: 0.00984875122775976
+[Training] 500/90/200 -> Loss: 0.010934097867131365
+epoch 90 loss 0.002247744705528021
+[Testing] -/90/200 -> Accuracy: 81.5079365079365 % 18900 15405
+epoch 91 started
+tensor(0.0013, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/91/200 -> Loss: 0.0012523874174803495
+[Training] 100/91/200 -> Loss: 0.009354064496142426
+[Training] 200/91/200 -> Loss: 0.01117744100870436
+[Training] 300/91/200 -> Loss: 0.011182217595733677
+[Training] 400/91/200 -> Loss: 0.011995106955596168
+[Training] 500/91/200 -> Loss: 0.011457408265792009
+epoch 91 loss 0.002184072742238641
+[Testing] -/91/200 -> Accuracy: 82.6031746031746 % 18900 15612
+epoch 92 started
+tensor(0.0005, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/92/200 -> Loss: 0.00046618105261586607
+[Training] 100/92/200 -> Loss: 0.00955801937412292
+[Training] 200/92/200 -> Loss: 0.009693742215537683
+[Training] 300/92/200 -> Loss: 0.011865843209736123
+[Training] 400/92/200 -> Loss: 0.01137390649030901
+[Training] 500/92/200 -> Loss: 0.010848143035801257
+epoch 92 loss 0.006559516303241253
+[Testing] -/92/200 -> Accuracy: 81.59788359788361 % 18900 15422
+epoch 93 started
+tensor(0.0093, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/93/200 -> Loss: 0.00932996440678835
+[Training] 100/93/200 -> Loss: 0.006741187363556969
+[Training] 200/93/200 -> Loss: 0.006811382480126989
+[Training] 300/93/200 -> Loss: 0.007191106814670066
+[Training] 400/93/200 -> Loss: 0.007914039327022834
+[Training] 500/93/200 -> Loss: 0.009358161724680222
+epoch 93 loss 0.016546053811907768
+[Testing] -/93/200 -> Accuracy: 82.06349206349206 % 18900 15510
+epoch 94 started
+tensor(0.0328, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/94/200 -> Loss: 0.03278190642595291
+[Training] 100/94/200 -> Loss: 0.009782480295170629
+[Training] 200/94/200 -> Loss: 0.011298083223917826
+[Training] 300/94/200 -> Loss: 0.011866670565016276
+[Training] 400/94/200 -> Loss: 0.01257554462898682
+[Training] 500/94/200 -> Loss: 0.012251824975541087
+epoch 94 loss 0.003915318753570318
+[Testing] -/94/200 -> Accuracy: 82.23280423280424 % 18900 15542
+epoch 95 started
+tensor(0.0002, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/95/200 -> Loss: 0.00023946345027070493
+[Training] 100/95/200 -> Loss: 0.004938356160396729
+[Training] 200/95/200 -> Loss: 0.004839307989890251
+[Training] 300/95/200 -> Loss: 0.0064552510876242
+[Training] 400/95/200 -> Loss: 0.007816272693380052
+[Training] 500/95/200 -> Loss: 0.009036461388059034
+epoch 95 loss 0.005805959925055504
+[Testing] -/95/200 -> Accuracy: 81.96825396825396 % 18900 15492
+epoch 96 started
+tensor(0.0194, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/96/200 -> Loss: 0.01938505657017231
+[Training] 100/96/200 -> Loss: 0.00955290793923034
+[Training] 200/96/200 -> Loss: 0.008357731718794427
+[Training] 300/96/200 -> Loss: 0.00933618896196762
+[Training] 400/96/200 -> Loss: 0.010380415543501779
+[Training] 500/96/200 -> Loss: 0.011945189373970303
+epoch 96 loss 0.00253436085768044
+[Testing] -/96/200 -> Accuracy: 81.04761904761905 % 18900 15318
+epoch 97 started
+tensor(0.0270, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/97/200 -> Loss: 0.027001723647117615
+[Training] 100/97/200 -> Loss: 0.01737695162404688
+[Training] 200/97/200 -> Loss: 0.014224786209705603
+[Training] 300/97/200 -> Loss: 0.01203617391544574
+[Training] 400/97/200 -> Loss: 0.011136314289651545
+[Training] 500/97/200 -> Loss: 0.010359053593658279
+epoch 97 loss 0.00048435269854962826
+[Testing] -/97/200 -> Accuracy: 82.75661375661376 % 18900 15641
+epoch 98 started
+tensor(0.0005, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/98/200 -> Loss: 0.0005362725351005793
+[Training] 100/98/200 -> Loss: 0.0039991665320719605
+[Training] 200/98/200 -> Loss: 0.008005001092571356
+[Training] 300/98/200 -> Loss: 0.007418016563821594
+[Training] 400/98/200 -> Loss: 0.006950483258421407
+[Training] 500/98/200 -> Loss: 0.006672417836230461
+epoch 98 loss 0.026957079768180847
+[Testing] -/98/200 -> Accuracy: 82.44444444444444 % 18900 15582
+epoch 99 started
+tensor(0.0002, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/99/200 -> Loss: 0.00018858551629818976
+[Training] 100/99/200 -> Loss: 0.005564871234407229
+[Training] 200/99/200 -> Loss: 0.007755073676645537
+[Training] 300/99/200 -> Loss: 0.010416062370471465
+[Training] 400/99/200 -> Loss: 0.01133221453795855
+[Training] 500/99/200 -> Loss: 0.012921610585355316
+epoch 99 loss 0.006711295805871487
+[Testing] -/99/200 -> Accuracy: 81.1957671957672 % 18900 15346
+epoch 100 started
+tensor(0.0078, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/100/200 -> Loss: 0.0077690123580396175
+[Training] 100/100/200 -> Loss: 0.012776852099398972
+[Training] 200/100/200 -> Loss: 0.01437616662182544
+[Training] 300/100/200 -> Loss: 0.012708006968013587
+[Training] 400/100/200 -> Loss: 0.012148932182250414
+[Training] 500/100/200 -> Loss: 0.012522588036245542
+epoch 100 loss 0.0050544957630336285
+[Testing] -/100/200 -> Accuracy: 81.95238095238095 % 18900 15489
+epoch 101 started
+tensor(0.0695, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/101/200 -> Loss: 0.06948000192642212
+[Training] 100/101/200 -> Loss: 0.006098857471803094
+[Training] 200/101/200 -> Loss: 0.008148265600557262
+[Training] 300/101/200 -> Loss: 0.008221133076944793
+[Training] 400/101/200 -> Loss: 0.009397798958384
+[Training] 500/101/200 -> Loss: 0.010126684353215428
+epoch 101 loss 0.037081100046634674
+[Testing] -/101/200 -> Accuracy: 82.76719576719577 % 18900 15643
+epoch 102 started
+tensor(0.0001, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/102/200 -> Loss: 0.00011586666369112208
+[Training] 100/102/200 -> Loss: 0.007285484511409984
+[Training] 200/102/200 -> Loss: 0.007090165841891485
+[Training] 300/102/200 -> Loss: 0.006652887698467104
+[Training] 400/102/200 -> Loss: 0.00681325601326285
+[Training] 500/102/200 -> Loss: 0.006818169369461668
+epoch 102 loss 0.004884942900389433
+[Testing] -/102/200 -> Accuracy: 82.73544973544973 % 18900 15637
+epoch 103 started
+tensor(0.0006, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/103/200 -> Loss: 0.0005730187986046076
+[Training] 100/103/200 -> Loss: 0.007767107218560431
+[Training] 200/103/200 -> Loss: 0.008052276293552377
+[Training] 300/103/200 -> Loss: 0.009421645001433554
+[Training] 400/103/200 -> Loss: 0.011426741121362003
+[Training] 500/103/200 -> Loss: 0.012840261898873903
+epoch 103 loss 0.04801492765545845
+[Testing] -/103/200 -> Accuracy: 82.33862433862433 % 18900 15562
+epoch 104 started
+tensor(0.0057, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/104/200 -> Loss: 0.005674537271261215
+[Training] 100/104/200 -> Loss: 0.012919536355760704
+[Training] 200/104/200 -> Loss: 0.009477432086131743
+[Training] 300/104/200 -> Loss: 0.008450835084090991
+[Training] 400/104/200 -> Loss: 0.008107367313437462
+[Training] 500/104/200 -> Loss: 0.008416944763260194
+epoch 104 loss 0.04318562522530556
+[Testing] -/104/200 -> Accuracy: 82.18518518518519 % 18900 15533
+epoch 105 started
+tensor(0.0003, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/105/200 -> Loss: 0.00034460483584553003
+[Training] 100/105/200 -> Loss: 0.005548080529663794
+[Training] 200/105/200 -> Loss: 0.00824836739210112
+[Training] 300/105/200 -> Loss: 0.008403208542559784
+[Training] 400/105/200 -> Loss: 0.007549767104397266
+[Training] 500/105/200 -> Loss: 0.007938273207721336
+epoch 105 loss 0.004686132539063692
+[Testing] -/105/200 -> Accuracy: 82.15873015873015 % 18900 15528
+epoch 106 started
+tensor(0.0085, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/106/200 -> Loss: 0.00850892998278141
+[Training] 100/106/200 -> Loss: 0.008554038989915521
+[Training] 200/106/200 -> Loss: 0.009261612035710578
+[Training] 300/106/200 -> Loss: 0.00961596890485084
+[Training] 400/106/200 -> Loss: 0.01118855169918963
+[Training] 500/106/200 -> Loss: 0.01286173227400902
+epoch 106 loss 0.010172653011977673
+[Testing] -/106/200 -> Accuracy: 81.92063492063491 % 18900 15483
+epoch 107 started
+tensor(0.0026, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/107/200 -> Loss: 0.0025712610222399235
+[Training] 100/107/200 -> Loss: 0.01153393034113797
+[Training] 200/107/200 -> Loss: 0.01069677118889626
+[Training] 300/107/200 -> Loss: 0.010400637886956863
+[Training] 400/107/200 -> Loss: 0.009710549674085193
+[Training] 500/107/200 -> Loss: 0.009890081064560706
+epoch 107 loss 0.0014814671594649553
+[Testing] -/107/200 -> Accuracy: 82.7037037037037 % 18900 15631
+epoch 108 started
+tensor(0.0008, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/108/200 -> Loss: 0.0008032643818296492
+[Training] 100/108/200 -> Loss: 0.010217349613439822
+[Training] 200/108/200 -> Loss: 0.013804888781562647
+[Training] 300/108/200 -> Loss: 0.012901023965326225
+[Training] 400/108/200 -> Loss: 0.011941160097829428
+[Training] 500/108/200 -> Loss: 0.011056430890018823
+epoch 108 loss 0.0035181569401174784
+[Testing] -/108/200 -> Accuracy: 82.85714285714286 % 18900 15660
+epoch 109 started
+tensor(0.0015, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/109/200 -> Loss: 0.0014737844467163086
+[Training] 100/109/200 -> Loss: 0.006764752951195339
+[Training] 200/109/200 -> Loss: 0.006848339029430413
+[Training] 300/109/200 -> Loss: 0.0060537427146775
+[Training] 400/109/200 -> Loss: 0.005811149462590804
+[Training] 500/109/200 -> Loss: 0.007065199718612032
+epoch 109 loss 0.06604021787643433
+[Testing] -/109/200 -> Accuracy: 82.86772486772487 % 18900 15662
+epoch 110 started
+tensor(0.0003, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/110/200 -> Loss: 0.00029586078017018735
+[Training] 100/110/200 -> Loss: 0.007355586929713021
+[Training] 200/110/200 -> Loss: 0.00987147821896954
+[Training] 300/110/200 -> Loss: 0.008968061046026345
+[Training] 400/110/200 -> Loss: 0.008376616186976668
+[Training] 500/110/200 -> Loss: 0.008660612327505528
+epoch 110 loss 0.00014528512838296592
+[Testing] -/110/200 -> Accuracy: 82.0 % 18900 15498
+epoch 111 started
+tensor(0.0098, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/111/200 -> Loss: 0.009767541661858559
+[Training] 100/111/200 -> Loss: 0.01828055014464391
+[Training] 200/111/200 -> Loss: 0.015195567851264403
+[Training] 300/111/200 -> Loss: 0.014450964425727263
+[Training] 400/111/200 -> Loss: 0.012705262038708722
+[Training] 500/111/200 -> Loss: 0.011374359012314855
+epoch 111 loss 7.726192416157573e-05
+[Testing] -/111/200 -> Accuracy: 82.96825396825398 % 18900 15681
+epoch 112 started
+tensor(0.0010, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/112/200 -> Loss: 0.0009617161704227328
+[Training] 100/112/200 -> Loss: 0.004506943721872351
+[Training] 200/112/200 -> Loss: 0.0031593080191452093
+[Training] 300/112/200 -> Loss: 0.00401059981146602
+[Training] 400/112/200 -> Loss: 0.0043140171590430485
+[Training] 500/112/200 -> Loss: 0.005281015943066682
+epoch 112 loss 0.0016279455740004778
+[Testing] -/112/200 -> Accuracy: 82.78835978835978 % 18900 15647
+epoch 113 started
+tensor(0.0016, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/113/200 -> Loss: 0.0015524470945820212
+[Training] 100/113/200 -> Loss: 0.01340484337766377
+[Training] 200/113/200 -> Loss: 0.010431256976435587
+[Training] 300/113/200 -> Loss: 0.010333104657892125
+[Training] 400/113/200 -> Loss: 0.010173599127082164
+[Training] 500/113/200 -> Loss: 0.0107795329053344
+epoch 113 loss 0.04874047264456749
+[Testing] -/113/200 -> Accuracy: 81.72486772486772 % 18900 15446
+epoch 114 started
+tensor(0.0061, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/114/200 -> Loss: 0.006122200284153223
+[Training] 100/114/200 -> Loss: 0.016831245838210912
+[Training] 200/114/200 -> Loss: 0.017361950526950505
+[Training] 300/114/200 -> Loss: 0.016830173788167844
+[Training] 400/114/200 -> Loss: 0.016179209373063018
+[Training] 500/114/200 -> Loss: 0.0156687661091602
+epoch 114 loss 0.003895349567756057
+[Testing] -/114/200 -> Accuracy: 82.07407407407408 % 18900 15512
+epoch 115 started
+tensor(0.0318, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/115/200 -> Loss: 0.03175986930727959
+[Training] 100/115/200 -> Loss: 0.006046748785485023
+[Training] 200/115/200 -> Loss: 0.004966394096367937
+[Training] 300/115/200 -> Loss: 0.005779117802068076
+[Training] 400/115/200 -> Loss: 0.006325597099517959
+[Training] 500/115/200 -> Loss: 0.006777059750112347
+epoch 115 loss 0.01996355876326561
+[Testing] -/115/200 -> Accuracy: 82.94708994708995 % 18900 15677
+epoch 116 started
+tensor(9.2173e-05, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/116/200 -> Loss: 9.217262413585559e-05
+[Training] 100/116/200 -> Loss: 0.0033847682911847627
+[Training] 200/116/200 -> Loss: 0.0030963165684339917
+[Training] 300/116/200 -> Loss: 0.002979998411144433
+[Training] 400/116/200 -> Loss: 0.002495340472789639
+[Training] 500/116/200 -> Loss: 0.0024253762384507205
+epoch 116 loss 0.0001235961972270161
+[Testing] -/116/200 -> Accuracy: 83.37566137566138 % 18900 15758
+epoch 117 started
+tensor(0.0002, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/117/200 -> Loss: 0.00020937681256327778
+[Training] 100/117/200 -> Loss: 0.002823606695303602
+[Training] 200/117/200 -> Loss: 0.002157299997514346
+[Training] 300/117/200 -> Loss: 0.0022251173757284965
+[Training] 400/117/200 -> Loss: 0.002646109387998827
+[Training] 500/117/200 -> Loss: 0.0034497707067240226
+epoch 117 loss 0.01951712556183338
+[Testing] -/117/200 -> Accuracy: 82.19047619047619 % 18900 15534
+epoch 118 started
+tensor(0.0009, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/118/200 -> Loss: 0.0009159171604551375
+[Training] 100/118/200 -> Loss: 0.008076108150465972
+[Training] 200/118/200 -> Loss: 0.009753078661384251
+[Training] 300/118/200 -> Loss: 0.013271451162138471
+[Training] 400/118/200 -> Loss: 0.01472977295867494
+[Training] 500/118/200 -> Loss: 0.015247765226798105
+epoch 118 loss 0.0022618507500737906
+[Testing] -/118/200 -> Accuracy: 80.5079365079365 % 18900 15216
+epoch 119 started
+tensor(0.0002, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/119/200 -> Loss: 0.00023613929806742817
+[Training] 100/119/200 -> Loss: 0.01875519157545226
+[Training] 200/119/200 -> Loss: 0.016053342783330003
+[Training] 300/119/200 -> Loss: 0.013509748415589549
+[Training] 400/119/200 -> Loss: 0.012324153089486159
+[Training] 500/119/200 -> Loss: 0.011712876453395053
+epoch 119 loss 0.0013453299179673195
+[Testing] -/119/200 -> Accuracy: 82.17989417989418 % 18900 15532
+epoch 120 started
+tensor(0.0378, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/120/200 -> Loss: 0.03782597929239273
+[Training] 100/120/200 -> Loss: 0.01122661027333343
+[Training] 200/120/200 -> Loss: 0.011006933908128534
+[Training] 300/120/200 -> Loss: 0.009571670720420583
+[Training] 400/120/200 -> Loss: 0.010040574403428492
+[Training] 500/120/200 -> Loss: 0.009936791358051847
+epoch 120 loss 0.0024469485506415367
+[Testing] -/120/200 -> Accuracy: 82.82010582010582 % 18900 15653
+epoch 121 started
+tensor(0.0299, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/121/200 -> Loss: 0.029886243864893913
+[Training] 100/121/200 -> Loss: 0.006425698133224984
+[Training] 200/121/200 -> Loss: 0.004437154613172321
+[Training] 300/121/200 -> Loss: 0.0044187424822080615
+[Training] 400/121/200 -> Loss: 0.004064521432128526
+[Training] 500/121/200 -> Loss: 0.003597366148457519
+epoch 121 loss 0.002114515984430909
+[Testing] -/121/200 -> Accuracy: 83.47089947089947 % 18900 15776
+epoch 122 started
+tensor(0.0013, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/122/200 -> Loss: 0.001305160578340292
+[Training] 100/122/200 -> Loss: 0.002151129261988845
+[Training] 200/122/200 -> Loss: 0.003571147023558749
+[Training] 300/122/200 -> Loss: 0.004455974156909508
+[Training] 400/122/200 -> Loss: 0.00550643218322644
+[Training] 500/122/200 -> Loss: 0.007690890037461694
+epoch 122 loss 0.0004881280765403062
+[Testing] -/122/200 -> Accuracy: 81.87301587301587 % 18900 15474
+epoch 123 started
+tensor(0.0043, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/123/200 -> Loss: 0.004286949522793293
+[Training] 100/123/200 -> Loss: 0.011337022469798275
+[Training] 200/123/200 -> Loss: 0.011936320701080597
+[Training] 300/123/200 -> Loss: 0.013546298332941685
+[Training] 400/123/200 -> Loss: 0.013151460276203761
+[Training] 500/123/200 -> Loss: 0.013846465594955127
+epoch 123 loss 0.02335583232343197
+[Testing] -/123/200 -> Accuracy: 82.47619047619048 % 18900 15588
+epoch 124 started
+tensor(0.0003, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/124/200 -> Loss: 0.0002916741359513253
+[Training] 100/124/200 -> Loss: 0.004313992636714757
+[Training] 200/124/200 -> Loss: 0.005771498300925681
+[Training] 300/124/200 -> Loss: 0.007937425496472082
+[Training] 400/124/200 -> Loss: 0.008689738108041366
+[Training] 500/124/200 -> Loss: 0.008950607470506872
+epoch 124 loss 0.05395324155688286
+[Testing] -/124/200 -> Accuracy: 82.64021164021163 % 18900 15619
+epoch 125 started
+tensor(0.0018, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/125/200 -> Loss: 0.0017596435500308871
+[Training] 100/125/200 -> Loss: 0.006084645852333419
+[Training] 200/125/200 -> Loss: 0.0055796096113833
+[Training] 300/125/200 -> Loss: 0.005529704885555511
+[Training] 400/125/200 -> Loss: 0.005189349363360278
+[Training] 500/125/200 -> Loss: 0.005128580833421282
+epoch 125 loss 0.0009522765758447349
+[Testing] -/125/200 -> Accuracy: 82.82010582010582 % 18900 15653
+epoch 126 started
+tensor(0.0127, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/126/200 -> Loss: 0.01266536395996809
+[Training] 100/126/200 -> Loss: 0.00458313412785867
+[Training] 200/126/200 -> Loss: 0.004103846270852919
+[Training] 300/126/200 -> Loss: 0.005985363968968304
+[Training] 400/126/200 -> Loss: 0.005743125468202231
+[Training] 500/126/200 -> Loss: 0.005842817314078637
+epoch 126 loss 0.00012230307038407773
+[Testing] -/126/200 -> Accuracy: 82.44444444444444 % 18900 15582
+epoch 127 started
+tensor(0.0019, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/127/200 -> Loss: 0.0019119217758998275
+[Training] 100/127/200 -> Loss: 0.006251748333942496
+[Training] 200/127/200 -> Loss: 0.004814993594989763
+[Training] 300/127/200 -> Loss: 0.006060995916108779
+[Training] 400/127/200 -> Loss: 0.0070881588517726244
+[Training] 500/127/200 -> Loss: 0.006993011218027478
+epoch 127 loss 0.0006164932274259627
+[Testing] -/127/200 -> Accuracy: 81.85714285714286 % 18900 15471
+epoch 128 started
+tensor(0.0036, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/128/200 -> Loss: 0.003576479619368911
+[Training] 100/128/200 -> Loss: 0.008396762935595995
+[Training] 200/128/200 -> Loss: 0.008144134242516811
+[Training] 300/128/200 -> Loss: 0.007363233849565613
+[Training] 400/128/200 -> Loss: 0.006948827568127021
+[Training] 500/128/200 -> Loss: 0.007319566500299772
+epoch 128 loss 0.00040987253305502236
+[Testing] -/128/200 -> Accuracy: 82.65608465608466 % 18900 15622
+epoch 129 started
+tensor(0.0001, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/129/200 -> Loss: 0.00014045000716578215
+[Training] 100/129/200 -> Loss: 0.012453683626418832
+[Training] 200/129/200 -> Loss: 0.009756990649646522
+[Training] 300/129/200 -> Loss: 0.009796338477443054
+[Training] 400/129/200 -> Loss: 0.009069032586633777
+[Training] 500/129/200 -> Loss: 0.00972147420223794
+epoch 129 loss 0.019402991980314255
+[Testing] -/129/200 -> Accuracy: 81.8941798941799 % 18900 15478
+epoch 130 started
+tensor(0.0053, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/130/200 -> Loss: 0.005330980289727449
+[Training] 100/130/200 -> Loss: 0.006862276201387106
+[Training] 200/130/200 -> Loss: 0.0076594473234559805
+[Training] 300/130/200 -> Loss: 0.006507966200744729
+[Training] 400/130/200 -> Loss: 0.006732065151827828
+[Training] 500/130/200 -> Loss: 0.00738241047674329
+epoch 130 loss 0.005950223188847303
+[Testing] -/130/200 -> Accuracy: 82.46031746031746 % 18900 15585
+epoch 131 started
+tensor(5.5196e-05, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/131/200 -> Loss: 5.5196283938130364e-05
+[Training] 100/131/200 -> Loss: 0.011561270213536376
+[Training] 200/131/200 -> Loss: 0.010593934509583123
+[Training] 300/131/200 -> Loss: 0.010778722453892064
+[Training] 400/131/200 -> Loss: 0.010481957538728043
+[Training] 500/131/200 -> Loss: 0.011148646210918985
+epoch 131 loss 0.006813700310885906
+[Testing] -/131/200 -> Accuracy: 82.14814814814815 % 18900 15526
+epoch 132 started
+tensor(0.0632, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/132/200 -> Loss: 0.0631609708070755
+[Training] 100/132/200 -> Loss: 0.013020782757767748
+[Training] 200/132/200 -> Loss: 0.01307699486837851
+[Training] 300/132/200 -> Loss: 0.010156888074048052
+[Training] 400/132/200 -> Loss: 0.008636392585311596
+[Training] 500/132/200 -> Loss: 0.00824413656134825
+epoch 132 loss 0.018137671053409576
+[Testing] -/132/200 -> Accuracy: 83.01058201058201 % 18900 15689
+epoch 133 started
+tensor(0.0006, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/133/200 -> Loss: 0.0006389474729076028
+[Training] 100/133/200 -> Loss: 0.004828653964941983
+[Training] 200/133/200 -> Loss: 0.006488025514275916
+[Training] 300/133/200 -> Loss: 0.006217705179340048
+[Training] 400/133/200 -> Loss: 0.005826054743661835
+[Training] 500/133/200 -> Loss: 0.005528347691163031
+epoch 133 loss 2.8160809961264022e-05
+[Testing] -/133/200 -> Accuracy: 83.48148148148148 % 18900 15778
+epoch 134 started
+tensor(0.0005, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/134/200 -> Loss: 0.0005162356537766755
+[Training] 100/134/200 -> Loss: 0.0009441297980080016
+[Training] 200/134/200 -> Loss: 0.0011454839902480265
+[Training] 300/134/200 -> Loss: 0.0015450755921215793
+[Training] 400/134/200 -> Loss: 0.001991252930938776
+[Training] 500/134/200 -> Loss: 0.00247663396992688
+epoch 134 loss 0.0015485120238736272
+[Testing] -/134/200 -> Accuracy: 82.53439153439153 % 18900 15599
+epoch 135 started
+tensor(0.0002, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/135/200 -> Loss: 0.00021878718689549714
+[Training] 100/135/200 -> Loss: 0.008252917917836907
+[Training] 200/135/200 -> Loss: 0.015047598996901779
+[Training] 300/135/200 -> Loss: 0.01816268995807878
+[Training] 400/135/200 -> Loss: 0.01770873167867678
+[Training] 500/135/200 -> Loss: 0.01746887292226861
+epoch 135 loss 0.0008135449606925249
+[Testing] -/135/200 -> Accuracy: 82.58730158730158 % 18900 15609
+epoch 136 started
+tensor(0.0002, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/136/200 -> Loss: 0.0001606524019734934
+[Training] 100/136/200 -> Loss: 0.006482423985856951
+[Training] 200/136/200 -> Loss: 0.0051437236775630155
+[Training] 300/136/200 -> Loss: 0.004550876694365707
+[Training] 400/136/200 -> Loss: 0.004254110017953784
+[Training] 500/136/200 -> Loss: 0.0050198884839987015
+epoch 136 loss 0.004059215076267719
+[Testing] -/136/200 -> Accuracy: 82.15343915343915 % 18900 15527
+epoch 137 started
+tensor(0.0005, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/137/200 -> Loss: 0.00046774744987487793
+[Training] 100/137/200 -> Loss: 0.005669509082904954
+[Training] 200/137/200 -> Loss: 0.0036766165118449555
+[Training] 300/137/200 -> Loss: 0.0035465263603889925
+[Training] 400/137/200 -> Loss: 0.0035147897701575032
+[Training] 500/137/200 -> Loss: 0.003534380551546908
+epoch 137 loss 0.004201438277959824
+[Testing] -/137/200 -> Accuracy: 82.68783068783068 % 18900 15628
+epoch 138 started
+tensor(0.0014, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/138/200 -> Loss: 0.0013796377461403608
+[Training] 100/138/200 -> Loss: 0.009428449832028328
+[Training] 200/138/200 -> Loss: 0.006497268272187058
+[Training] 300/138/200 -> Loss: 0.005236547072259341
+[Training] 400/138/200 -> Loss: 0.00480330862737765
+[Training] 500/138/200 -> Loss: 0.00470091245740682
+epoch 138 loss 0.00011908531450899318
+[Testing] -/138/200 -> Accuracy: 82.46560846560847 % 18900 15586
+epoch 139 started
+tensor(0.0027, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/139/200 -> Loss: 0.002672240836545825
+[Training] 100/139/200 -> Loss: 0.0133477711356451
+[Training] 200/139/200 -> Loss: 0.01085106605726773
+[Training] 300/139/200 -> Loss: 0.010491049160260215
+[Training] 400/139/200 -> Loss: 0.011138732434600278
+[Training] 500/139/200 -> Loss: 0.012727537775065426
+epoch 139 loss 0.006428565364331007
+[Testing] -/139/200 -> Accuracy: 81.74603174603175 % 18900 15450
+epoch 140 started
+tensor(0.0406, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/140/200 -> Loss: 0.04063880443572998
+[Training] 100/140/200 -> Loss: 0.009034963566501564
+[Training] 200/140/200 -> Loss: 0.007604648902269223
+[Training] 300/140/200 -> Loss: 0.007616706471351766
+[Training] 400/140/200 -> Loss: 0.006978799732721547
+[Training] 500/140/200 -> Loss: 0.00700617947375453
+epoch 140 loss 0.01803949475288391
+[Testing] -/140/200 -> Accuracy: 82.60846560846561 % 18900 15613
+epoch 141 started
+tensor(0.0018, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/141/200 -> Loss: 0.0018137693405151367
+[Training] 100/141/200 -> Loss: 0.004377421236754479
+[Training] 200/141/200 -> Loss: 0.004160600084499343
+[Training] 300/141/200 -> Loss: 0.004009112254072498
+[Training] 400/141/200 -> Loss: 0.005190349593370607
+[Training] 500/141/200 -> Loss: 0.005225093849949661
+epoch 141 loss 0.008107499219477177
+[Testing] -/141/200 -> Accuracy: 82.7989417989418 % 18900 15649
+epoch 142 started
+tensor(0.0014, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/142/200 -> Loss: 0.0014093827921897173
+[Training] 100/142/200 -> Loss: 0.0036305262995546678
+[Training] 200/142/200 -> Loss: 0.0048794036840570975
+[Training] 300/142/200 -> Loss: 0.006212254268216067
+[Training] 400/142/200 -> Loss: 0.007405202359631291
+[Training] 500/142/200 -> Loss: 0.00800506022011348
+epoch 142 loss 0.007655805442482233
+[Testing] -/142/200 -> Accuracy: 82.32275132275132 % 18900 15559
+epoch 143 started
+tensor(0.0002, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/143/200 -> Loss: 0.00019128859275951982
+[Training] 100/143/200 -> Loss: 0.005202140440544982
+[Training] 200/143/200 -> Loss: 0.005699131884696486
+[Training] 300/143/200 -> Loss: 0.0060286907631134186
+[Training] 400/143/200 -> Loss: 0.005687272854509347
+[Training] 500/143/200 -> Loss: 0.0058676827592064945
+epoch 143 loss 0.011679853312671185
+[Testing] -/143/200 -> Accuracy: 83.07407407407408 % 18900 15701
+epoch 144 started
+tensor(0.0003, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/144/200 -> Loss: 0.00033378839725628495
+[Training] 100/144/200 -> Loss: 0.003653164305469185
+[Training] 200/144/200 -> Loss: 0.0041629491935050306
+[Training] 300/144/200 -> Loss: 0.003433410754062839
+[Training] 400/144/200 -> Loss: 0.0033692639167395527
+[Training] 500/144/200 -> Loss: 0.003219053502375945
+epoch 144 loss 6.2131880440574605e-06
+[Testing] -/144/200 -> Accuracy: 83.01587301587303 % 18900 15690
+epoch 145 started
+tensor(0.0014, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/145/200 -> Loss: 0.0014146703761070967
+[Training] 100/145/200 -> Loss: 0.00420801316262315
+[Training] 200/145/200 -> Loss: 0.006024084631526104
+[Training] 300/145/200 -> Loss: 0.006904639370536627
+[Training] 400/145/200 -> Loss: 0.007127088598269921
+[Training] 500/145/200 -> Loss: 0.007062035602060435
+epoch 145 loss 0.0012186623644083738
+[Testing] -/145/200 -> Accuracy: 81.7936507936508 % 18900 15459
+epoch 146 started
+tensor(0.0032, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/146/200 -> Loss: 0.00320544489659369
+[Training] 100/146/200 -> Loss: 0.009606943856815993
+[Training] 200/146/200 -> Loss: 0.009629533763558837
+[Training] 300/146/200 -> Loss: 0.008560406605604075
+[Training] 400/146/200 -> Loss: 0.00889411655672821
+[Training] 500/146/200 -> Loss: 0.009918494625651987
+epoch 146 loss 0.005221652798354626
+[Testing] -/146/200 -> Accuracy: 82.63492063492063 % 18900 15618
+epoch 147 started
+tensor(0.0001, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/147/200 -> Loss: 0.00014098048268351704
+[Training] 100/147/200 -> Loss: 0.008281759286366633
+[Training] 200/147/200 -> Loss: 0.011783698379085718
+[Training] 300/147/200 -> Loss: 0.011430947421206799
+[Training] 400/147/200 -> Loss: 0.010031454303638488
+[Training] 500/147/200 -> Loss: 0.008712880844203703
+epoch 147 loss 0.003936568275094032
+[Testing] -/147/200 -> Accuracy: 83.07407407407408 % 18900 15701
+epoch 148 started
+tensor(0.0006, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/148/200 -> Loss: 0.0005925440927967429
+[Training] 100/148/200 -> Loss: 0.0037621579530522386
+[Training] 200/148/200 -> Loss: 0.004440027996873987
+[Training] 300/148/200 -> Loss: 0.0036163860674070713
+[Training] 400/148/200 -> Loss: 0.003927481734865835
+[Training] 500/148/200 -> Loss: 0.004153581392098157
+epoch 148 loss 9.828210022533312e-05
+[Testing] -/148/200 -> Accuracy: 82.63492063492063 % 18900 15618
+epoch 149 started
+tensor(0.0006, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/149/200 -> Loss: 0.0005640423041768372
+[Training] 100/149/200 -> Loss: 0.004954236003445343
+[Training] 200/149/200 -> Loss: 0.007003923207717274
+[Training] 300/149/200 -> Loss: 0.008678934713104757
+[Training] 400/149/200 -> Loss: 0.008828486461080453
+[Training] 500/149/200 -> Loss: 0.009187192477134476
+epoch 149 loss 0.02341361530125141
+[Testing] -/149/200 -> Accuracy: 82.2962962962963 % 18900 15554
+epoch 150 started
+tensor(0.0004, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/150/200 -> Loss: 0.00044099093065597117
+[Training] 100/150/200 -> Loss: 0.0077374882135106
+[Training] 200/150/200 -> Loss: 0.006083020957011109
+[Training] 300/150/200 -> Loss: 0.007820321889689195
+[Training] 400/150/200 -> Loss: 0.008328856371149062
+[Training] 500/150/200 -> Loss: 0.00799134773421543
+epoch 150 loss 0.00045089705963619053
+[Testing] -/150/200 -> Accuracy: 83.06349206349206 % 18900 15699
+epoch 151 started
+tensor(9.1326e-05, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/151/200 -> Loss: 9.132623381447047e-05
+[Training] 100/151/200 -> Loss: 0.0036979862128880474
+[Training] 200/151/200 -> Loss: 0.004396262748997373
+[Training] 300/151/200 -> Loss: 0.004266099185043455
+[Training] 400/151/200 -> Loss: 0.004048356686855454
+[Training] 500/151/200 -> Loss: 0.0036671398538819194
+epoch 151 loss 0.002067780587822199
+[Testing] -/151/200 -> Accuracy: 83.35449735449735 % 18900 15754
+epoch 152 started
+tensor(0.0008, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/152/200 -> Loss: 0.0007979142828844488
+[Training] 100/152/200 -> Loss: 0.0025243799142243566
+[Training] 200/152/200 -> Loss: 0.0027678650315994756
+[Training] 300/152/200 -> Loss: 0.003378695978934174
+[Training] 400/152/200 -> Loss: 0.003390187532959702
+[Training] 500/152/200 -> Loss: 0.0038047590178593564
+epoch 152 loss 0.00571815948933363
+[Testing] -/152/200 -> Accuracy: 82.68783068783068 % 18900 15628
+epoch 153 started
+tensor(3.2263e-05, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/153/200 -> Loss: 3.2262803870253265e-05
+[Training] 100/153/200 -> Loss: 0.005251337407436481
+[Training] 200/153/200 -> Loss: 0.00533148367557898
+[Training] 300/153/200 -> Loss: 0.0064496820356131305
+[Training] 400/153/200 -> Loss: 0.006513886030374115
+[Training] 500/153/200 -> Loss: 0.006261460499891671
+epoch 153 loss 0.01673235557973385
+[Testing] -/153/200 -> Accuracy: 82.08994708994709 % 18900 15515
+epoch 154 started
+tensor(0.0126, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/154/200 -> Loss: 0.012567522935569286
+[Training] 100/154/200 -> Loss: 0.008692579701085262
+[Training] 200/154/200 -> Loss: 0.007788292227792339
+[Training] 300/154/200 -> Loss: 0.007806490877217499
+[Training] 400/154/200 -> Loss: 0.008457674524280739
+[Training] 500/154/200 -> Loss: 0.009692231596601122
+epoch 154 loss 0.020799923688173294
+[Testing] -/154/200 -> Accuracy: 81.73015873015873 % 18900 15447
+epoch 155 started
+tensor(0.0019, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/155/200 -> Loss: 0.0018781041726469994
+[Training] 100/155/200 -> Loss: 0.0085037808751775
+[Training] 200/155/200 -> Loss: 0.006623300728489397
+[Training] 300/155/200 -> Loss: 0.005280197418943676
+[Training] 400/155/200 -> Loss: 0.006061582179258234
+[Training] 500/155/200 -> Loss: 0.006055986947516514
+epoch 155 loss 0.0001136022838181816
+[Testing] -/155/200 -> Accuracy: 83.01058201058201 % 18900 15689
+epoch 156 started
+tensor(0.0005, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/156/200 -> Loss: 0.000542911293450743
+[Training] 100/156/200 -> Loss: 0.004900345220070592
+[Training] 200/156/200 -> Loss: 0.004943261242550223
+[Training] 300/156/200 -> Loss: 0.004780936911697382
+[Training] 400/156/200 -> Loss: 0.007121968709066606
+[Training] 500/156/200 -> Loss: 0.007451927665582564
+epoch 156 loss 7.883608486736193e-05
+[Testing] -/156/200 -> Accuracy: 82.47619047619048 % 18900 15588
+epoch 157 started
+tensor(0.0087, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/157/200 -> Loss: 0.008669419214129448
+[Training] 100/157/200 -> Loss: 0.013129978667679421
+[Training] 200/157/200 -> Loss: 0.010929834904739288
+[Training] 300/157/200 -> Loss: 0.010249601693666715
+[Training] 400/157/200 -> Loss: 0.008714062228685626
+[Training] 500/157/200 -> Loss: 0.008464260572129964
+epoch 157 loss 0.003383526811376214
+[Testing] -/157/200 -> Accuracy: 82.44444444444444 % 18900 15582
+epoch 158 started
+tensor(0.0021, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/158/200 -> Loss: 0.0020628750789910555
+[Training] 100/158/200 -> Loss: 0.0038059049032262288
+[Training] 200/158/200 -> Loss: 0.0034372340546249334
+[Training] 300/158/200 -> Loss: 0.003321343914105449
+[Training] 400/158/200 -> Loss: 0.0036963729474137424
+[Training] 500/158/200 -> Loss: 0.004116235181675778
+epoch 158 loss 0.0026727807708084583
+[Testing] -/158/200 -> Accuracy: 82.29100529100529 % 18900 15553
+epoch 159 started
+tensor(0.0112, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/159/200 -> Loss: 0.011241420172154903
+[Training] 100/159/200 -> Loss: 0.009248697980336434
+[Training] 200/159/200 -> Loss: 0.009921677340277362
+[Training] 300/159/200 -> Loss: 0.009850265012211212
+[Training] 400/159/200 -> Loss: 0.010299617578649823
+[Training] 500/159/200 -> Loss: 0.009882930244947023
+epoch 159 loss 0.022593073546886444
+[Testing] -/159/200 -> Accuracy: 83.1005291005291 % 18900 15706
+epoch 160 started
+tensor(2.2311e-05, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/160/200 -> Loss: 2.2311211068881676e-05
+[Training] 100/160/200 -> Loss: 0.0040666499522144075
+[Training] 200/160/200 -> Loss: 0.005216975197036117
+[Training] 300/160/200 -> Loss: 0.005321664620351836
+[Training] 400/160/200 -> Loss: 0.004909826226290384
+[Training] 500/160/200 -> Loss: 0.004997558589013148
+epoch 160 loss 7.87520402809605e-05
+[Testing] -/160/200 -> Accuracy: 82.86772486772487 % 18900 15662
+epoch 161 started
+tensor(6.9565e-05, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/161/200 -> Loss: 6.956457946216688e-05
+[Training] 100/161/200 -> Loss: 0.00358612975704469
+[Training] 200/161/200 -> Loss: 0.004092331432793482
+[Training] 300/161/200 -> Loss: 0.004740103967593205
+[Training] 400/161/200 -> Loss: 0.004464699975028282
+[Training] 500/161/200 -> Loss: 0.0040336427698707345
+epoch 161 loss 7.697343971813098e-05
+[Testing] -/161/200 -> Accuracy: 82.77248677248677 % 18900 15644
+epoch 162 started
+tensor(0.0005, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/162/200 -> Loss: 0.000501577858813107
+[Training] 100/162/200 -> Loss: 0.002831514115440417
+[Training] 200/162/200 -> Loss: 0.002932049387329325
+[Training] 300/162/200 -> Loss: 0.0023556194155956224
+[Training] 400/162/200 -> Loss: 0.003264646284824289
+[Training] 500/162/200 -> Loss: 0.004246287706915816
+epoch 162 loss 2.4977922294056043e-05
+[Testing] -/162/200 -> Accuracy: 81.76719576719577 % 18900 15454
+epoch 163 started
+tensor(0.0014, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/163/200 -> Loss: 0.0013539779465645552
+[Training] 100/163/200 -> Loss: 0.008169023387291408
+[Training] 200/163/200 -> Loss: 0.009156449024464849
+[Training] 300/163/200 -> Loss: 0.009866565401328827
+[Training] 400/163/200 -> Loss: 0.009755664975046442
+[Training] 500/163/200 -> Loss: 0.00948619758922771
+epoch 163 loss 0.07651817053556442
+[Testing] -/163/200 -> Accuracy: 82.3968253968254 % 18900 15573
+epoch 164 started
+tensor(0.0001, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/164/200 -> Loss: 0.00012579880421981215
+[Training] 100/164/200 -> Loss: 0.007722648096070302
+[Training] 200/164/200 -> Loss: 0.007031062125350046
+[Training] 300/164/200 -> Loss: 0.0066863874236208895
+[Training] 400/164/200 -> Loss: 0.006359735981023458
+[Training] 500/164/200 -> Loss: 0.006454253907722596
+epoch 164 loss 0.00452417554333806
+[Testing] -/164/200 -> Accuracy: 82.31216931216932 % 18900 15557
+epoch 165 started
+tensor(0.0229, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/165/200 -> Loss: 0.022929277271032333
+[Training] 100/165/200 -> Loss: 0.005481121496246704
+[Training] 200/165/200 -> Loss: 0.003997063920471545
+[Training] 300/165/200 -> Loss: 0.0038473735646592684
+[Training] 400/165/200 -> Loss: 0.004461118791707866
+[Training] 500/165/200 -> Loss: 0.005524864690295782
+epoch 165 loss 0.000916919088922441
+[Testing] -/165/200 -> Accuracy: 82.01587301587303 % 18900 15501
+epoch 166 started
+tensor(0.0013, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/166/200 -> Loss: 0.0013035606825724244
+[Training] 100/166/200 -> Loss: 0.006998108155364594
+[Training] 200/166/200 -> Loss: 0.006808431846569766
+[Training] 300/166/200 -> Loss: 0.006065350665206601
+[Training] 400/166/200 -> Loss: 0.005052149449995722
+[Training] 500/166/200 -> Loss: 0.00493304446809973
+epoch 166 loss 0.003674678737297654
+[Testing] -/166/200 -> Accuracy: 83.14814814814815 % 18900 15715
+epoch 167 started
+tensor(4.7832e-05, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/167/200 -> Loss: 4.783153417520225e-05
+[Training] 100/167/200 -> Loss: 0.0026035370770832833
+[Training] 200/167/200 -> Loss: 0.0033256340785822913
+[Training] 300/167/200 -> Loss: 0.003866666422747156
+[Training] 400/167/200 -> Loss: 0.00419664553897574
+[Training] 500/167/200 -> Loss: 0.004633560301611173
+epoch 167 loss 0.006260809954255819
+[Testing] -/167/200 -> Accuracy: 82.68783068783068 % 18900 15628
+epoch 168 started
+tensor(0.0002, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/168/200 -> Loss: 0.00024065971956588328
+[Training] 100/168/200 -> Loss: 0.0022027075840266867
+[Training] 200/168/200 -> Loss: 0.0023310279280958097
+[Training] 300/168/200 -> Loss: 0.0023977535603893273
+[Training] 400/168/200 -> Loss: 0.0028544950612325592
+[Training] 500/168/200 -> Loss: 0.0032725555424686042
+epoch 168 loss 0.0009033955866470933
+[Testing] -/168/200 -> Accuracy: 82.24338624338624 % 18900 15544
+epoch 169 started
+tensor(5.8551e-05, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/169/200 -> Loss: 5.8550835092319176e-05
+[Training] 100/169/200 -> Loss: 0.008154777415707077
+[Training] 200/169/200 -> Loss: 0.007881713540102092
+[Training] 300/169/200 -> Loss: 0.010447402908583328
+[Training] 400/169/200 -> Loss: 0.011336945659913817
+[Training] 500/169/200 -> Loss: 0.013489244990479253
+epoch 169 loss 0.004025271162390709
+[Testing] -/169/200 -> Accuracy: 82.57671957671958 % 18900 15607
+epoch 170 started
+tensor(0.0042, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/170/200 -> Loss: 0.004224641248583794
+[Training] 100/170/200 -> Loss: 0.003777333718647755
+[Training] 200/170/200 -> Loss: 0.004356006985421371
+[Training] 300/170/200 -> Loss: 0.0035438931197759637
+[Training] 400/170/200 -> Loss: 0.0031678551688656214
+[Training] 500/170/200 -> Loss: 0.0034441889106510315
+epoch 170 loss 0.00014406323316507041
+[Testing] -/170/200 -> Accuracy: 82.75661375661376 % 18900 15641
+epoch 171 started
+tensor(0.0026, device='cuda:0', grad_fn=<NllLossBackward>)
+[Training] 0/171/200 -> Loss: 0.002613397780805826
+[Training] 100/171/200 -> Loss: 0.0028318508949485136
+[Training] 200/171/200 -> Loss: 0.0024015942638706024
+[Training] 300/171/200 -> Loss: 0.0028638551782500976
+[Training] 400/171/200 -> Loss: 0.0035337932237912025
+[Training] 500/171/200 -> Loss: 0.0033769985447462546
+epoch 171 loss 0.010961937718093395
+[Testing] -/171/200 -> Accuracy: 82.86243386243386 % 18900 15661
+epoch 172 started
