@@ -1,4 +1,5 @@
 # https://discuss.pytorch.org/t/how-to-split-dataset-into-test-and-validation-sets/33987
+# https://github.com/adambielski/siamese-triplet/blob/master/datasets.py
 import torch
 import torchvision
 import numpy as np
@@ -52,7 +53,7 @@ class PairedDataset(torch.utils.data.Dataset):
 
         self.classes = []
         self.class_to_index = {}
-        if not self.fine_grain:
+        if self.train:
             train_links= self.sketch_root+'/train.txt'
 
             class_i =0
@@ -82,6 +83,44 @@ class PairedDataset(torch.utils.data.Dataset):
                         self.label_to_indx_photo[label] = []
                     self.label_to_indx_photo[label].append(i)
                     self.train_photo.append((label, path))
+        else:
+            # generate fixed pairs for testing
+            test_links = self.sketch_root + '/test.txt'
+
+            class_i = 0
+            with open(test_links) as f:
+                for i, line in enumerate(f):
+                    label, path = line.split()
+
+                    if label not in self.class_to_index:
+                        self.class_to_index[label] = class_i
+                        self.classes.append(label)
+                        class_i += 1
+                    label = self.class_to_index[label]
+                    self.test_sketch.append((label, path))
+
+                    if label not in self.label_to_indx_sketch:
+                        self.label_to_indx_sketch[label] = []
+
+                    self.label_to_indx_sketch[label].append(i)
+
+            test_links = self.photo_root + '/test.txt'
+            with open(test_links) as f:
+                for i, line in enumerate(f):
+                    label, path = line.split()
+                    label = self.class_to_index[label]
+                    if label not in self.label_to_indx_photo:
+                        self.label_to_indx_photo[label] = []
+                    self.label_to_indx_photo[label].append(i)
+                    self.test_photo.append((label, path))
+            self.test_labels = self.classes
+            self.test_data = self.test_data
+            self.labels_set = set(self.test_labels.numpy())
+            self.label_to_indices = {label: np.where(self.test_labels.numpy() == label)[0]
+                                     for label in self.labels_set}
+
+
+
 
         self.classes_set = set(self.classes)
         self.class_to_index['unmatched'] = class_i
@@ -97,15 +136,27 @@ class PairedDataset(torch.utils.data.Dataset):
         target = np.random.randint(0, 2)
         label_s,sketch = self.train_sketch[index]
         label = label_s
-        if target ==1:
-            photo_index = np.random.choice(self.label_to_indx_photo[label_s])
-            label_p,photo = self.train_photo[photo_index]
+        if self.train:
+            if target ==1:
+                photo_index = np.random.choice(self.label_to_indx_photo[label_s])
+                label_p,photo = self.train_photo[photo_index]
+            else:
+                neg_class = np.random.choice(list(self.classes_set-set([label_s])))
+                neg_class = self.class_to_index[neg_class]
+                photo_index = np.random.choice(self.label_to_indx_photo[neg_class])
+                label_p,photo = self.train_photo[photo_index]
+                label = self.class_to_index['unmatched']
         else:
-            neg_class = np.random.choice(list(self.classes_set-set([label_s])))
-            neg_class = self.class_to_index[neg_class]
-            photo_index = np.random.choice(self.label_to_indx_photo[neg_class])
-            label_p,photo = self.train_photo[photo_index]
-            label = self.class_to_index['unmatched']
+            random_state = np.random.RandomState(29)
+            if target ==1:
+                photo_index = random_state.choice(self.label_to_indx_photo[label_s])
+                label_p,photo = self.train_photo[photo_index]
+            else:
+                neg_class = random_state.choice(list(self.classes_set-set([label_s])))
+                neg_class = self.class_to_index[neg_class]
+                photo_index = random_state.choice(self.label_to_indx_photo[neg_class])
+                label_p,photo = self.train_photo[photo_index]
+                label = self.class_to_index['unmatched']
         sketch =self.pil_loader(sketch)
         photo = self.pil_loader(photo)
         if self.transform is not None:
