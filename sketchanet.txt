@@ -1,0 +1,1801 @@
+here
+epoch 0 started
+[Training] 0/0/200 -> Loss: 4.894217014312744 Accu: 0.0
+[Training] 100/0/200 -> Loss: 4.616827011108398 Accu: 2.0
+[Training] 200/0/200 -> Loss: 4.7745256423950195 Accu: 0.0
+[Training] 300/0/200 -> Loss: 4.533936023712158 Accu: 1.0
+[Training] 400/0/200 -> Loss: 4.581650257110596 Accu: 6.0
+[Training] 500/0/200 -> Loss: 4.326187610626221 Accu: 2.0
+epoch 0 loss 4.415987968444824
+[Testing] -/0/200 -> Accuracy: 3.9894179894179893 % 18900 754
+epoch 1 started
+[Training] 0/1/200 -> Loss: 4.4728922843933105 Accu: 10.0
+[Training] 100/1/200 -> Loss: 4.2044267654418945 Accu: 9.0
+[Training] 200/1/200 -> Loss: 4.203527927398682 Accu: 6.0
+[Training] 300/1/200 -> Loss: 4.161602020263672 Accu: 6.0
+[Training] 400/1/200 -> Loss: 4.273883819580078 Accu: 5.0
+[Training] 500/1/200 -> Loss: 3.908888339996338 Accu: 5.0
+epoch 1 loss 3.86460542678833
+[Testing] -/1/200 -> Accuracy: 7.502645502645502 % 18900 1418
+epoch 2 started
+[Training] 0/2/200 -> Loss: 3.813807487487793 Accu: 10.0
+[Training] 100/2/200 -> Loss: 3.980527400970459 Accu: 7.000000000000001
+[Training] 200/2/200 -> Loss: 3.8443775177001953 Accu: 6.0
+[Training] 300/2/200 -> Loss: 4.054661750793457 Accu: 10.0
+[Training] 400/2/200 -> Loss: 3.782419204711914 Accu: 6.0
+[Training] 500/2/200 -> Loss: 3.7817583084106445 Accu: 9.0
+epoch 2 loss 3.6412386894226074
+[Testing] -/2/200 -> Accuracy: 10.91005291005291 % 18900 2062
+epoch 3 started
+[Training] 0/3/200 -> Loss: 3.677366256713867 Accu: 8.0
+[Training] 100/3/200 -> Loss: 3.6863625049591064 Accu: 10.0
+[Training] 200/3/200 -> Loss: 3.67527437210083 Accu: 7.000000000000001
+[Training] 300/3/200 -> Loss: 3.719832181930542 Accu: 8.0
+[Training] 400/3/200 -> Loss: 3.7732911109924316 Accu: 11.0
+[Training] 500/3/200 -> Loss: 3.479402542114258 Accu: 14.000000000000002
+epoch 3 loss 3.504237174987793
+[Testing] -/3/200 -> Accuracy: 14.486772486772487 % 18900 2738
+epoch 4 started
+[Training] 0/4/200 -> Loss: 3.495685338973999 Accu: 13.0
+[Training] 100/4/200 -> Loss: 3.5814597606658936 Accu: 16.0
+[Training] 200/4/200 -> Loss: 3.465864896774292 Accu: 15.0
+[Training] 300/4/200 -> Loss: 3.5900180339813232 Accu: 17.0
+[Training] 400/4/200 -> Loss: 3.3092305660247803 Accu: 16.0
+[Training] 500/4/200 -> Loss: 3.267340660095215 Accu: 18.0
+epoch 4 loss 3.1242308616638184
+[Testing] -/4/200 -> Accuracy: 19.43915343915344 % 18900 3674
+epoch 5 started
+[Training] 0/5/200 -> Loss: 3.049070119857788 Accu: 26.0
+[Training] 100/5/200 -> Loss: 3.2459497451782227 Accu: 20.0
+[Training] 200/5/200 -> Loss: 3.0442373752593994 Accu: 18.0
+[Training] 300/5/200 -> Loss: 3.2018651962280273 Accu: 20.0
+[Training] 400/5/200 -> Loss: 3.207524299621582 Accu: 22.0
+[Training] 500/5/200 -> Loss: 2.791454792022705 Accu: 24.0
+epoch 5 loss 2.7002806663513184
+[Testing] -/5/200 -> Accuracy: 24.76719576719577 % 18900 4681
+epoch 6 started
+[Training] 0/6/200 -> Loss: 2.7945902347564697 Accu: 31.0
+[Training] 100/6/200 -> Loss: 2.7376773357391357 Accu: 28.999999999999996
+[Training] 200/6/200 -> Loss: 2.6855032444000244 Accu: 34.0
+[Training] 300/6/200 -> Loss: 2.9536468982696533 Accu: 31.0
+[Training] 400/6/200 -> Loss: 2.4471077919006348 Accu: 30.0
+[Training] 500/6/200 -> Loss: 2.6388168334960938 Accu: 28.999999999999996
+epoch 6 loss 2.5693960189819336
+[Testing] -/6/200 -> Accuracy: 31.026455026455025 % 18900 5864
+epoch 7 started
+[Training] 0/7/200 -> Loss: 2.4058327674865723 Accu: 43.0
+[Training] 100/7/200 -> Loss: 2.5317611694335938 Accu: 36.0
+[Training] 200/7/200 -> Loss: 2.6144564151763916 Accu: 35.0
+[Training] 300/7/200 -> Loss: 2.633187770843506 Accu: 26.0
+[Training] 400/7/200 -> Loss: 2.2863380908966064 Accu: 39.0
+[Training] 500/7/200 -> Loss: 2.2511749267578125 Accu: 42.0
+epoch 7 loss 2.048353910446167
+[Testing] -/7/200 -> Accuracy: 37.56613756613756 % 18900 7100
+epoch 8 started
+[Training] 0/8/200 -> Loss: 2.1605608463287354 Accu: 42.0
+[Training] 100/8/200 -> Loss: 2.345445156097412 Accu: 41.0
+[Training] 200/8/200 -> Loss: 2.37778377532959 Accu: 45.0
+[Training] 300/8/200 -> Loss: 2.197573184967041 Accu: 41.0
+[Training] 400/8/200 -> Loss: 2.279219627380371 Accu: 35.0
+[Training] 500/8/200 -> Loss: 2.285299777984619 Accu: 38.0
+epoch 8 loss 2.0673203468322754
+[Testing] -/8/200 -> Accuracy: 40.248677248677254 % 18900 7607
+epoch 9 started
+[Training] 0/9/200 -> Loss: 2.049715518951416 Accu: 44.0
+[Training] 100/9/200 -> Loss: 1.840997576713562 Accu: 47.0
+[Training] 200/9/200 -> Loss: 2.1756985187530518 Accu: 44.0
+[Training] 300/9/200 -> Loss: 1.7939075231552124 Accu: 43.0
+[Training] 400/9/200 -> Loss: 1.9543336629867554 Accu: 42.0
+[Training] 500/9/200 -> Loss: 2.0281667709350586 Accu: 45.0
+epoch 9 loss 1.9018313884735107
+[Testing] -/9/200 -> Accuracy: 43.64021164021164 % 18900 8248
+epoch 10 started
+[Training] 0/10/200 -> Loss: 1.519800066947937 Accu: 56.99999999999999
+[Training] 100/10/200 -> Loss: 1.9197609424591064 Accu: 49.0
+[Training] 200/10/200 -> Loss: 1.7968876361846924 Accu: 46.0
+[Training] 300/10/200 -> Loss: 1.9332927465438843 Accu: 55.00000000000001
+[Training] 400/10/200 -> Loss: 1.6895197629928589 Accu: 51.0
+[Training] 500/10/200 -> Loss: 1.7870641946792603 Accu: 54.0
+epoch 10 loss 1.500760793685913
+[Testing] -/10/200 -> Accuracy: 46.82539682539682 % 18900 8850
+epoch 11 started
+[Training] 0/11/200 -> Loss: 1.6003179550170898 Accu: 55.00000000000001
+[Training] 100/11/200 -> Loss: 1.9938870668411255 Accu: 48.0
+[Training] 200/11/200 -> Loss: 1.813490867614746 Accu: 50.0
+[Training] 300/11/200 -> Loss: 1.7118715047836304 Accu: 56.99999999999999
+[Training] 400/11/200 -> Loss: 1.6324756145477295 Accu: 47.0
+[Training] 500/11/200 -> Loss: 1.837571382522583 Accu: 45.0
+epoch 11 loss 1.5577195882797241
+[Testing] -/11/200 -> Accuracy: 49.27513227513228 % 18900 9313
+epoch 12 started
+[Training] 0/12/200 -> Loss: 1.6087591648101807 Accu: 53.0
+[Training] 100/12/200 -> Loss: 1.4209271669387817 Accu: 54.0
+[Training] 200/12/200 -> Loss: 1.6586782932281494 Accu: 52.0
+[Training] 300/12/200 -> Loss: 1.7652157545089722 Accu: 53.0
+[Training] 400/12/200 -> Loss: 1.5895447731018066 Accu: 56.00000000000001
+[Training] 500/12/200 -> Loss: 1.4527981281280518 Accu: 61.0
+epoch 12 loss 1.4484350681304932
+[Testing] -/12/200 -> Accuracy: 51.61904761904762 % 18900 9756
+epoch 13 started
+[Training] 0/13/200 -> Loss: 1.3643819093704224 Accu: 61.0
+[Training] 100/13/200 -> Loss: 1.5080376863479614 Accu: 59.0
+[Training] 200/13/200 -> Loss: 1.5432580709457397 Accu: 62.0
+[Training] 300/13/200 -> Loss: 1.5820515155792236 Accu: 56.00000000000001
+[Training] 400/13/200 -> Loss: 1.8450202941894531 Accu: 49.0
+[Training] 500/13/200 -> Loss: 1.6791777610778809 Accu: 50.0
+epoch 13 loss 1.6603186130523682
+[Testing] -/13/200 -> Accuracy: 53.39153439153439 % 18900 10091
+epoch 14 started
+[Training] 0/14/200 -> Loss: 1.3234254121780396 Accu: 64.0
+[Training] 100/14/200 -> Loss: 1.355647325515747 Accu: 57.99999999999999
+[Training] 200/14/200 -> Loss: 1.4127037525177002 Accu: 59.0
+[Training] 300/14/200 -> Loss: 1.4058501720428467 Accu: 54.0
+[Training] 400/14/200 -> Loss: 1.4487786293029785 Accu: 61.0
+[Training] 500/14/200 -> Loss: 1.272948980331421 Accu: 65.0
+epoch 14 loss 1.5214200019836426
+[Testing] -/14/200 -> Accuracy: 54.67724867724868 % 18900 10334
+epoch 15 started
+[Training] 0/15/200 -> Loss: 1.0659468173980713 Accu: 68.0
+[Training] 100/15/200 -> Loss: 1.2357683181762695 Accu: 67.0
+[Training] 200/15/200 -> Loss: 1.3777999877929688 Accu: 64.0
+[Training] 300/15/200 -> Loss: 1.7393810749053955 Accu: 54.0
+[Training] 400/15/200 -> Loss: 1.3673001527786255 Accu: 61.0
+[Training] 500/15/200 -> Loss: 1.2717207670211792 Accu: 60.0
+epoch 15 loss 1.4963258504867554
+[Testing] -/15/200 -> Accuracy: 56.52380952380952 % 18900 10683
+epoch 16 started
+[Training] 0/16/200 -> Loss: 1.1039743423461914 Accu: 66.0
+[Training] 100/16/200 -> Loss: 1.331819772720337 Accu: 62.0
+[Training] 200/16/200 -> Loss: 1.5398435592651367 Accu: 57.99999999999999
+[Training] 300/16/200 -> Loss: 1.473459005355835 Accu: 56.99999999999999
+[Training] 400/16/200 -> Loss: 0.8862922787666321 Accu: 77.0
+[Training] 500/16/200 -> Loss: 1.2802817821502686 Accu: 66.0
+epoch 16 loss 1.5217714309692383
+[Testing] -/16/200 -> Accuracy: 57.17460317460318 % 18900 10806
+epoch 17 started
+[Training] 0/17/200 -> Loss: 1.267305850982666 Accu: 63.0
+[Training] 100/17/200 -> Loss: 0.9208507537841797 Accu: 74.0
+[Training] 200/17/200 -> Loss: 1.0534437894821167 Accu: 72.0
+[Training] 300/17/200 -> Loss: 1.3059272766113281 Accu: 62.0
+[Training] 400/17/200 -> Loss: 1.2736475467681885 Accu: 65.0
+[Training] 500/17/200 -> Loss: 1.2732254266738892 Accu: 66.0
+epoch 17 loss 1.120162844657898
+[Testing] -/17/200 -> Accuracy: 58.75132275132275 % 18900 11104
+epoch 18 started
+[Training] 0/18/200 -> Loss: 1.0906572341918945 Accu: 69.0
+[Training] 100/18/200 -> Loss: 0.8111986517906189 Accu: 76.0
+[Training] 200/18/200 -> Loss: 0.942700982093811 Accu: 72.0
+[Training] 300/18/200 -> Loss: 1.2348350286483765 Accu: 65.0
+[Training] 400/18/200 -> Loss: 1.085742473602295 Accu: 70.0
+[Training] 500/18/200 -> Loss: 0.9095422625541687 Accu: 71.0
+epoch 18 loss 1.3526890277862549
+[Testing] -/18/200 -> Accuracy: 59.857142857142854 % 18900 11313
+epoch 19 started
+[Training] 0/19/200 -> Loss: 1.1072821617126465 Accu: 70.0
+[Training] 100/19/200 -> Loss: 0.8609662652015686 Accu: 78.0
+[Training] 200/19/200 -> Loss: 1.225332260131836 Accu: 67.0
+[Training] 300/19/200 -> Loss: 0.9594398736953735 Accu: 72.0
+[Training] 400/19/200 -> Loss: 0.8986457586288452 Accu: 75.0
+[Training] 500/19/200 -> Loss: 0.8345912098884583 Accu: 69.0
+epoch 19 loss 0.9044644832611084
+[Testing] -/19/200 -> Accuracy: 60.41269841269842 % 18900 11418
+epoch 20 started
+[Training] 0/20/200 -> Loss: 0.8271443247795105 Accu: 73.0
+[Training] 100/20/200 -> Loss: 0.937882661819458 Accu: 69.0
+[Training] 200/20/200 -> Loss: 0.813062310218811 Accu: 79.0
+[Training] 300/20/200 -> Loss: 0.7535912394523621 Accu: 74.0
+[Training] 400/20/200 -> Loss: 1.070961594581604 Accu: 73.0
+[Training] 500/20/200 -> Loss: 0.9715217351913452 Accu: 70.0
+epoch 20 loss 1.0707404613494873
+[Testing] -/20/200 -> Accuracy: 61.55026455026456 % 18900 11633
+epoch 21 started
+[Training] 0/21/200 -> Loss: 0.7931718230247498 Accu: 72.0
+[Training] 100/21/200 -> Loss: 0.5339031219482422 Accu: 84.0
+[Training] 200/21/200 -> Loss: 0.6949059367179871 Accu: 79.0
+[Training] 300/21/200 -> Loss: 0.7747443318367004 Accu: 78.0
+[Training] 400/21/200 -> Loss: 0.7226859927177429 Accu: 80.0
+[Training] 500/21/200 -> Loss: 1.003269076347351 Accu: 67.0
+epoch 21 loss 0.7005593180656433
+[Testing] -/21/200 -> Accuracy: 62.126984126984134 % 18900 11742
+epoch 22 started
+[Training] 0/22/200 -> Loss: 0.7118933796882629 Accu: 81.0
+[Training] 100/22/200 -> Loss: 0.8130536079406738 Accu: 72.0
+[Training] 200/22/200 -> Loss: 0.9626535177230835 Accu: 74.0
+[Training] 300/22/200 -> Loss: 0.9167633652687073 Accu: 74.0
+[Training] 400/22/200 -> Loss: 0.7754396796226501 Accu: 76.0
+[Training] 500/22/200 -> Loss: 0.9357079863548279 Accu: 75.0
+epoch 22 loss 0.9292711019515991
+[Testing] -/22/200 -> Accuracy: 62.095238095238095 % 18900 11736
+epoch 23 started
+[Training] 0/23/200 -> Loss: 0.721138596534729 Accu: 82.0
+[Training] 100/23/200 -> Loss: 0.8404030799865723 Accu: 73.0
+[Training] 200/23/200 -> Loss: 1.0049573183059692 Accu: 66.0
+[Training] 300/23/200 -> Loss: 0.8990074396133423 Accu: 74.0
+[Training] 400/23/200 -> Loss: 0.7495824694633484 Accu: 77.0
+[Training] 500/23/200 -> Loss: 0.7735094428062439 Accu: 78.0
+epoch 23 loss 0.7864948511123657
+[Testing] -/23/200 -> Accuracy: 62.682539682539684 % 18900 11847
+epoch 24 started
+[Training] 0/24/200 -> Loss: 0.544395387172699 Accu: 83.0
+[Training] 100/24/200 -> Loss: 0.5331559777259827 Accu: 82.0
+[Training] 200/24/200 -> Loss: 0.641866147518158 Accu: 81.0
+[Training] 300/24/200 -> Loss: 0.7461942434310913 Accu: 78.0
+[Training] 400/24/200 -> Loss: 0.8431088924407959 Accu: 71.0
+[Training] 500/24/200 -> Loss: 0.5684523582458496 Accu: 83.0
+epoch 24 loss 0.7797778248786926
+[Testing] -/24/200 -> Accuracy: 63.28042328042328 % 18900 11960
+epoch 25 started
+[Training] 0/25/200 -> Loss: 0.823253870010376 Accu: 77.0
+[Training] 100/25/200 -> Loss: 0.6148454546928406 Accu: 82.0
+[Training] 200/25/200 -> Loss: 0.5503280758857727 Accu: 86.0
+[Training] 300/25/200 -> Loss: 0.803355872631073 Accu: 74.0
+[Training] 400/25/200 -> Loss: 0.7357841730117798 Accu: 74.0
+[Training] 500/25/200 -> Loss: 0.708757221698761 Accu: 78.0
+epoch 25 loss 0.7539801001548767
+[Testing] -/25/200 -> Accuracy: 62.41269841269841 % 18900 11796
+epoch 26 started
+[Training] 0/26/200 -> Loss: 0.6854355335235596 Accu: 77.0
+[Training] 100/26/200 -> Loss: 0.6501060724258423 Accu: 80.0
+[Training] 200/26/200 -> Loss: 0.6615030765533447 Accu: 80.0
+[Training] 300/26/200 -> Loss: 0.7535812854766846 Accu: 78.0
+[Training] 400/26/200 -> Loss: 0.5906427502632141 Accu: 83.0
+[Training] 500/26/200 -> Loss: 0.6429264545440674 Accu: 80.0
+epoch 26 loss 0.8540450930595398
+[Testing] -/26/200 -> Accuracy: 63.73015873015873 % 18900 12045
+epoch 27 started
+[Training] 0/27/200 -> Loss: 0.4997970461845398 Accu: 84.0
+[Training] 100/27/200 -> Loss: 0.5277680158615112 Accu: 83.0
+[Training] 200/27/200 -> Loss: 0.6094527244567871 Accu: 83.0
+[Training] 300/27/200 -> Loss: 0.6860765814781189 Accu: 77.0
+[Training] 400/27/200 -> Loss: 0.7463200092315674 Accu: 78.0
+[Training] 500/27/200 -> Loss: 0.2944091856479645 Accu: 90.0
+epoch 27 loss 0.6961885094642639
+[Testing] -/27/200 -> Accuracy: 64.32275132275133 % 18900 12157
+epoch 28 started
+[Training] 0/28/200 -> Loss: 0.4823939800262451 Accu: 84.0
+[Training] 100/28/200 -> Loss: 0.6303926706314087 Accu: 85.0
+[Training] 200/28/200 -> Loss: 0.4293287992477417 Accu: 86.0
+[Training] 300/28/200 -> Loss: 0.5479785799980164 Accu: 86.0
+[Training] 400/28/200 -> Loss: 0.6739987134933472 Accu: 78.0
+[Training] 500/28/200 -> Loss: 0.6629865765571594 Accu: 76.0
+epoch 28 loss 0.72829270362854
+[Testing] -/28/200 -> Accuracy: 64.19576719576719 % 18900 12133
+epoch 29 started
+[Training] 0/29/200 -> Loss: 0.44483688473701477 Accu: 87.0
+[Training] 100/29/200 -> Loss: 0.44560402631759644 Accu: 88.0
+[Training] 200/29/200 -> Loss: 0.30598002672195435 Accu: 92.0
+[Training] 300/29/200 -> Loss: 0.5348799228668213 Accu: 85.0
+[Training] 400/29/200 -> Loss: 0.5649277567863464 Accu: 83.0
+[Training] 500/29/200 -> Loss: 0.555850625038147 Accu: 86.0
+epoch 29 loss 0.4653983414173126
+[Testing] -/29/200 -> Accuracy: 64.86243386243386 % 18900 12259
+epoch 30 started
+[Training] 0/30/200 -> Loss: 0.513719379901886 Accu: 84.0
+[Training] 100/30/200 -> Loss: 0.5042921304702759 Accu: 84.0
+[Training] 200/30/200 -> Loss: 0.4090656042098999 Accu: 89.0
+[Training] 300/30/200 -> Loss: 0.5477461814880371 Accu: 84.0
+[Training] 400/30/200 -> Loss: 0.4982648491859436 Accu: 81.0
+[Training] 500/30/200 -> Loss: 0.6667348742485046 Accu: 81.0
+epoch 30 loss 0.6561428308486938
+[Testing] -/30/200 -> Accuracy: 64.80423280423281 % 18900 12248
+epoch 31 started
+[Training] 0/31/200 -> Loss: 0.5147932767868042 Accu: 83.0
+[Training] 100/31/200 -> Loss: 0.5641182065010071 Accu: 81.0
+[Training] 200/31/200 -> Loss: 0.5932401418685913 Accu: 86.0
+[Training] 300/31/200 -> Loss: 0.6317737698554993 Accu: 80.0
+[Training] 400/31/200 -> Loss: 0.5131511092185974 Accu: 87.0
+[Training] 500/31/200 -> Loss: 0.2407979965209961 Accu: 92.0
+epoch 31 loss 0.29582881927490234
+[Testing] -/31/200 -> Accuracy: 65.07936507936508 % 18900 12300
+epoch 32 started
+[Training] 0/32/200 -> Loss: 0.3646552562713623 Accu: 87.0
+[Training] 100/32/200 -> Loss: 0.3780127763748169 Accu: 90.0
+[Training] 200/32/200 -> Loss: 0.5552163124084473 Accu: 85.0
+[Training] 300/32/200 -> Loss: 0.5502625703811646 Accu: 83.0
+[Training] 400/32/200 -> Loss: 0.4873040020465851 Accu: 83.0
+[Training] 500/32/200 -> Loss: 0.4889717400074005 Accu: 82.0
+epoch 32 loss 0.4793991446495056
+[Testing] -/32/200 -> Accuracy: 65.58730158730158 % 18900 12396
+epoch 33 started
+[Training] 0/33/200 -> Loss: 0.4548952579498291 Accu: 83.0
+[Training] 100/33/200 -> Loss: 0.35888171195983887 Accu: 87.0
+[Training] 200/33/200 -> Loss: 0.7386177182197571 Accu: 83.0
+[Training] 300/33/200 -> Loss: 0.6591112017631531 Accu: 82.0
+[Training] 400/33/200 -> Loss: 0.44876575469970703 Accu: 86.0
+[Training] 500/33/200 -> Loss: 0.5752899646759033 Accu: 83.0
+epoch 33 loss 0.6343250870704651
+[Testing] -/33/200 -> Accuracy: 65.53968253968254 % 18900 12387
+epoch 34 started
+[Training] 0/34/200 -> Loss: 0.3027746081352234 Accu: 93.0
+[Training] 100/34/200 -> Loss: 0.3559085428714752 Accu: 89.0
+[Training] 200/34/200 -> Loss: 0.3475119471549988 Accu: 90.0
+[Training] 300/34/200 -> Loss: 0.43931591510772705 Accu: 87.0
+[Training] 400/34/200 -> Loss: 0.499576598405838 Accu: 86.0
+[Training] 500/34/200 -> Loss: 0.4902711808681488 Accu: 86.0
+epoch 34 loss 0.42712193727493286
+[Testing] -/34/200 -> Accuracy: 65.27513227513228 % 18900 12337
+epoch 35 started
+[Training] 0/35/200 -> Loss: 0.4261787533760071 Accu: 86.0
+[Training] 100/35/200 -> Loss: 0.27704164385795593 Accu: 90.0
+[Training] 200/35/200 -> Loss: 0.5029900074005127 Accu: 85.0
+[Training] 300/35/200 -> Loss: 0.3300386667251587 Accu: 92.0
+[Training] 400/35/200 -> Loss: 0.4264603853225708 Accu: 86.0
+[Training] 500/35/200 -> Loss: 0.6354336738586426 Accu: 83.0
+epoch 35 loss 0.469366192817688
+[Testing] -/35/200 -> Accuracy: 65.93650793650794 % 18900 12462
+epoch 36 started
+[Training] 0/36/200 -> Loss: 0.38975515961647034 Accu: 82.0
+[Training] 100/36/200 -> Loss: 0.2175263911485672 Accu: 95.0
+[Training] 200/36/200 -> Loss: 0.3838404715061188 Accu: 90.0
+[Training] 300/36/200 -> Loss: 0.5214051604270935 Accu: 86.0
+[Training] 400/36/200 -> Loss: 0.24211354553699493 Accu: 91.0
+[Training] 500/36/200 -> Loss: 0.40926143527030945 Accu: 85.0
+epoch 36 loss 0.3625725507736206
+[Testing] -/36/200 -> Accuracy: 65.81481481481481 % 18900 12439
+epoch 37 started
+[Training] 0/37/200 -> Loss: 0.32615557312965393 Accu: 90.0
+[Training] 100/37/200 -> Loss: 0.38890743255615234 Accu: 85.0
+[Training] 200/37/200 -> Loss: 0.39620667695999146 Accu: 89.0
+[Training] 300/37/200 -> Loss: 0.23606832325458527 Accu: 92.0
+[Training] 400/37/200 -> Loss: 0.4325762093067169 Accu: 87.0
+[Training] 500/37/200 -> Loss: 0.39583858847618103 Accu: 85.0
+epoch 37 loss 0.35432204604148865
+[Testing] -/37/200 -> Accuracy: 66.13756613756614 % 18900 12500
+epoch 38 started
+[Training] 0/38/200 -> Loss: 0.22743554413318634 Accu: 93.0
+[Training] 100/38/200 -> Loss: 0.31407099962234497 Accu: 92.0
+[Training] 200/38/200 -> Loss: 0.3387252688407898 Accu: 88.0
+[Training] 300/38/200 -> Loss: 0.44656017422676086 Accu: 84.0
+[Training] 400/38/200 -> Loss: 0.5714618563652039 Accu: 81.0
+[Training] 500/38/200 -> Loss: 0.26892292499542236 Accu: 91.0
+epoch 38 loss 0.42770394682884216
+[Testing] -/38/200 -> Accuracy: 66.65608465608466 % 18900 12598
+epoch 39 started
+[Training] 0/39/200 -> Loss: 0.2040412724018097 Accu: 95.0
+[Training] 100/39/200 -> Loss: 0.31847164034843445 Accu: 93.0
+[Training] 200/39/200 -> Loss: 0.42119675874710083 Accu: 87.0
+[Training] 300/39/200 -> Loss: 0.4607202112674713 Accu: 87.0
+[Training] 400/39/200 -> Loss: 0.4310515224933624 Accu: 82.0
+[Training] 500/39/200 -> Loss: 0.3963625431060791 Accu: 87.0
+epoch 39 loss 0.31107527017593384
+[Testing] -/39/200 -> Accuracy: 66.28042328042328 % 18900 12527
+epoch 40 started
+[Training] 0/40/200 -> Loss: 0.1826109141111374 Accu: 95.0
+[Training] 100/40/200 -> Loss: 0.33435070514678955 Accu: 91.0
+[Training] 200/40/200 -> Loss: 0.2985299825668335 Accu: 90.0
+[Training] 300/40/200 -> Loss: 0.3278227150440216 Accu: 84.0
+[Training] 400/40/200 -> Loss: 0.6375858187675476 Accu: 86.0
+[Training] 500/40/200 -> Loss: 0.4666876494884491 Accu: 88.0
+epoch 40 loss 0.22007641196250916
+[Testing] -/40/200 -> Accuracy: 66.67195767195767 % 18900 12601
+epoch 41 started
+[Training] 0/41/200 -> Loss: 0.28579095005989075 Accu: 93.0
+[Training] 100/41/200 -> Loss: 0.22132878005504608 Accu: 91.0
+[Training] 200/41/200 -> Loss: 0.24578434228897095 Accu: 91.0
+[Training] 300/41/200 -> Loss: 0.5246639847755432 Accu: 84.0
+[Training] 400/41/200 -> Loss: 0.44262465834617615 Accu: 84.0
+[Training] 500/41/200 -> Loss: 0.2936576306819916 Accu: 91.0
+epoch 41 loss 0.3646853268146515
+[Testing] -/41/200 -> Accuracy: 66.66137566137567 % 18900 12599
+epoch 42 started
+[Training] 0/42/200 -> Loss: 0.2811287045478821 Accu: 89.0
+[Training] 100/42/200 -> Loss: 0.31957748532295227 Accu: 91.0
+[Training] 200/42/200 -> Loss: 0.3110751211643219 Accu: 92.0
+[Training] 300/42/200 -> Loss: 0.20727966725826263 Accu: 94.0
+[Training] 400/42/200 -> Loss: 0.37140563130378723 Accu: 90.0
+[Training] 500/42/200 -> Loss: 0.3065870702266693 Accu: 93.0
+epoch 42 loss 0.3580291271209717
+[Testing] -/42/200 -> Accuracy: 66.35449735449735 % 18900 12541
+epoch 43 started
+[Training] 0/43/200 -> Loss: 0.23121464252471924 Accu: 94.0
+[Training] 100/43/200 -> Loss: 0.27214744687080383 Accu: 92.0
+[Training] 200/43/200 -> Loss: 0.19667977094650269 Accu: 95.0
+[Training] 300/43/200 -> Loss: 0.28855693340301514 Accu: 88.0
+[Training] 400/43/200 -> Loss: 0.35336506366729736 Accu: 90.0
+[Training] 500/43/200 -> Loss: 0.19439458847045898 Accu: 93.0
+epoch 43 loss 0.2484888881444931
+[Testing] -/43/200 -> Accuracy: 66.12169312169313 % 18900 12497
+epoch 44 started
+[Training] 0/44/200 -> Loss: 0.24889224767684937 Accu: 93.0
+[Training] 100/44/200 -> Loss: 0.24606308341026306 Accu: 90.0
+[Training] 200/44/200 -> Loss: 0.2927209138870239 Accu: 92.0
+[Training] 300/44/200 -> Loss: 0.27447277307510376 Accu: 93.0
+[Training] 400/44/200 -> Loss: 0.17362460494041443 Accu: 93.0
+[Training] 500/44/200 -> Loss: 0.5608175992965698 Accu: 81.0
+epoch 44 loss 0.49496594071388245
+[Testing] -/44/200 -> Accuracy: 66.98941798941799 % 18900 12661
+epoch 45 started
+[Training] 0/45/200 -> Loss: 0.4489493668079376 Accu: 89.0
+[Training] 100/45/200 -> Loss: 0.3304626941680908 Accu: 91.0
+[Training] 200/45/200 -> Loss: 0.22161206603050232 Accu: 93.0
+[Training] 300/45/200 -> Loss: 0.2811740040779114 Accu: 91.0
+[Training] 400/45/200 -> Loss: 0.24139194190502167 Accu: 89.0
+[Training] 500/45/200 -> Loss: 0.3728412389755249 Accu: 88.0
+epoch 45 loss 0.22073334455490112
+[Testing] -/45/200 -> Accuracy: 66.44973544973544 % 18900 12559
+epoch 46 started
+[Training] 0/46/200 -> Loss: 0.21272464096546173 Accu: 93.0
+[Training] 100/46/200 -> Loss: 0.3649729788303375 Accu: 91.0
+[Training] 200/46/200 -> Loss: 0.324374794960022 Accu: 91.0
+[Training] 300/46/200 -> Loss: 0.13795949518680573 Accu: 96.0
+[Training] 400/46/200 -> Loss: 0.27745160460472107 Accu: 91.0
+[Training] 500/46/200 -> Loss: 0.43234729766845703 Accu: 85.0
+epoch 46 loss 0.20875214040279388
+[Testing] -/46/200 -> Accuracy: 66.93121693121694 % 18900 12650
+epoch 47 started
+[Training] 0/47/200 -> Loss: 0.21019601821899414 Accu: 94.0
+[Training] 100/47/200 -> Loss: 0.26870518922805786 Accu: 91.0
+[Training] 200/47/200 -> Loss: 0.11510660499334335 Accu: 95.0
+[Training] 300/47/200 -> Loss: 0.34679070115089417 Accu: 93.0
+[Training] 400/47/200 -> Loss: 0.3582252562046051 Accu: 89.0
+[Training] 500/47/200 -> Loss: 0.14796015620231628 Accu: 95.0
+epoch 47 loss 0.5000761151313782
+[Testing] -/47/200 -> Accuracy: 66.77248677248677 % 18900 12620
+epoch 48 started
+[Training] 0/48/200 -> Loss: 0.24626225233078003 Accu: 91.0
+[Training] 100/48/200 -> Loss: 0.28788888454437256 Accu: 90.0
+[Training] 200/48/200 -> Loss: 0.3907930850982666 Accu: 90.0
+[Training] 300/48/200 -> Loss: 0.20850950479507446 Accu: 94.0
+[Training] 400/48/200 -> Loss: 0.28990474343299866 Accu: 93.0
+[Training] 500/48/200 -> Loss: 0.39199137687683105 Accu: 89.0
+epoch 48 loss 0.3844529390335083
+[Testing] -/48/200 -> Accuracy: 67.13227513227513 % 18900 12688
+epoch 49 started
+[Training] 0/49/200 -> Loss: 0.38011276721954346 Accu: 91.0
+[Training] 100/49/200 -> Loss: 0.17498527467250824 Accu: 96.0
+[Training] 200/49/200 -> Loss: 0.2875140309333801 Accu: 92.0
+[Training] 300/49/200 -> Loss: 0.288917601108551 Accu: 93.0
+[Training] 400/49/200 -> Loss: 0.3917124271392822 Accu: 94.0
+[Training] 500/49/200 -> Loss: 0.33123454451560974 Accu: 92.0
+epoch 49 loss 0.427283376455307
+[Testing] -/49/200 -> Accuracy: 67.12169312169313 % 18900 12686
+epoch 50 started
+[Training] 0/50/200 -> Loss: 0.25564277172088623 Accu: 90.0
+[Training] 100/50/200 -> Loss: 0.3178943395614624 Accu: 91.0
+[Training] 200/50/200 -> Loss: 0.43582451343536377 Accu: 88.0
+[Training] 300/50/200 -> Loss: 0.2470395863056183 Accu: 91.0
+[Training] 400/50/200 -> Loss: 0.2892223298549652 Accu: 91.0
+[Training] 500/50/200 -> Loss: 0.283128559589386 Accu: 89.0
+epoch 50 loss 0.17830637097358704
+[Testing] -/50/200 -> Accuracy: 67.03703703703704 % 18900 12670
+epoch 51 started
+[Training] 0/51/200 -> Loss: 0.3031071424484253 Accu: 92.0
+[Training] 100/51/200 -> Loss: 0.1595633178949356 Accu: 94.0
+[Training] 200/51/200 -> Loss: 0.17267519235610962 Accu: 95.0
+[Training] 300/51/200 -> Loss: 0.16769808530807495 Accu: 94.0
+[Training] 400/51/200 -> Loss: 0.3912474811077118 Accu: 87.0
+[Training] 500/51/200 -> Loss: 0.38760310411453247 Accu: 89.0
+epoch 51 loss 0.21716956794261932
+[Testing] -/51/200 -> Accuracy: 67.13227513227513 % 18900 12688
+epoch 52 started
+[Training] 0/52/200 -> Loss: 0.1493678241968155 Accu: 95.0
+[Training] 100/52/200 -> Loss: 0.20347481966018677 Accu: 91.0
+[Training] 200/52/200 -> Loss: 0.1583925187587738 Accu: 96.0
+[Training] 300/52/200 -> Loss: 0.16354559361934662 Accu: 93.0
+[Training] 400/52/200 -> Loss: 0.08487742394208908 Accu: 97.0
+[Training] 500/52/200 -> Loss: 0.17700572311878204 Accu: 92.0
+epoch 52 loss 0.19976402819156647
+[Testing] -/52/200 -> Accuracy: 66.61904761904762 % 18900 12591
+epoch 53 started
+[Training] 0/53/200 -> Loss: 0.30323392152786255 Accu: 93.0
+[Training] 100/53/200 -> Loss: 0.24738863110542297 Accu: 91.0
+[Training] 200/53/200 -> Loss: 0.3415502905845642 Accu: 92.0
+[Training] 300/53/200 -> Loss: 0.19088055193424225 Accu: 93.0
+[Training] 400/53/200 -> Loss: 0.19935211539268494 Accu: 94.0
+[Training] 500/53/200 -> Loss: 0.29503750801086426 Accu: 92.0
+epoch 53 loss 0.5281820893287659
+[Testing] -/53/200 -> Accuracy: 67.0952380952381 % 18900 12681
+epoch 54 started
+[Training] 0/54/200 -> Loss: 0.2854512333869934 Accu: 92.0
+[Training] 100/54/200 -> Loss: 0.39894038438796997 Accu: 89.0
+[Training] 200/54/200 -> Loss: 0.19448037445545197 Accu: 94.0
+[Training] 300/54/200 -> Loss: 0.3040054738521576 Accu: 92.0
+[Training] 400/54/200 -> Loss: 0.2570456564426422 Accu: 91.0
+[Training] 500/54/200 -> Loss: 0.321726530790329 Accu: 92.0
+epoch 54 loss 0.30070772767066956
+[Testing] -/54/200 -> Accuracy: 68.11111111111111 % 18900 12873
+epoch 55 started
+[Training] 0/55/200 -> Loss: 0.22010305523872375 Accu: 91.0
+[Training] 100/55/200 -> Loss: 0.3143545389175415 Accu: 89.0
+[Training] 200/55/200 -> Loss: 0.2647872269153595 Accu: 93.0
+[Training] 300/55/200 -> Loss: 0.29729825258255005 Accu: 93.0
+[Training] 400/55/200 -> Loss: 0.1291791796684265 Accu: 95.0
+[Training] 500/55/200 -> Loss: 0.26096194982528687 Accu: 91.0
+epoch 55 loss 0.2886832654476166
+[Testing] -/55/200 -> Accuracy: 66.98941798941799 % 18900 12661
+epoch 56 started
+[Training] 0/56/200 -> Loss: 0.3240255117416382 Accu: 93.0
+[Training] 100/56/200 -> Loss: 0.19227153062820435 Accu: 93.0
+[Training] 200/56/200 -> Loss: 0.27811941504478455 Accu: 94.0
+[Training] 300/56/200 -> Loss: 0.25652655959129333 Accu: 95.0
+[Training] 400/56/200 -> Loss: 0.2749641537666321 Accu: 92.0
+[Training] 500/56/200 -> Loss: 0.24949589371681213 Accu: 90.0
+epoch 56 loss 0.28248360753059387
+[Testing] -/56/200 -> Accuracy: 68.03703703703704 % 18900 12859
+epoch 57 started
+[Training] 0/57/200 -> Loss: 0.15434569120407104 Accu: 94.0
+[Training] 100/57/200 -> Loss: 0.3435887098312378 Accu: 92.0
+[Training] 200/57/200 -> Loss: 0.10893364995718002 Accu: 95.0
+[Training] 300/57/200 -> Loss: 0.2544834017753601 Accu: 94.0
+[Training] 400/57/200 -> Loss: 0.286761999130249 Accu: 91.0
+[Training] 500/57/200 -> Loss: 0.41321781277656555 Accu: 85.0
+epoch 57 loss 0.22065739333629608
+[Testing] -/57/200 -> Accuracy: 67.94179894179894 % 18900 12841
+epoch 58 started
+[Training] 0/58/200 -> Loss: 0.3658040165901184 Accu: 89.0
+[Training] 100/58/200 -> Loss: 0.24097803235054016 Accu: 93.0
+[Training] 200/58/200 -> Loss: 0.3524116575717926 Accu: 91.0
+[Training] 300/58/200 -> Loss: 0.16851507127285004 Accu: 93.0
+[Training] 400/58/200 -> Loss: 0.3054646849632263 Accu: 89.0
+[Training] 500/58/200 -> Loss: 0.20629139244556427 Accu: 90.0
+epoch 58 loss 0.31071093678474426
+[Testing] -/58/200 -> Accuracy: 67.44444444444444 % 18900 12747
+epoch 59 started
+[Training] 0/59/200 -> Loss: 0.45408234000205994 Accu: 88.0
+[Training] 100/59/200 -> Loss: 0.2554289698600769 Accu: 94.0
+[Training] 200/59/200 -> Loss: 0.2658822536468506 Accu: 93.0
+[Training] 300/59/200 -> Loss: 0.2472383677959442 Accu: 93.0
+[Training] 400/59/200 -> Loss: 0.24283409118652344 Accu: 94.0
+[Training] 500/59/200 -> Loss: 0.2505238354206085 Accu: 92.0
+epoch 59 loss 0.4319605231285095
+[Testing] -/59/200 -> Accuracy: 68.35449735449735 % 18900 12919
+epoch 60 started
+[Training] 0/60/200 -> Loss: 0.20397000014781952 Accu: 95.0
+[Training] 100/60/200 -> Loss: 0.21973003447055817 Accu: 93.0
+[Training] 200/60/200 -> Loss: 0.25286149978637695 Accu: 93.0
+[Training] 300/60/200 -> Loss: 0.12850111722946167 Accu: 96.0
+[Training] 400/60/200 -> Loss: 0.24596872925758362 Accu: 93.0
+[Training] 500/60/200 -> Loss: 0.26051101088523865 Accu: 93.0
+epoch 60 loss 0.3372495174407959
+[Testing] -/60/200 -> Accuracy: 67.87830687830689 % 18900 12829
+epoch 61 started
+[Training] 0/61/200 -> Loss: 0.1835806667804718 Accu: 95.0
+[Training] 100/61/200 -> Loss: 0.08287662267684937 Accu: 98.0
+[Training] 200/61/200 -> Loss: 0.21382302045822144 Accu: 96.0
+[Training] 300/61/200 -> Loss: 0.27614039182662964 Accu: 91.0
+[Training] 400/61/200 -> Loss: 0.2806694507598877 Accu: 92.0
+[Training] 500/61/200 -> Loss: 0.241322323679924 Accu: 91.0
+epoch 61 loss 0.3088093101978302
+[Testing] -/61/200 -> Accuracy: 67.87830687830689 % 18900 12829
+epoch 62 started
+[Training] 0/62/200 -> Loss: 0.3049614429473877 Accu: 91.0
+[Training] 100/62/200 -> Loss: 0.22513645887374878 Accu: 92.0
+[Training] 200/62/200 -> Loss: 0.23834575712680817 Accu: 92.0
+[Training] 300/62/200 -> Loss: 0.2206735461950302 Accu: 95.0
+[Training] 400/62/200 -> Loss: 0.3175497353076935 Accu: 90.0
+[Training] 500/62/200 -> Loss: 0.15768025815486908 Accu: 94.0
+epoch 62 loss 0.3081914484500885
+[Testing] -/62/200 -> Accuracy: 68.53439153439153 % 18900 12953
+epoch 63 started
+[Training] 0/63/200 -> Loss: 0.17898227274417877 Accu: 95.0
+[Training] 100/63/200 -> Loss: 0.31031131744384766 Accu: 91.0
+[Training] 200/63/200 -> Loss: 0.22276374697685242 Accu: 95.0
+[Training] 300/63/200 -> Loss: 0.08737820386886597 Accu: 98.0
+[Training] 400/63/200 -> Loss: 0.3130791485309601 Accu: 91.0
+[Training] 500/63/200 -> Loss: 0.326437771320343 Accu: 92.0
+epoch 63 loss 0.1586001068353653
+[Testing] -/63/200 -> Accuracy: 67.92592592592592 % 18900 12838
+epoch 64 started
+[Training] 0/64/200 -> Loss: 0.47429728507995605 Accu: 86.0
+[Training] 100/64/200 -> Loss: 0.2671717703342438 Accu: 91.0
+[Training] 200/64/200 -> Loss: 0.1314382702112198 Accu: 95.0
+[Training] 300/64/200 -> Loss: 0.20025554299354553 Accu: 93.0
+[Training] 400/64/200 -> Loss: 0.17975963652133942 Accu: 96.0
+[Training] 500/64/200 -> Loss: 0.24206452071666718 Accu: 92.0
+epoch 64 loss 0.2959534525871277
+[Testing] -/64/200 -> Accuracy: 67.24338624338624 % 18900 12709
+epoch 65 started
+[Training] 0/65/200 -> Loss: 0.40719905495643616 Accu: 89.0
+[Training] 100/65/200 -> Loss: 0.11205460876226425 Accu: 97.0
+[Training] 200/65/200 -> Loss: 0.05888472497463226 Accu: 96.0
+[Training] 300/65/200 -> Loss: 0.3450898230075836 Accu: 89.0
+[Training] 400/65/200 -> Loss: 0.2922833561897278 Accu: 90.0
+[Training] 500/65/200 -> Loss: 0.23870576918125153 Accu: 94.0
+epoch 65 loss 0.19896888732910156
+[Testing] -/65/200 -> Accuracy: 67.48677248677248 % 18900 12755
+epoch 66 started
+[Training] 0/66/200 -> Loss: 0.25590693950653076 Accu: 89.0
+[Training] 100/66/200 -> Loss: 0.2507776916027069 Accu: 93.0
+[Training] 200/66/200 -> Loss: 0.22867770493030548 Accu: 92.0
+[Training] 300/66/200 -> Loss: 0.08210184425115585 Accu: 97.0
+[Training] 400/66/200 -> Loss: 0.29938164353370667 Accu: 89.0
+[Training] 500/66/200 -> Loss: 0.20103305578231812 Accu: 95.0
+epoch 66 loss 0.2657715082168579
+[Testing] -/66/200 -> Accuracy: 67.97883597883599 % 18900 12848
+epoch 67 started
+[Training] 0/67/200 -> Loss: 0.1138879656791687 Accu: 97.0
+[Training] 100/67/200 -> Loss: 0.13549047708511353 Accu: 96.0
+[Training] 200/67/200 -> Loss: 0.19552448391914368 Accu: 94.0
+[Training] 300/67/200 -> Loss: 0.09098350256681442 Accu: 95.0
+[Training] 400/67/200 -> Loss: 0.3649507761001587 Accu: 86.0
+[Training] 500/67/200 -> Loss: 0.20797502994537354 Accu: 95.0
+epoch 67 loss 0.30628862977027893
+[Testing] -/67/200 -> Accuracy: 67.84126984126985 % 18900 12822
+epoch 68 started
+[Training] 0/68/200 -> Loss: 0.268209308385849 Accu: 95.0
+[Training] 100/68/200 -> Loss: 0.27050548791885376 Accu: 90.0
+[Training] 200/68/200 -> Loss: 0.3203018307685852 Accu: 91.0
+[Training] 300/68/200 -> Loss: 0.13713985681533813 Accu: 96.0
+[Training] 400/68/200 -> Loss: 0.055340975522994995 Accu: 98.0
+[Training] 500/68/200 -> Loss: 0.13695386052131653 Accu: 95.0
+epoch 68 loss 0.2233940064907074
+[Testing] -/68/200 -> Accuracy: 68.23809523809524 % 18900 12897
+epoch 69 started
+[Training] 0/69/200 -> Loss: 0.15789760649204254 Accu: 96.0
+[Training] 100/69/200 -> Loss: 0.2577824294567108 Accu: 92.0
+[Training] 200/69/200 -> Loss: 0.22960712015628815 Accu: 91.0
+[Training] 300/69/200 -> Loss: 0.11090553551912308 Accu: 96.0
+[Training] 400/69/200 -> Loss: 0.2210572063922882 Accu: 91.0
+[Training] 500/69/200 -> Loss: 0.1821589469909668 Accu: 94.0
+epoch 69 loss 0.3598520755767822
+[Testing] -/69/200 -> Accuracy: 68.03174603174604 % 18900 12858
+epoch 70 started
+[Training] 0/70/200 -> Loss: 0.2727399468421936 Accu: 93.0
+[Training] 100/70/200 -> Loss: 0.12081963568925858 Accu: 95.0
+[Training] 200/70/200 -> Loss: 0.08704963326454163 Accu: 96.0
+[Training] 300/70/200 -> Loss: 0.1518576443195343 Accu: 95.0
+[Training] 400/70/200 -> Loss: 0.12445755302906036 Accu: 96.0
+[Training] 500/70/200 -> Loss: 0.1293361335992813 Accu: 95.0
+epoch 70 loss 0.2836172580718994
+[Testing] -/70/200 -> Accuracy: 68.25925925925927 % 18900 12901
+epoch 71 started
+[Training] 0/71/200 -> Loss: 0.5472042560577393 Accu: 91.0
+[Training] 100/71/200 -> Loss: 0.13479986786842346 Accu: 96.0
+[Training] 200/71/200 -> Loss: 0.06222294270992279 Accu: 98.0
+[Training] 300/71/200 -> Loss: 0.19850078225135803 Accu: 96.0
+[Training] 400/71/200 -> Loss: 0.2664780020713806 Accu: 93.0
+[Training] 500/71/200 -> Loss: 0.21233338117599487 Accu: 93.0
+epoch 71 loss 0.26432493329048157
+[Testing] -/71/200 -> Accuracy: 68.54497354497354 % 18900 12955
+epoch 72 started
+[Training] 0/72/200 -> Loss: 0.2654259204864502 Accu: 93.0
+[Training] 100/72/200 -> Loss: 0.1276131272315979 Accu: 95.0
+[Training] 200/72/200 -> Loss: 0.11140162497758865 Accu: 97.0
+[Training] 300/72/200 -> Loss: 0.1153198629617691 Accu: 95.0
+[Training] 400/72/200 -> Loss: 0.320785254240036 Accu: 94.0
+[Training] 500/72/200 -> Loss: 0.3108728528022766 Accu: 93.0
+epoch 72 loss 0.16363267600536346
+[Testing] -/72/200 -> Accuracy: 68.33862433862434 % 18900 12916
+epoch 73 started
+[Training] 0/73/200 -> Loss: 0.11119195818901062 Accu: 97.0
+[Training] 100/73/200 -> Loss: 0.34601590037345886 Accu: 93.0
+[Training] 200/73/200 -> Loss: 0.14298397302627563 Accu: 93.0
+[Training] 300/73/200 -> Loss: 0.22172050178050995 Accu: 94.0
+[Training] 400/73/200 -> Loss: 0.20338860154151917 Accu: 95.0
+[Training] 500/73/200 -> Loss: 0.1140800192952156 Accu: 97.0
+epoch 73 loss 0.254706472158432
+[Testing] -/73/200 -> Accuracy: 68.86243386243386 % 18900 13015
+epoch 74 started
+[Training] 0/74/200 -> Loss: 0.1561025083065033 Accu: 96.0
+[Training] 100/74/200 -> Loss: 0.06777782738208771 Accu: 97.0
+[Training] 200/74/200 -> Loss: 0.11265382915735245 Accu: 96.0
+[Training] 300/74/200 -> Loss: 0.15147525072097778 Accu: 95.0
+[Training] 400/74/200 -> Loss: 0.19089417159557343 Accu: 95.0
+[Training] 500/74/200 -> Loss: 0.13237638771533966 Accu: 96.0
+epoch 74 loss 0.13417112827301025
+[Testing] -/74/200 -> Accuracy: 68.74074074074073 % 18900 12992
+epoch 75 started
+[Training] 0/75/200 -> Loss: 0.19505292177200317 Accu: 93.0
+[Training] 100/75/200 -> Loss: 0.09568063914775848 Accu: 96.0
+[Training] 200/75/200 -> Loss: 0.2900729775428772 Accu: 94.0
+[Training] 300/75/200 -> Loss: 0.5148122310638428 Accu: 89.0
+[Training] 400/75/200 -> Loss: 0.1389816701412201 Accu: 96.0
+[Training] 500/75/200 -> Loss: 0.41850101947784424 Accu: 90.0
+epoch 75 loss 0.3279949128627777
+[Testing] -/75/200 -> Accuracy: 67.7989417989418 % 18900 12814
+epoch 76 started
+[Training] 0/76/200 -> Loss: 0.18827174603939056 Accu: 95.0
+[Training] 100/76/200 -> Loss: 0.2100556492805481 Accu: 95.0
+[Training] 200/76/200 -> Loss: 0.30251452326774597 Accu: 94.0
+[Training] 300/76/200 -> Loss: 0.22330079972743988 Accu: 90.0
+[Training] 400/76/200 -> Loss: 0.18513540923595428 Accu: 96.0
+[Training] 500/76/200 -> Loss: 0.2274980992078781 Accu: 94.0
+epoch 76 loss 0.24550579488277435
+[Testing] -/76/200 -> Accuracy: 68.7936507936508 % 18900 13002
+epoch 77 started
+[Training] 0/77/200 -> Loss: 0.11318234354257584 Accu: 96.0
+[Training] 100/77/200 -> Loss: 0.21573279798030853 Accu: 95.0
+[Training] 200/77/200 -> Loss: 0.30317628383636475 Accu: 90.0
+[Training] 300/77/200 -> Loss: 0.2307090014219284 Accu: 95.0
+[Training] 400/77/200 -> Loss: 0.14171816408634186 Accu: 94.0
+[Training] 500/77/200 -> Loss: 0.21301795542240143 Accu: 94.0
+epoch 77 loss 0.17793560028076172
+[Testing] -/77/200 -> Accuracy: 68.71428571428572 % 18900 12987
+epoch 78 started
+[Training] 0/78/200 -> Loss: 0.170021191239357 Accu: 91.0
+[Training] 100/78/200 -> Loss: 0.0975073054432869 Accu: 97.0
+[Training] 200/78/200 -> Loss: 0.11510303616523743 Accu: 96.0
+[Training] 300/78/200 -> Loss: 0.14872607588768005 Accu: 97.0
+[Training] 400/78/200 -> Loss: 0.16787326335906982 Accu: 93.0
+[Training] 500/78/200 -> Loss: 0.36335253715515137 Accu: 90.0
+epoch 78 loss 0.20675787329673767
+[Testing] -/78/200 -> Accuracy: 67.87830687830689 % 18900 12829
+epoch 79 started
+[Training] 0/79/200 -> Loss: 0.13447654247283936 Accu: 95.0
+[Training] 100/79/200 -> Loss: 0.08210411667823792 Accu: 97.0
+[Training] 200/79/200 -> Loss: 0.1453211009502411 Accu: 97.0
+[Training] 300/79/200 -> Loss: 0.15443775057792664 Accu: 95.0
+[Training] 400/79/200 -> Loss: 0.27788615226745605 Accu: 92.0
+[Training] 500/79/200 -> Loss: 0.16647112369537354 Accu: 93.0
+epoch 79 loss 0.10295155644416809
+[Testing] -/79/200 -> Accuracy: 68.71957671957672 % 18900 12988
+epoch 80 started
+[Training] 0/80/200 -> Loss: 0.12182702869176865 Accu: 95.0
+[Training] 100/80/200 -> Loss: 0.12496870011091232 Accu: 95.0
+[Training] 200/80/200 -> Loss: 0.22723382711410522 Accu: 93.0
+[Training] 300/80/200 -> Loss: 0.22097456455230713 Accu: 92.0
+[Training] 400/80/200 -> Loss: 0.10483599454164505 Accu: 98.0
+[Training] 500/80/200 -> Loss: 0.13367198407649994 Accu: 95.0
+epoch 80 loss 0.08736270666122437
+[Testing] -/80/200 -> Accuracy: 68.7989417989418 % 18900 13003
+epoch 81 started
+[Training] 0/81/200 -> Loss: 0.14956134557724 Accu: 95.0
+[Training] 100/81/200 -> Loss: 0.24326090514659882 Accu: 94.0
+[Training] 200/81/200 -> Loss: 0.1860894411802292 Accu: 98.0
+[Training] 300/81/200 -> Loss: 0.14498713612556458 Accu: 97.0
+[Training] 400/81/200 -> Loss: 0.0458747036755085 Accu: 99.0
+[Training] 500/81/200 -> Loss: 0.1432105451822281 Accu: 95.0
+epoch 81 loss 0.2265399992465973
+[Testing] -/81/200 -> Accuracy: 68.66137566137566 % 18900 12977
+epoch 82 started
+[Training] 0/82/200 -> Loss: 0.2537328898906708 Accu: 91.0
+[Training] 100/82/200 -> Loss: 0.18618085980415344 Accu: 95.0
+[Training] 200/82/200 -> Loss: 0.24613945186138153 Accu: 93.0
+[Training] 300/82/200 -> Loss: 0.3233615756034851 Accu: 93.0
+[Training] 400/82/200 -> Loss: 0.11217065900564194 Accu: 95.0
+[Training] 500/82/200 -> Loss: 0.14051511883735657 Accu: 97.0
+epoch 82 loss 0.11881761252880096
+[Testing] -/82/200 -> Accuracy: 68.71428571428572 % 18900 12987
+epoch 83 started
+[Training] 0/83/200 -> Loss: 0.15361803770065308 Accu: 94.0
+[Training] 100/83/200 -> Loss: 0.27275726199150085 Accu: 92.0
+[Training] 200/83/200 -> Loss: 0.09049591422080994 Accu: 96.0
+[Training] 300/83/200 -> Loss: 0.15915992856025696 Accu: 92.0
+[Training] 400/83/200 -> Loss: 0.1748272329568863 Accu: 95.0
+[Training] 500/83/200 -> Loss: 0.13139328360557556 Accu: 95.0
+epoch 83 loss 0.3797329068183899
+[Testing] -/83/200 -> Accuracy: 68.7936507936508 % 18900 13002
+epoch 84 started
+[Training] 0/84/200 -> Loss: 0.06436876952648163 Accu: 100.0
+[Training] 100/84/200 -> Loss: 0.17978274822235107 Accu: 95.0
+[Training] 200/84/200 -> Loss: 0.16920389235019684 Accu: 95.0
+[Training] 300/84/200 -> Loss: 0.19472795724868774 Accu: 92.0
+[Training] 400/84/200 -> Loss: 0.26494601368904114 Accu: 93.0
+[Training] 500/84/200 -> Loss: 0.11700287461280823 Accu: 97.0
+epoch 84 loss 0.10382458567619324
+[Testing] -/84/200 -> Accuracy: 68.13227513227514 % 18900 12877
+epoch 85 started
+[Training] 0/85/200 -> Loss: 0.19109751284122467 Accu: 94.0
+[Training] 100/85/200 -> Loss: 0.12496020644903183 Accu: 97.0
+[Training] 200/85/200 -> Loss: 0.07990522682666779 Accu: 99.0
+[Training] 300/85/200 -> Loss: 0.17010504007339478 Accu: 91.0
+[Training] 400/85/200 -> Loss: 0.22717800736427307 Accu: 96.0
+[Training] 500/85/200 -> Loss: 0.2149055302143097 Accu: 95.0
+epoch 85 loss 0.32337239384651184
+[Testing] -/85/200 -> Accuracy: 68.53439153439153 % 18900 12953
+epoch 86 started
+[Training] 0/86/200 -> Loss: 0.28736621141433716 Accu: 90.0
+[Training] 100/86/200 -> Loss: 0.1238158792257309 Accu: 96.0
+[Training] 200/86/200 -> Loss: 0.22356782853603363 Accu: 91.0
+[Training] 300/86/200 -> Loss: 0.09371146559715271 Accu: 97.0
+[Training] 400/86/200 -> Loss: 0.10620256513357162 Accu: 97.0
+[Training] 500/86/200 -> Loss: 0.2120949625968933 Accu: 95.0
+epoch 86 loss 0.037277594208717346
+[Testing] -/86/200 -> Accuracy: 68.16402116402116 % 18900 12883
+epoch 87 started
+[Training] 0/87/200 -> Loss: 0.1065167784690857 Accu: 95.0
+[Training] 100/87/200 -> Loss: 0.054505981504917145 Accu: 97.0
+[Training] 200/87/200 -> Loss: 0.2512594759464264 Accu: 93.0
+[Training] 300/87/200 -> Loss: 0.23897239565849304 Accu: 94.0
+[Training] 400/87/200 -> Loss: 0.02378925308585167 Accu: 100.0
+[Training] 500/87/200 -> Loss: 0.03606988489627838 Accu: 99.0
+epoch 87 loss 0.043838225305080414
+[Testing] -/87/200 -> Accuracy: 68.62433862433862 % 18900 12970
+epoch 88 started
+[Training] 0/88/200 -> Loss: 0.14634907245635986 Accu: 97.0
+[Training] 100/88/200 -> Loss: 0.1623324751853943 Accu: 94.0
+[Training] 200/88/200 -> Loss: 0.20451702177524567 Accu: 95.0
+[Training] 300/88/200 -> Loss: 0.2660672664642334 Accu: 93.0
+[Training] 400/88/200 -> Loss: 0.3275001049041748 Accu: 93.0
+[Training] 500/88/200 -> Loss: 0.14928501844406128 Accu: 93.0
+epoch 88 loss 0.24708624184131622
+[Testing] -/88/200 -> Accuracy: 68.84126984126983 % 18900 13011
+epoch 89 started
+[Training] 0/89/200 -> Loss: 0.1097879707813263 Accu: 96.0
+[Training] 100/89/200 -> Loss: 0.09827423095703125 Accu: 96.0
+[Training] 200/89/200 -> Loss: 0.1000986322760582 Accu: 98.0
+[Training] 300/89/200 -> Loss: 0.3223252594470978 Accu: 93.0
+[Training] 400/89/200 -> Loss: 0.0844707265496254 Accu: 97.0
+[Training] 500/89/200 -> Loss: 0.25889310240745544 Accu: 93.0
+epoch 89 loss 0.1399991363286972
+[Testing] -/89/200 -> Accuracy: 68.68783068783068 % 18900 12982
+epoch 90 started
+[Training] 0/90/200 -> Loss: 0.47298306226730347 Accu: 90.0
+[Training] 100/90/200 -> Loss: 0.1900363564491272 Accu: 95.0
+[Training] 200/90/200 -> Loss: 0.3107740581035614 Accu: 88.0
+[Training] 300/90/200 -> Loss: 0.11923656612634659 Accu: 97.0
+[Training] 400/90/200 -> Loss: 0.23095646500587463 Accu: 92.0
+[Training] 500/90/200 -> Loss: 0.18741866946220398 Accu: 92.0
+epoch 90 loss 0.14153596758842468
+[Testing] -/90/200 -> Accuracy: 68.64021164021163 % 18900 12973
+epoch 91 started
+[Training] 0/91/200 -> Loss: 0.0934286117553711 Accu: 97.0
+[Training] 100/91/200 -> Loss: 0.15717770159244537 Accu: 97.0
+[Training] 200/91/200 -> Loss: 0.15389512479305267 Accu: 95.0
+[Training] 300/91/200 -> Loss: 0.20103168487548828 Accu: 95.0
+[Training] 400/91/200 -> Loss: 0.1343902051448822 Accu: 96.0
+[Training] 500/91/200 -> Loss: 0.22550556063652039 Accu: 94.0
+epoch 91 loss 0.2224821150302887
+[Testing] -/91/200 -> Accuracy: 68.95238095238095 % 18900 13032
+epoch 92 started
+[Training] 0/92/200 -> Loss: 0.27653515338897705 Accu: 88.0
+[Training] 100/92/200 -> Loss: 0.0583302266895771 Accu: 98.0
+[Training] 200/92/200 -> Loss: 0.17324824631214142 Accu: 94.0
+[Training] 300/92/200 -> Loss: 0.2607245147228241 Accu: 96.0
+[Training] 400/92/200 -> Loss: 0.09682872146368027 Accu: 97.0
+[Training] 500/92/200 -> Loss: 0.15293681621551514 Accu: 95.0
+epoch 92 loss 0.16350610554218292
+[Testing] -/92/200 -> Accuracy: 67.3015873015873 % 18900 12720
+epoch 93 started
+[Training] 0/93/200 -> Loss: 0.13959838449954987 Accu: 96.0
+[Training] 100/93/200 -> Loss: 0.14035387337207794 Accu: 95.0
+[Training] 200/93/200 -> Loss: 0.07460978627204895 Accu: 99.0
+[Training] 300/93/200 -> Loss: 0.2849545180797577 Accu: 92.0
+[Training] 400/93/200 -> Loss: 0.1826338917016983 Accu: 97.0
+[Training] 500/93/200 -> Loss: 0.09914527088403702 Accu: 97.0
+epoch 93 loss 0.1477290391921997
+[Testing] -/93/200 -> Accuracy: 68.61904761904762 % 18900 12969
+epoch 94 started
+[Training] 0/94/200 -> Loss: 0.0798080563545227 Accu: 98.0
+[Training] 100/94/200 -> Loss: 0.06338104605674744 Accu: 97.0
+[Training] 200/94/200 -> Loss: 0.2398386150598526 Accu: 95.0
+[Training] 300/94/200 -> Loss: 0.06762449443340302 Accu: 97.0
+[Training] 400/94/200 -> Loss: 0.10075320303440094 Accu: 96.0
+[Training] 500/94/200 -> Loss: 0.22077961266040802 Accu: 95.0
+epoch 94 loss 0.19504314661026
+[Testing] -/94/200 -> Accuracy: 68.50264550264549 % 18900 12947
+epoch 95 started
+[Training] 0/95/200 -> Loss: 0.26184341311454773 Accu: 94.0
+[Training] 100/95/200 -> Loss: 0.08849932998418808 Accu: 97.0
+[Training] 200/95/200 -> Loss: 0.08113902062177658 Accu: 97.0
+[Training] 300/95/200 -> Loss: 0.09396148473024368 Accu: 95.0
+[Training] 400/95/200 -> Loss: 0.2634827494621277 Accu: 94.0
+[Training] 500/95/200 -> Loss: 0.2171628624200821 Accu: 95.0
+epoch 95 loss 0.14895513653755188
+[Testing] -/95/200 -> Accuracy: 68.78306878306879 % 18900 13000
+epoch 96 started
+[Training] 0/96/200 -> Loss: 0.30856114625930786 Accu: 93.0
+[Training] 100/96/200 -> Loss: 0.19426532089710236 Accu: 93.0
+[Training] 200/96/200 -> Loss: 0.23266498744487762 Accu: 94.0
+[Training] 300/96/200 -> Loss: 0.05867382884025574 Accu: 97.0
+[Training] 400/96/200 -> Loss: 0.17866367101669312 Accu: 94.0
+[Training] 500/96/200 -> Loss: 0.04959499463438988 Accu: 99.0
+epoch 96 loss 0.08008372038602829
+[Testing] -/96/200 -> Accuracy: 68.8994708994709 % 18900 13022
+epoch 97 started
+[Training] 0/97/200 -> Loss: 0.12966705858707428 Accu: 96.0
+[Training] 100/97/200 -> Loss: 0.13418680429458618 Accu: 98.0
+[Training] 200/97/200 -> Loss: 0.07138312608003616 Accu: 99.0
+[Training] 300/97/200 -> Loss: 0.28495246171951294 Accu: 93.0
+[Training] 400/97/200 -> Loss: 0.296235591173172 Accu: 97.0
+[Training] 500/97/200 -> Loss: 0.12340729683637619 Accu: 97.0
+epoch 97 loss 0.08708687126636505
+[Testing] -/97/200 -> Accuracy: 68.84656084656085 % 18900 13012
+epoch 98 started
+[Training] 0/98/200 -> Loss: 0.12376230210065842 Accu: 96.0
+[Training] 100/98/200 -> Loss: 0.26009872555732727 Accu: 91.0
+[Training] 200/98/200 -> Loss: 0.15192070603370667 Accu: 96.0
+[Training] 300/98/200 -> Loss: 0.26170504093170166 Accu: 92.0
+[Training] 400/98/200 -> Loss: 0.16684848070144653 Accu: 93.0
+[Training] 500/98/200 -> Loss: 0.1449449509382248 Accu: 96.0
+epoch 98 loss 0.18534129858016968
+[Testing] -/98/200 -> Accuracy: 68.6931216931217 % 18900 12983
+epoch 99 started
+[Training] 0/99/200 -> Loss: 0.11465156823396683 Accu: 95.0
+[Training] 100/99/200 -> Loss: 0.10762903094291687 Accu: 96.0
+[Training] 200/99/200 -> Loss: 0.10583827644586563 Accu: 96.0
+[Training] 300/99/200 -> Loss: 0.06571472436189651 Accu: 96.0
+[Training] 400/99/200 -> Loss: 0.15456894040107727 Accu: 97.0
+[Training] 500/99/200 -> Loss: 0.09280794858932495 Accu: 98.0
+epoch 99 loss 0.1037328913807869
+[Testing] -/99/200 -> Accuracy: 68.97354497354497 % 18900 13036
+epoch 100 started
+[Training] 0/100/200 -> Loss: 0.12957708537578583 Accu: 94.0
+[Training] 100/100/200 -> Loss: 0.07575535774230957 Accu: 97.0
+[Training] 200/100/200 -> Loss: 0.2659344971179962 Accu: 95.0
+[Training] 300/100/200 -> Loss: 0.08870356529951096 Accu: 97.0
+[Training] 400/100/200 -> Loss: 0.14879731833934784 Accu: 96.0
+[Training] 500/100/200 -> Loss: 0.11099518835544586 Accu: 95.0
+epoch 100 loss 0.094240702688694
+[Testing] -/100/200 -> Accuracy: 68.93650793650794 % 18900 13029
+epoch 101 started
+[Training] 0/101/200 -> Loss: 0.09797000885009766 Accu: 96.0
+[Training] 100/101/200 -> Loss: 0.09143976122140884 Accu: 97.0
+[Training] 200/101/200 -> Loss: 0.2582815885543823 Accu: 93.0
+[Training] 300/101/200 -> Loss: 0.15549026429653168 Accu: 96.0
+[Training] 400/101/200 -> Loss: 0.10264883190393448 Accu: 96.0
+[Training] 500/101/200 -> Loss: 0.13318796455860138 Accu: 96.0
+epoch 101 loss 0.20900921523571014
+[Testing] -/101/200 -> Accuracy: 68.88888888888889 % 18900 13020
+epoch 102 started
+[Training] 0/102/200 -> Loss: 0.06400243192911148 Accu: 96.0
+[Training] 100/102/200 -> Loss: 0.14763705432415009 Accu: 94.0
+[Training] 200/102/200 -> Loss: 0.2197646200656891 Accu: 94.0
+[Training] 300/102/200 -> Loss: 0.14150547981262207 Accu: 95.0
+[Training] 400/102/200 -> Loss: 0.15705560147762299 Accu: 92.0
+[Training] 500/102/200 -> Loss: 0.030925173312425613 Accu: 99.0
+epoch 102 loss 0.17611031234264374
+[Testing] -/102/200 -> Accuracy: 68.32275132275132 % 18900 12913
+epoch 103 started
+[Training] 0/103/200 -> Loss: 0.1663081794977188 Accu: 96.0
+[Training] 100/103/200 -> Loss: 0.03999955579638481 Accu: 98.0
+[Training] 200/103/200 -> Loss: 0.154532790184021 Accu: 96.0
+[Training] 300/103/200 -> Loss: 0.12156354635953903 Accu: 94.0
+[Training] 400/103/200 -> Loss: 0.2830275297164917 Accu: 93.0
+[Training] 500/103/200 -> Loss: 0.1758933812379837 Accu: 95.0
+epoch 103 loss 0.09334889054298401
+[Testing] -/103/200 -> Accuracy: 68.65079365079364 % 18900 12975
+epoch 104 started
+[Training] 0/104/200 -> Loss: 0.07759856432676315 Accu: 98.0
+[Training] 100/104/200 -> Loss: 0.12340779602527618 Accu: 97.0
+[Training] 200/104/200 -> Loss: 0.07086142152547836 Accu: 98.0
+[Training] 300/104/200 -> Loss: 0.14583416283130646 Accu: 96.0
+[Training] 400/104/200 -> Loss: 0.17343322932720184 Accu: 96.0
+[Training] 500/104/200 -> Loss: 0.10414020717144012 Accu: 97.0
+epoch 104 loss 0.12235035002231598
+[Testing] -/104/200 -> Accuracy: 69.33333333333334 % 18900 13104
+epoch 105 started
+[Training] 0/105/200 -> Loss: 0.08903267979621887 Accu: 98.0
+[Training] 100/105/200 -> Loss: 0.12429207563400269 Accu: 95.0
+[Training] 200/105/200 -> Loss: 0.2749362587928772 Accu: 94.0
+[Training] 300/105/200 -> Loss: 0.20207200944423676 Accu: 95.0
+[Training] 400/105/200 -> Loss: 0.15140976011753082 Accu: 94.0
+[Training] 500/105/200 -> Loss: 0.07519030570983887 Accu: 97.0
+epoch 105 loss 0.12562260031700134
+[Testing] -/105/200 -> Accuracy: 68.64550264550265 % 18900 12974
+epoch 106 started
+[Training] 0/106/200 -> Loss: 0.15376661717891693 Accu: 96.0
+[Training] 100/106/200 -> Loss: 0.05737832188606262 Accu: 98.0
+[Training] 200/106/200 -> Loss: 0.09696803987026215 Accu: 97.0
+[Training] 300/106/200 -> Loss: 0.05291027948260307 Accu: 97.0
+[Training] 400/106/200 -> Loss: 0.12748412787914276 Accu: 95.0
+[Training] 500/106/200 -> Loss: 0.06973908096551895 Accu: 98.0
+epoch 106 loss 0.14642570912837982
+[Testing] -/106/200 -> Accuracy: 69.54497354497354 % 18900 13144
+epoch 107 started
+[Training] 0/107/200 -> Loss: 0.21554917097091675 Accu: 95.0
+[Training] 100/107/200 -> Loss: 0.23651134967803955 Accu: 93.0
+[Training] 200/107/200 -> Loss: 0.18597717583179474 Accu: 94.0
+[Training] 300/107/200 -> Loss: 0.17094650864601135 Accu: 95.0
+[Training] 400/107/200 -> Loss: 0.07222788035869598 Accu: 98.0
+[Training] 500/107/200 -> Loss: 0.1138748899102211 Accu: 97.0
+epoch 107 loss 0.34473487734794617
+[Testing] -/107/200 -> Accuracy: 68.66666666666667 % 18900 12978
+epoch 108 started
+[Training] 0/108/200 -> Loss: 0.18175944685935974 Accu: 94.0
+[Training] 100/108/200 -> Loss: 0.17041514813899994 Accu: 96.0
+[Training] 200/108/200 -> Loss: 0.16266871988773346 Accu: 94.0
+[Training] 300/108/200 -> Loss: 0.06925603747367859 Accu: 96.0
+[Training] 400/108/200 -> Loss: 0.07935813069343567 Accu: 95.0
+[Training] 500/108/200 -> Loss: 0.026425965130329132 Accu: 99.0
+epoch 108 loss 0.18176023662090302
+[Testing] -/108/200 -> Accuracy: 68.87830687830689 % 18900 13018
+epoch 109 started
+[Training] 0/109/200 -> Loss: 0.15420350432395935 Accu: 93.0
+[Training] 100/109/200 -> Loss: 0.17998728156089783 Accu: 95.0
+[Training] 200/109/200 -> Loss: 0.10746357589960098 Accu: 96.0
+[Training] 300/109/200 -> Loss: 0.0665687620639801 Accu: 98.0
+[Training] 400/109/200 -> Loss: 0.22807402908802032 Accu: 92.0
+[Training] 500/109/200 -> Loss: 0.08702349662780762 Accu: 96.0
+epoch 109 loss 0.2595803737640381
+[Testing] -/109/200 -> Accuracy: 69.17460317460318 % 18900 13074
+epoch 110 started
+[Training] 0/110/200 -> Loss: 0.14965882897377014 Accu: 98.0
+[Training] 100/110/200 -> Loss: 0.022113502025604248 Accu: 99.0
+[Training] 200/110/200 -> Loss: 0.05053437873721123 Accu: 97.0
+[Training] 300/110/200 -> Loss: 0.10673923790454865 Accu: 96.0
+[Training] 400/110/200 -> Loss: 0.2070622593164444 Accu: 94.0
+[Training] 500/110/200 -> Loss: 0.29523956775665283 Accu: 94.0
+epoch 110 loss 0.16624200344085693
+[Testing] -/110/200 -> Accuracy: 68.87830687830689 % 18900 13018
+epoch 111 started
+[Training] 0/111/200 -> Loss: 0.0870203971862793 Accu: 95.0
+[Training] 100/111/200 -> Loss: 0.0570514090359211 Accu: 97.0
+[Training] 200/111/200 -> Loss: 0.09551003575325012 Accu: 98.0
+[Training] 300/111/200 -> Loss: 0.2158990502357483 Accu: 93.0
+[Training] 400/111/200 -> Loss: 0.05984564870595932 Accu: 99.0
+[Training] 500/111/200 -> Loss: 0.04077453166246414 Accu: 99.0
+epoch 111 loss 0.1519799679517746
+[Testing] -/111/200 -> Accuracy: 68.8941798941799 % 18900 13021
+epoch 112 started
+[Training] 0/112/200 -> Loss: 0.09437021613121033 Accu: 95.0
+[Training] 100/112/200 -> Loss: 0.09270837903022766 Accu: 97.0
+[Training] 200/112/200 -> Loss: 0.1093825250864029 Accu: 96.0
+[Training] 300/112/200 -> Loss: 0.15301036834716797 Accu: 96.0
+[Training] 400/112/200 -> Loss: 0.08737275004386902 Accu: 97.0
+[Training] 500/112/200 -> Loss: 0.08199963718652725 Accu: 98.0
+epoch 112 loss 0.0898585394024849
+[Testing] -/112/200 -> Accuracy: 69.25925925925925 % 18900 13090
+epoch 113 started
+[Training] 0/113/200 -> Loss: 0.16104993224143982 Accu: 93.0
+[Training] 100/113/200 -> Loss: 0.06910520792007446 Accu: 98.0
+[Training] 200/113/200 -> Loss: 0.22082553803920746 Accu: 93.0
+[Training] 300/113/200 -> Loss: 0.09823916107416153 Accu: 97.0
+[Training] 400/113/200 -> Loss: 0.09975840896368027 Accu: 98.0
+[Training] 500/113/200 -> Loss: 0.1457975059747696 Accu: 96.0
+epoch 113 loss 0.0924917608499527
+[Testing] -/113/200 -> Accuracy: 69.34920634920636 % 18900 13107
+epoch 114 started
+[Training] 0/114/200 -> Loss: 0.04506398364901543 Accu: 99.0
+[Training] 100/114/200 -> Loss: 0.1866571009159088 Accu: 95.0
+[Training] 200/114/200 -> Loss: 0.12945419549942017 Accu: 96.0
+[Training] 300/114/200 -> Loss: 0.1347460299730301 Accu: 97.0
+[Training] 400/114/200 -> Loss: 0.11750098317861557 Accu: 97.0
+[Training] 500/114/200 -> Loss: 0.18075944483280182 Accu: 94.0
+epoch 114 loss 0.2673448324203491
+[Testing] -/114/200 -> Accuracy: 68.83068783068784 % 18900 13009
+epoch 115 started
+[Training] 0/115/200 -> Loss: 0.16407518088817596 Accu: 93.0
+[Training] 100/115/200 -> Loss: 0.2580798268318176 Accu: 93.0
+[Training] 200/115/200 -> Loss: 0.2694389224052429 Accu: 94.0
+[Training] 300/115/200 -> Loss: 0.15828102827072144 Accu: 97.0
+[Training] 400/115/200 -> Loss: 0.12322821468114853 Accu: 98.0
+[Training] 500/115/200 -> Loss: 0.20559118688106537 Accu: 96.0
+epoch 115 loss 0.24505753815174103
+[Testing] -/115/200 -> Accuracy: 69.22751322751323 % 18900 13084
+epoch 116 started
+[Training] 0/116/200 -> Loss: 0.09238151460886002 Accu: 97.0
+[Training] 100/116/200 -> Loss: 0.10596561431884766 Accu: 95.0
+[Training] 200/116/200 -> Loss: 0.049323372542858124 Accu: 99.0
+[Training] 300/116/200 -> Loss: 0.3591342270374298 Accu: 95.0
+[Training] 400/116/200 -> Loss: 0.09029354155063629 Accu: 97.0
+[Training] 500/116/200 -> Loss: 0.16032516956329346 Accu: 97.0
+epoch 116 loss 0.14207328855991364
+[Testing] -/116/200 -> Accuracy: 68.87301587301587 % 18900 13017
+epoch 117 started
+[Training] 0/117/200 -> Loss: 0.02932482212781906 Accu: 98.0
+[Training] 100/117/200 -> Loss: 0.3405884802341461 Accu: 88.0
+[Training] 200/117/200 -> Loss: 0.04911205917596817 Accu: 99.0
+[Training] 300/117/200 -> Loss: 0.1825392097234726 Accu: 94.0
+[Training] 400/117/200 -> Loss: 0.13924546539783478 Accu: 97.0
+[Training] 500/117/200 -> Loss: 0.1695684790611267 Accu: 94.0
+epoch 117 loss 0.29791367053985596
+[Testing] -/117/200 -> Accuracy: 69.24867724867725 % 18900 13088
+epoch 118 started
+[Training] 0/118/200 -> Loss: 0.1961199939250946 Accu: 95.0
+[Training] 100/118/200 -> Loss: 0.32200607657432556 Accu: 90.0
+[Training] 200/118/200 -> Loss: 0.040445975959300995 Accu: 99.0
+[Training] 300/118/200 -> Loss: 0.17072586715221405 Accu: 92.0
+[Training] 400/118/200 -> Loss: 0.05019146576523781 Accu: 99.0
+[Training] 500/118/200 -> Loss: 0.03625507280230522 Accu: 99.0
+epoch 118 loss 0.1696372628211975
+[Testing] -/118/200 -> Accuracy: 68.24867724867725 % 18900 12899
+epoch 119 started
+[Training] 0/119/200 -> Loss: 0.20459112524986267 Accu: 93.0
+[Training] 100/119/200 -> Loss: 0.08154679089784622 Accu: 98.0
+[Training] 200/119/200 -> Loss: 0.17909978330135345 Accu: 93.0
+[Training] 300/119/200 -> Loss: 0.103740394115448 Accu: 96.0
+[Training] 400/119/200 -> Loss: 0.16502781212329865 Accu: 94.0
+[Training] 500/119/200 -> Loss: 0.13582541048526764 Accu: 96.0
+epoch 119 loss 0.10462361574172974
+[Testing] -/119/200 -> Accuracy: 69.3068783068783 % 18900 13099
+epoch 120 started
+[Training] 0/120/200 -> Loss: 0.20607882738113403 Accu: 96.0
+[Training] 100/120/200 -> Loss: 0.121574766933918 Accu: 96.0
+[Training] 200/120/200 -> Loss: 0.07985536009073257 Accu: 98.0
+[Training] 300/120/200 -> Loss: 0.046726521104574203 Accu: 99.0
+[Training] 400/120/200 -> Loss: 0.1025327518582344 Accu: 97.0
+[Training] 500/120/200 -> Loss: 0.06978921592235565 Accu: 97.0
+epoch 120 loss 0.2627091705799103
+[Testing] -/120/200 -> Accuracy: 69.25925925925925 % 18900 13090
+epoch 121 started
+[Training] 0/121/200 -> Loss: 0.05514048412442207 Accu: 97.0
+[Training] 100/121/200 -> Loss: 0.06320910155773163 Accu: 98.0
+[Training] 200/121/200 -> Loss: 0.09962783008813858 Accu: 97.0
+[Training] 300/121/200 -> Loss: 0.2465205043554306 Accu: 94.0
+[Training] 400/121/200 -> Loss: 0.082626573741436 Accu: 94.0
+[Training] 500/121/200 -> Loss: 0.21752025187015533 Accu: 95.0
+epoch 121 loss 0.26692748069763184
+[Testing] -/121/200 -> Accuracy: 68.02116402116403 % 18900 12856
+epoch 122 started
+[Training] 0/122/200 -> Loss: 0.23948125541210175 Accu: 95.0
+[Training] 100/122/200 -> Loss: 0.15980783104896545 Accu: 97.0
+[Training] 200/122/200 -> Loss: 0.06199425086379051 Accu: 97.0
+[Training] 300/122/200 -> Loss: 0.13959607481956482 Accu: 95.0
+[Training] 400/122/200 -> Loss: 0.004927442409098148 Accu: 100.0
+[Training] 500/122/200 -> Loss: 0.2325509786605835 Accu: 92.0
+epoch 122 loss 0.0971420481801033
+[Testing] -/122/200 -> Accuracy: 69.15873015873017 % 18900 13071
+epoch 123 started
+[Training] 0/123/200 -> Loss: 0.1138741597533226 Accu: 96.0
+[Training] 100/123/200 -> Loss: 0.13309398293495178 Accu: 95.0
+[Training] 200/123/200 -> Loss: 0.17763088643550873 Accu: 94.0
+[Training] 300/123/200 -> Loss: 0.10301902890205383 Accu: 96.0
+[Training] 400/123/200 -> Loss: 0.10481783002614975 Accu: 95.0
+[Training] 500/123/200 -> Loss: 0.031718119978904724 Accu: 99.0
+epoch 123 loss 0.043328750878572464
+[Testing] -/123/200 -> Accuracy: 69.03703703703704 % 18900 13048
+epoch 124 started
+[Training] 0/124/200 -> Loss: 0.27047035098075867 Accu: 93.0
+[Training] 100/124/200 -> Loss: 0.050495874136686325 Accu: 97.0
+[Training] 200/124/200 -> Loss: 0.10508976876735687 Accu: 95.0
+[Training] 300/124/200 -> Loss: 0.23927825689315796 Accu: 95.0
+[Training] 400/124/200 -> Loss: 0.20818966627120972 Accu: 97.0
+[Training] 500/124/200 -> Loss: 0.18166598677635193 Accu: 95.0
+epoch 124 loss 0.10678339749574661
+[Testing] -/124/200 -> Accuracy: 69.47089947089947 % 18900 13130
+epoch 125 started
+[Training] 0/125/200 -> Loss: 0.13788063824176788 Accu: 96.0
+[Training] 100/125/200 -> Loss: 0.15634191036224365 Accu: 95.0
+[Training] 200/125/200 -> Loss: 0.17679303884506226 Accu: 96.0
+[Training] 300/125/200 -> Loss: 0.11222339421510696 Accu: 97.0
+[Training] 400/125/200 -> Loss: 0.2869613468647003 Accu: 90.0
+[Training] 500/125/200 -> Loss: 0.2913411259651184 Accu: 92.0
+epoch 125 loss 0.03461939096450806
+[Testing] -/125/200 -> Accuracy: 69.05820105820106 % 18900 13052
+epoch 126 started
+[Training] 0/126/200 -> Loss: 0.17133189737796783 Accu: 94.0
+[Training] 100/126/200 -> Loss: 0.0921858698129654 Accu: 96.0
+[Training] 200/126/200 -> Loss: 0.0969042107462883 Accu: 97.0
+[Training] 300/126/200 -> Loss: 0.08020678162574768 Accu: 97.0
+[Training] 400/126/200 -> Loss: 0.04159506782889366 Accu: 99.0
+[Training] 500/126/200 -> Loss: 0.06758775562047958 Accu: 99.0
+epoch 126 loss 0.1072843074798584
+[Testing] -/126/200 -> Accuracy: 69.08994708994709 % 18900 13058
+epoch 127 started
+[Training] 0/127/200 -> Loss: 0.16737070679664612 Accu: 96.0
+[Training] 100/127/200 -> Loss: 0.24257883429527283 Accu: 91.0
+[Training] 200/127/200 -> Loss: 0.2650986313819885 Accu: 96.0
+[Training] 300/127/200 -> Loss: 0.15816190838813782 Accu: 96.0
+[Training] 400/127/200 -> Loss: 0.1995914876461029 Accu: 93.0
+[Training] 500/127/200 -> Loss: 0.13214688003063202 Accu: 95.0
+epoch 127 loss 0.29412537813186646
+[Testing] -/127/200 -> Accuracy: 69.50264550264549 % 18900 13136
+epoch 128 started
+[Training] 0/128/200 -> Loss: 0.057297445833683014 Accu: 99.0
+[Training] 100/128/200 -> Loss: 0.23455040156841278 Accu: 95.0
+[Training] 200/128/200 -> Loss: 0.08438386023044586 Accu: 97.0
+[Training] 300/128/200 -> Loss: 0.11112532019615173 Accu: 98.0
+[Training] 400/128/200 -> Loss: 0.20067977905273438 Accu: 95.0
+[Training] 500/128/200 -> Loss: 0.119341179728508 Accu: 96.0
+epoch 128 loss 0.17246827483177185
+[Testing] -/128/200 -> Accuracy: 69.32804232804233 % 18900 13103
+epoch 129 started
+[Training] 0/129/200 -> Loss: 0.1655951738357544 Accu: 95.0
+[Training] 100/129/200 -> Loss: 0.10715123265981674 Accu: 96.0
+[Training] 200/129/200 -> Loss: 0.07562698423862457 Accu: 98.0
+[Training] 300/129/200 -> Loss: 0.08943798393011093 Accu: 95.0
+[Training] 400/129/200 -> Loss: 0.2592925727367401 Accu: 92.0
+[Training] 500/129/200 -> Loss: 0.16073280572891235 Accu: 96.0
+epoch 129 loss 0.17034249007701874
+[Testing] -/129/200 -> Accuracy: 69.4074074074074 % 18900 13118
+epoch 130 started
+[Training] 0/130/200 -> Loss: 0.20461075007915497 Accu: 95.0
+[Training] 100/130/200 -> Loss: 0.015320727601647377 Accu: 100.0
+[Training] 200/130/200 -> Loss: 0.13616260886192322 Accu: 95.0
+[Training] 300/130/200 -> Loss: 0.17604921758174896 Accu: 96.0
+[Training] 400/130/200 -> Loss: 0.03814161941409111 Accu: 97.0
+[Training] 500/130/200 -> Loss: 0.11523227393627167 Accu: 96.0
+epoch 130 loss 0.10195901989936829
+[Testing] -/130/200 -> Accuracy: 68.92592592592592 % 18900 13027
+epoch 131 started
+[Training] 0/131/200 -> Loss: 0.18286944925785065 Accu: 96.0
+[Training] 100/131/200 -> Loss: 0.07190483063459396 Accu: 98.0
+[Training] 200/131/200 -> Loss: 0.06899518519639969 Accu: 98.0
+[Training] 300/131/200 -> Loss: 0.14705108106136322 Accu: 97.0
+[Training] 400/131/200 -> Loss: 0.12083301693201065 Accu: 94.0
+[Training] 500/131/200 -> Loss: 0.1240672692656517 Accu: 94.0
+epoch 131 loss 0.24932506680488586
+[Testing] -/131/200 -> Accuracy: 69.38095238095238 % 18900 13113
+epoch 132 started
+[Training] 0/132/200 -> Loss: 0.10529554635286331 Accu: 96.0
+[Training] 100/132/200 -> Loss: 0.02847185544669628 Accu: 99.0
+[Training] 200/132/200 -> Loss: 0.17344222962856293 Accu: 95.0
+[Training] 300/132/200 -> Loss: 0.0783008262515068 Accu: 98.0
+[Training] 400/132/200 -> Loss: 0.07080037891864777 Accu: 99.0
+[Training] 500/132/200 -> Loss: 0.12831822037696838 Accu: 97.0
+epoch 132 loss 0.11414932459592819
+[Testing] -/132/200 -> Accuracy: 69.17460317460318 % 18900 13074
+epoch 133 started
+[Training] 0/133/200 -> Loss: 0.0422130785882473 Accu: 99.0
+[Training] 100/133/200 -> Loss: 0.07267767935991287 Accu: 98.0
+[Training] 200/133/200 -> Loss: 0.15105758607387543 Accu: 96.0
+[Training] 300/133/200 -> Loss: 0.04744306951761246 Accu: 99.0
+[Training] 400/133/200 -> Loss: 0.3095248341560364 Accu: 97.0
+[Training] 500/133/200 -> Loss: 0.34449777007102966 Accu: 93.0
+epoch 133 loss 0.07035572081804276
+[Testing] -/133/200 -> Accuracy: 68.41269841269842 % 18900 12930
+epoch 134 started
+[Training] 0/134/200 -> Loss: 0.2270132303237915 Accu: 96.0
+[Training] 100/134/200 -> Loss: 0.09974244982004166 Accu: 95.0
+[Training] 200/134/200 -> Loss: 0.09841650724411011 Accu: 96.0
+[Training] 300/134/200 -> Loss: 0.2228938639163971 Accu: 96.0
+[Training] 400/134/200 -> Loss: 0.14119449257850647 Accu: 96.0
+[Training] 500/134/200 -> Loss: 0.20185013115406036 Accu: 93.0
+epoch 134 loss 0.21266135573387146
+[Testing] -/134/200 -> Accuracy: 69.92063492063491 % 18900 13215
+epoch 135 started
+[Training] 0/135/200 -> Loss: 0.173233300447464 Accu: 95.0
+[Training] 100/135/200 -> Loss: 0.1532231718301773 Accu: 96.0
+[Training] 200/135/200 -> Loss: 0.1379672884941101 Accu: 98.0
+[Training] 300/135/200 -> Loss: 0.1741614192724228 Accu: 96.0
+[Training] 400/135/200 -> Loss: 0.1662643849849701 Accu: 97.0
+[Training] 500/135/200 -> Loss: 0.08192355930805206 Accu: 98.0
+epoch 135 loss 0.2662163972854614
+[Testing] -/135/200 -> Accuracy: 69.84656084656085 % 18900 13201
+epoch 136 started
+[Training] 0/136/200 -> Loss: 0.24316692352294922 Accu: 93.0
+[Training] 100/136/200 -> Loss: 0.12152406573295593 Accu: 96.0
+[Training] 200/136/200 -> Loss: 0.125540629029274 Accu: 97.0
+[Training] 300/136/200 -> Loss: 0.15474006533622742 Accu: 97.0
+[Training] 400/136/200 -> Loss: 0.08823787420988083 Accu: 97.0
+[Training] 500/136/200 -> Loss: 0.07773704826831818 Accu: 98.0
+epoch 136 loss 0.16043172776699066
+[Testing] -/136/200 -> Accuracy: 69.3968253968254 % 18900 13116
+epoch 137 started
+[Training] 0/137/200 -> Loss: 0.028826480731368065 Accu: 99.0
+[Training] 100/137/200 -> Loss: 0.07002316415309906 Accu: 98.0
+[Training] 200/137/200 -> Loss: 0.08339866995811462 Accu: 97.0
+[Training] 300/137/200 -> Loss: 0.09814324975013733 Accu: 97.0
+[Training] 400/137/200 -> Loss: 0.06431981921195984 Accu: 96.0
+[Training] 500/137/200 -> Loss: 0.04646744579076767 Accu: 99.0
+epoch 137 loss 0.0324019119143486
+[Testing] -/137/200 -> Accuracy: 69.16931216931216 % 18900 13073
+epoch 138 started
+[Training] 0/138/200 -> Loss: 0.14784154295921326 Accu: 97.0
+[Training] 100/138/200 -> Loss: 0.1779249906539917 Accu: 98.0
+[Training] 200/138/200 -> Loss: 0.2054661512374878 Accu: 92.0
+[Training] 300/138/200 -> Loss: 0.06301591545343399 Accu: 98.0
+[Training] 400/138/200 -> Loss: 0.22520120441913605 Accu: 94.0
+[Training] 500/138/200 -> Loss: 0.12988610565662384 Accu: 94.0
+epoch 138 loss 0.08291373401880264
+[Testing] -/138/200 -> Accuracy: 69.47619047619048 % 18900 13131
+epoch 139 started
+[Training] 0/139/200 -> Loss: 0.24177822470664978 Accu: 97.0
+[Training] 100/139/200 -> Loss: 0.008711090311408043 Accu: 100.0
+[Training] 200/139/200 -> Loss: 0.09454574435949326 Accu: 97.0
+[Training] 300/139/200 -> Loss: 0.04959459602832794 Accu: 97.0
+[Training] 400/139/200 -> Loss: 0.06980109214782715 Accu: 98.0
+[Training] 500/139/200 -> Loss: 0.04786542430520058 Accu: 98.0
+epoch 139 loss 0.15642815828323364
+[Testing] -/139/200 -> Accuracy: 69.51851851851852 % 18900 13139
+epoch 140 started
+[Training] 0/140/200 -> Loss: 0.13286060094833374 Accu: 96.0
+[Training] 100/140/200 -> Loss: 0.07194921374320984 Accu: 96.0
+[Training] 200/140/200 -> Loss: 0.10940729081630707 Accu: 97.0
+[Training] 300/140/200 -> Loss: 0.06768713146448135 Accu: 98.0
+[Training] 400/140/200 -> Loss: 0.03287876769900322 Accu: 98.0
+[Training] 500/140/200 -> Loss: 0.06522901356220245 Accu: 98.0
+epoch 140 loss 0.052022695541381836
+[Testing] -/140/200 -> Accuracy: 69.78306878306879 % 18900 13189
+epoch 141 started
+[Training] 0/141/200 -> Loss: 0.13719424605369568 Accu: 95.0
+[Training] 100/141/200 -> Loss: 0.02100650779902935 Accu: 99.0
+[Training] 200/141/200 -> Loss: 0.1804790049791336 Accu: 97.0
+[Training] 300/141/200 -> Loss: 0.14524108171463013 Accu: 93.0
+[Training] 400/141/200 -> Loss: 0.07376118004322052 Accu: 97.0
+[Training] 500/141/200 -> Loss: 0.17552104592323303 Accu: 96.0
+epoch 141 loss 0.051274776458740234
+[Testing] -/141/200 -> Accuracy: 69.53439153439153 % 18900 13142
+epoch 142 started
+[Training] 0/142/200 -> Loss: 0.07973124086856842 Accu: 95.0
+[Training] 100/142/200 -> Loss: 0.22555260360240936 Accu: 95.0
+[Training] 200/142/200 -> Loss: 0.0633193701505661 Accu: 98.0
+[Training] 300/142/200 -> Loss: 0.0579209141433239 Accu: 98.0
+[Training] 400/142/200 -> Loss: 0.19015270471572876 Accu: 97.0
+[Training] 500/142/200 -> Loss: 0.031144678592681885 Accu: 99.0
+epoch 142 loss 0.12619008123874664
+[Testing] -/142/200 -> Accuracy: 69.63492063492063 % 18900 13161
+epoch 143 started
+[Training] 0/143/200 -> Loss: 0.1530669629573822 Accu: 97.0
+[Training] 100/143/200 -> Loss: 0.02132074348628521 Accu: 99.0
+[Training] 200/143/200 -> Loss: 0.16981682181358337 Accu: 94.0
+[Training] 300/143/200 -> Loss: 0.12151023745536804 Accu: 96.0
+[Training] 400/143/200 -> Loss: 0.13065962493419647 Accu: 97.0
+[Training] 500/143/200 -> Loss: 0.021511221304535866 Accu: 99.0
+epoch 143 loss 0.10103218257427216
+[Testing] -/143/200 -> Accuracy: 69.52380952380952 % 18900 13140
+epoch 144 started
+[Training] 0/144/200 -> Loss: 0.04260995239019394 Accu: 98.0
+[Training] 100/144/200 -> Loss: 0.041223958134651184 Accu: 99.0
+[Training] 200/144/200 -> Loss: 0.23153814673423767 Accu: 95.0
+[Training] 300/144/200 -> Loss: 0.1705709844827652 Accu: 95.0
+[Training] 400/144/200 -> Loss: 0.20830383896827698 Accu: 96.0
+[Training] 500/144/200 -> Loss: 0.12123438715934753 Accu: 97.0
+epoch 144 loss 0.036084216088056564
+[Testing] -/144/200 -> Accuracy: 69.57142857142857 % 18900 13149
+epoch 145 started
+[Training] 0/145/200 -> Loss: 0.07680794596672058 Accu: 99.0
+[Training] 100/145/200 -> Loss: 0.12158183008432388 Accu: 97.0
+[Training] 200/145/200 -> Loss: 0.14740091562271118 Accu: 96.0
+[Training] 300/145/200 -> Loss: 0.11005599796772003 Accu: 97.0
+[Training] 400/145/200 -> Loss: 0.11712436378002167 Accu: 96.0
+[Training] 500/145/200 -> Loss: 0.24251127243041992 Accu: 94.0
+epoch 145 loss 0.1998404562473297
+[Testing] -/145/200 -> Accuracy: 69.45502645502646 % 18900 13127
+epoch 146 started
+[Training] 0/146/200 -> Loss: 0.07881096750497818 Accu: 97.0
+[Training] 100/146/200 -> Loss: 0.15577849745750427 Accu: 96.0
+[Training] 200/146/200 -> Loss: 0.0793636292219162 Accu: 98.0
+[Training] 300/146/200 -> Loss: 0.24932131171226501 Accu: 93.0
+[Training] 400/146/200 -> Loss: 0.22242693603038788 Accu: 94.0
+[Training] 500/146/200 -> Loss: 0.1632016897201538 Accu: 95.0
+epoch 146 loss 0.08688542246818542
+[Testing] -/146/200 -> Accuracy: 69.73544973544973 % 18900 13180
+epoch 147 started
+[Training] 0/147/200 -> Loss: 0.1405918449163437 Accu: 96.0
+[Training] 100/147/200 -> Loss: 0.11723466217517853 Accu: 97.0
+[Training] 200/147/200 -> Loss: 0.08059593290090561 Accu: 98.0
+[Training] 300/147/200 -> Loss: 0.08981726318597794 Accu: 98.0
+[Training] 400/147/200 -> Loss: 0.09707437455654144 Accu: 98.0
+[Training] 500/147/200 -> Loss: 0.05075613409280777 Accu: 98.0
+epoch 147 loss 0.20821870863437653
+[Testing] -/147/200 -> Accuracy: 69.23809523809524 % 18900 13086
+epoch 148 started
+[Training] 0/148/200 -> Loss: 0.25307023525238037 Accu: 94.0
+[Training] 100/148/200 -> Loss: 0.029222387820482254 Accu: 98.0
+[Training] 200/148/200 -> Loss: 0.07731494307518005 Accu: 97.0
+[Training] 300/148/200 -> Loss: 0.15092003345489502 Accu: 96.0
+[Training] 400/148/200 -> Loss: 0.12409992516040802 Accu: 94.0
+[Training] 500/148/200 -> Loss: 0.2609928548336029 Accu: 95.0
+epoch 148 loss 0.006821060087531805
+[Testing] -/148/200 -> Accuracy: 69.65608465608466 % 18900 13165
+epoch 149 started
+[Training] 0/149/200 -> Loss: 0.0743676945567131 Accu: 97.0
+[Training] 100/149/200 -> Loss: 0.0220850370824337 Accu: 99.0
+[Training] 200/149/200 -> Loss: 0.09708773344755173 Accu: 98.0
+[Training] 300/149/200 -> Loss: 0.09727253019809723 Accu: 97.0
+[Training] 400/149/200 -> Loss: 0.0401751846075058 Accu: 98.0
+[Training] 500/149/200 -> Loss: 0.08237242698669434 Accu: 97.0
+epoch 149 loss 0.06673062592744827
+[Testing] -/149/200 -> Accuracy: 69.38095238095238 % 18900 13113
+epoch 150 started
+[Training] 0/150/200 -> Loss: 0.0467512384057045 Accu: 98.0
+[Training] 100/150/200 -> Loss: 0.03327250853180885 Accu: 99.0
+[Training] 200/150/200 -> Loss: 0.12593486905097961 Accu: 96.0
+[Training] 300/150/200 -> Loss: 0.0873640924692154 Accu: 98.0
+[Training] 400/150/200 -> Loss: 0.030573027208447456 Accu: 99.0
+[Training] 500/150/200 -> Loss: 0.13096573948860168 Accu: 93.0
+epoch 150 loss 0.011039509437978268
+[Testing] -/150/200 -> Accuracy: 69.11640211640211 % 18900 13063
+epoch 151 started
+[Training] 0/151/200 -> Loss: 0.17224961519241333 Accu: 97.0
+[Training] 100/151/200 -> Loss: 0.04905838146805763 Accu: 97.0
+[Training] 200/151/200 -> Loss: 0.14862076938152313 Accu: 96.0
+[Training] 300/151/200 -> Loss: 0.152548149228096 Accu: 96.0
+[Training] 400/151/200 -> Loss: 0.21601879596710205 Accu: 97.0
+[Training] 500/151/200 -> Loss: 0.07711532711982727 Accu: 97.0
+epoch 151 loss 0.10704085975885391
+[Testing] -/151/200 -> Accuracy: 69.47619047619048 % 18900 13131
+epoch 152 started
+[Training] 0/152/200 -> Loss: 0.0513777919113636 Accu: 97.0
+[Training] 100/152/200 -> Loss: 0.05814047157764435 Accu: 98.0
+[Training] 200/152/200 -> Loss: 0.14968129992485046 Accu: 96.0
+[Training] 300/152/200 -> Loss: 0.10550530254840851 Accu: 96.0
+[Training] 400/152/200 -> Loss: 0.08896467834711075 Accu: 97.0
+[Training] 500/152/200 -> Loss: 0.03253113850951195 Accu: 99.0
+epoch 152 loss 0.03214895352721214
+[Testing] -/152/200 -> Accuracy: 69.14285714285714 % 18900 13068
+epoch 153 started
+[Training] 0/153/200 -> Loss: 0.234756201505661 Accu: 94.0
+[Training] 100/153/200 -> Loss: 0.006524400785565376 Accu: 100.0
+[Training] 200/153/200 -> Loss: 0.0878395065665245 Accu: 97.0
+[Training] 300/153/200 -> Loss: 0.11427798867225647 Accu: 97.0
+[Training] 400/153/200 -> Loss: 0.08666966110467911 Accu: 98.0
+[Training] 500/153/200 -> Loss: 0.09763801842927933 Accu: 95.0
+epoch 153 loss 0.19916754961013794
+[Testing] -/153/200 -> Accuracy: 69.39153439153439 % 18900 13115
+epoch 154 started
+[Training] 0/154/200 -> Loss: 0.09488198906183243 Accu: 97.0
+[Training] 100/154/200 -> Loss: 0.3221040964126587 Accu: 93.0
+[Training] 200/154/200 -> Loss: 0.11201123893260956 Accu: 98.0
+[Training] 300/154/200 -> Loss: 0.03309081494808197 Accu: 99.0
+[Training] 400/154/200 -> Loss: 0.2213398814201355 Accu: 94.0
+[Training] 500/154/200 -> Loss: 0.09564293920993805 Accu: 98.0
+epoch 154 loss 0.07459457963705063
+[Testing] -/154/200 -> Accuracy: 69.12698412698413 % 18900 13065
+epoch 155 started
+[Training] 0/155/200 -> Loss: 0.10021772980690002 Accu: 96.0
+[Training] 100/155/200 -> Loss: 0.05242109298706055 Accu: 99.0
+[Training] 200/155/200 -> Loss: 0.12864887714385986 Accu: 96.0
+[Training] 300/155/200 -> Loss: 0.16211575269699097 Accu: 97.0
+[Training] 400/155/200 -> Loss: 0.1435636281967163 Accu: 96.0
+[Training] 500/155/200 -> Loss: 0.04067295044660568 Accu: 98.0
+epoch 155 loss 0.12846162915229797
+[Testing] -/155/200 -> Accuracy: 69.13227513227514 % 18900 13066
+epoch 156 started
+[Training] 0/156/200 -> Loss: 0.26307469606399536 Accu: 94.0
+[Training] 100/156/200 -> Loss: 0.05600719153881073 Accu: 98.0
+[Training] 200/156/200 -> Loss: 0.0158839114010334 Accu: 99.0
+[Training] 300/156/200 -> Loss: 0.12949185073375702 Accu: 97.0
+[Training] 400/156/200 -> Loss: 0.09699181467294693 Accu: 98.0
+[Training] 500/156/200 -> Loss: 0.1633782982826233 Accu: 95.0
+epoch 156 loss 0.055626463145017624
+[Testing] -/156/200 -> Accuracy: 69.53439153439153 % 18900 13142
+epoch 157 started
+[Training] 0/157/200 -> Loss: 0.16413918137550354 Accu: 95.0
+[Training] 100/157/200 -> Loss: 0.037204448133707047 Accu: 98.0
+[Training] 200/157/200 -> Loss: 0.1338755190372467 Accu: 96.0
+[Training] 300/157/200 -> Loss: 0.14493778347969055 Accu: 97.0
+[Training] 400/157/200 -> Loss: 0.19522839784622192 Accu: 93.0
+[Training] 500/157/200 -> Loss: 0.13809634745121002 Accu: 95.0
+epoch 157 loss 0.10565220564603806
+[Testing] -/157/200 -> Accuracy: 69.66137566137566 % 18900 13166
+epoch 158 started
+[Training] 0/158/200 -> Loss: 0.1905888319015503 Accu: 96.0
+[Training] 100/158/200 -> Loss: 0.07153584063053131 Accu: 97.0
+[Training] 200/158/200 -> Loss: 0.11095019429922104 Accu: 96.0
+[Training] 300/158/200 -> Loss: 0.027631931006908417 Accu: 98.0
+[Training] 400/158/200 -> Loss: 0.07056187838315964 Accu: 98.0
+[Training] 500/158/200 -> Loss: 0.12590856850147247 Accu: 94.0
+epoch 158 loss 0.09177279472351074
+[Testing] -/158/200 -> Accuracy: 70.02116402116401 % 18900 13234
+epoch 159 started
+[Training] 0/159/200 -> Loss: 0.25254303216934204 Accu: 95.0
+[Training] 100/159/200 -> Loss: 0.17996686697006226 Accu: 97.0
+[Training] 200/159/200 -> Loss: 0.04218139499425888 Accu: 99.0
+[Training] 300/159/200 -> Loss: 0.056600190699100494 Accu: 98.0
+[Training] 400/159/200 -> Loss: 0.04650711640715599 Accu: 98.0
+[Training] 500/159/200 -> Loss: 0.050693850964307785 Accu: 98.0
+epoch 159 loss 0.12843531370162964
+[Testing] -/159/200 -> Accuracy: 69.04761904761905 % 18900 13050
+epoch 160 started
+[Training] 0/160/200 -> Loss: 0.10963369160890579 Accu: 96.0
+[Training] 100/160/200 -> Loss: 0.15100236237049103 Accu: 92.0
+[Training] 200/160/200 -> Loss: 0.0946703553199768 Accu: 98.0
+[Training] 300/160/200 -> Loss: 0.0653153508901596 Accu: 97.0
+[Training] 400/160/200 -> Loss: 0.17854201793670654 Accu: 96.0
+[Training] 500/160/200 -> Loss: 0.12816041707992554 Accu: 95.0
+epoch 160 loss 0.2859128415584564
+[Testing] -/160/200 -> Accuracy: 69.17989417989418 % 18900 13075
+epoch 161 started
+[Training] 0/161/200 -> Loss: 0.13779382407665253 Accu: 97.0
+[Training] 100/161/200 -> Loss: 0.15196004509925842 Accu: 98.0
+[Training] 200/161/200 -> Loss: 0.27620407938957214 Accu: 95.0
+[Training] 300/161/200 -> Loss: 0.014770019799470901 Accu: 100.0
+[Training] 400/161/200 -> Loss: 0.13551336526870728 Accu: 94.0
+[Training] 500/161/200 -> Loss: 0.1872548907995224 Accu: 97.0
+epoch 161 loss 0.0986408144235611
+[Testing] -/161/200 -> Accuracy: 69.74603174603175 % 18900 13182
+epoch 162 started
+[Training] 0/162/200 -> Loss: 0.22618438303470612 Accu: 97.0
+[Training] 100/162/200 -> Loss: 0.13189995288848877 Accu: 97.0
+[Training] 200/162/200 -> Loss: 0.3072088658809662 Accu: 93.0
+[Training] 300/162/200 -> Loss: 0.007162879686802626 Accu: 100.0
+[Training] 400/162/200 -> Loss: 0.2979418933391571 Accu: 93.0
+[Training] 500/162/200 -> Loss: 0.15110523998737335 Accu: 96.0
+epoch 162 loss 0.07047512382268906
+[Testing] -/162/200 -> Accuracy: 69.05291005291005 % 18900 13051
+epoch 163 started
+[Training] 0/163/200 -> Loss: 0.04040607064962387 Accu: 98.0
+[Training] 100/163/200 -> Loss: 0.15532584488391876 Accu: 97.0
+[Training] 200/163/200 -> Loss: 0.04442247375845909 Accu: 98.0
+[Training] 300/163/200 -> Loss: 0.08425386250019073 Accu: 98.0
+[Training] 400/163/200 -> Loss: 0.09261269867420197 Accu: 97.0
+[Training] 500/163/200 -> Loss: 0.2593247592449188 Accu: 95.0
+epoch 163 loss 0.24592554569244385
+[Testing] -/163/200 -> Accuracy: 69.65079365079364 % 18900 13164
+epoch 164 started
+[Training] 0/164/200 -> Loss: 0.1247478574514389 Accu: 98.0
+[Training] 100/164/200 -> Loss: 0.1837545931339264 Accu: 97.0
+[Training] 200/164/200 -> Loss: 0.19181427359580994 Accu: 96.0
+[Training] 300/164/200 -> Loss: 0.1207096204161644 Accu: 98.0
+[Training] 400/164/200 -> Loss: 0.1288546770811081 Accu: 99.0
+[Training] 500/164/200 -> Loss: 0.033777348697185516 Accu: 98.0
+epoch 164 loss 0.06514450907707214
+[Testing] -/164/200 -> Accuracy: 69.7037037037037 % 18900 13174
+epoch 165 started
+[Training] 0/165/200 -> Loss: 0.2304656207561493 Accu: 97.0
+[Training] 100/165/200 -> Loss: 0.11787737905979156 Accu: 96.0
+[Training] 200/165/200 -> Loss: 0.16734710335731506 Accu: 95.0
+[Training] 300/165/200 -> Loss: 0.10379853844642639 Accu: 96.0
+[Training] 400/165/200 -> Loss: 0.24923953413963318 Accu: 94.0
+[Training] 500/165/200 -> Loss: 0.2877875864505768 Accu: 92.0
+epoch 165 loss 0.04576907679438591
+[Testing] -/165/200 -> Accuracy: 69.6931216931217 % 18900 13172
+epoch 166 started
+[Training] 0/166/200 -> Loss: 0.04256267845630646 Accu: 99.0
+[Training] 100/166/200 -> Loss: 0.18068206310272217 Accu: 93.0
+[Training] 200/166/200 -> Loss: 0.07306665182113647 Accu: 96.0
+[Training] 300/166/200 -> Loss: 0.02865341678261757 Accu: 98.0
+[Training] 400/166/200 -> Loss: 0.26383131742477417 Accu: 96.0
+[Training] 500/166/200 -> Loss: 0.10092713683843613 Accu: 97.0
+epoch 166 loss 0.08641570061445236
+[Testing] -/166/200 -> Accuracy: 69.16931216931216 % 18900 13073
+epoch 167 started
+[Training] 0/167/200 -> Loss: 0.16621753573417664 Accu: 96.0
+[Training] 100/167/200 -> Loss: 0.17969894409179688 Accu: 98.0
+[Training] 200/167/200 -> Loss: 0.2764759659767151 Accu: 96.0
+[Training] 300/167/200 -> Loss: 0.16628481447696686 Accu: 97.0
+[Training] 400/167/200 -> Loss: 0.15442271530628204 Accu: 95.0
+[Training] 500/167/200 -> Loss: 0.3144710659980774 Accu: 96.0
+epoch 167 loss 0.1353001743555069
+[Testing] -/167/200 -> Accuracy: 69.28042328042328 % 18900 13094
+epoch 168 started
+[Training] 0/168/200 -> Loss: 0.34891214966773987 Accu: 98.0
+[Training] 100/168/200 -> Loss: 0.09491466730833054 Accu: 99.0
+[Training] 200/168/200 -> Loss: 0.017651665955781937 Accu: 99.0
+[Training] 300/168/200 -> Loss: 0.1392918974161148 Accu: 98.0
+[Training] 400/168/200 -> Loss: 0.0962059423327446 Accu: 95.0
+[Training] 500/168/200 -> Loss: 0.22110271453857422 Accu: 96.0
+epoch 168 loss 0.06326846778392792
+[Testing] -/168/200 -> Accuracy: 69.61375661375662 % 18900 13157
+epoch 169 started
+[Training] 0/169/200 -> Loss: 0.16890928149223328 Accu: 96.0
+[Training] 100/169/200 -> Loss: 0.043043456971645355 Accu: 99.0
+[Training] 200/169/200 -> Loss: 0.19435451924800873 Accu: 96.0
+[Training] 300/169/200 -> Loss: 0.08406758308410645 Accu: 98.0
+[Training] 400/169/200 -> Loss: 0.1161193922162056 Accu: 96.0
+[Training] 500/169/200 -> Loss: 0.1829746663570404 Accu: 95.0
+epoch 169 loss 0.022057414054870605
+[Testing] -/169/200 -> Accuracy: 69.66137566137566 % 18900 13166
+epoch 170 started
+[Training] 0/170/200 -> Loss: 0.10239145159721375 Accu: 98.0
+[Training] 100/170/200 -> Loss: 0.06572538614273071 Accu: 99.0
+[Training] 200/170/200 -> Loss: 0.031785864382982254 Accu: 99.0
+[Training] 300/170/200 -> Loss: 0.08346086740493774 Accu: 97.0
+[Training] 400/170/200 -> Loss: 0.03818061947822571 Accu: 98.0
+[Training] 500/170/200 -> Loss: 0.0918063372373581 Accu: 98.0
+epoch 170 loss 0.08284912258386612
+[Testing] -/170/200 -> Accuracy: 69.33333333333334 % 18900 13104
+epoch 171 started
+[Training] 0/171/200 -> Loss: 0.0780697837471962 Accu: 98.0
+[Training] 100/171/200 -> Loss: 0.055939968675374985 Accu: 98.0
+[Training] 200/171/200 -> Loss: 0.13857455551624298 Accu: 97.0
+[Training] 300/171/200 -> Loss: 0.18494445085525513 Accu: 95.0
+[Training] 400/171/200 -> Loss: 0.1646905094385147 Accu: 94.0
+[Training] 500/171/200 -> Loss: 0.10958825796842575 Accu: 97.0
+epoch 171 loss 0.07527296990156174
+[Testing] -/171/200 -> Accuracy: 68.95238095238095 % 18900 13032
+epoch 172 started
+[Training] 0/172/200 -> Loss: 0.03834297135472298 Accu: 99.0
+[Training] 100/172/200 -> Loss: 0.09868407994508743 Accu: 95.0
+[Training] 200/172/200 -> Loss: 0.1571483314037323 Accu: 96.0
+[Training] 300/172/200 -> Loss: 0.09846111387014389 Accu: 96.0
+[Training] 400/172/200 -> Loss: 0.047888174653053284 Accu: 98.0
+[Training] 500/172/200 -> Loss: 0.05432887002825737 Accu: 98.0
+epoch 172 loss 0.1067822203040123
+[Testing] -/172/200 -> Accuracy: 70.2962962962963 % 18900 13286
+epoch 173 started
+[Training] 0/173/200 -> Loss: 0.08746752142906189 Accu: 98.0
+[Training] 100/173/200 -> Loss: 0.056535087525844574 Accu: 99.0
+[Training] 200/173/200 -> Loss: 0.0665411427617073 Accu: 99.0
+[Training] 300/173/200 -> Loss: 0.1486317217350006 Accu: 93.0
+[Training] 400/173/200 -> Loss: 0.027376975864171982 Accu: 100.0
+[Training] 500/173/200 -> Loss: 0.05946071445941925 Accu: 99.0
+epoch 173 loss 0.06282615661621094
+[Testing] -/173/200 -> Accuracy: 69.78835978835978 % 18900 13190
+epoch 174 started
+[Training] 0/174/200 -> Loss: 0.13904137909412384 Accu: 95.0
+[Training] 100/174/200 -> Loss: 0.1279379427433014 Accu: 96.0
+[Training] 200/174/200 -> Loss: 0.04944673925638199 Accu: 98.0
+[Training] 300/174/200 -> Loss: 0.041502002626657486 Accu: 98.0
+[Training] 400/174/200 -> Loss: 0.2360682636499405 Accu: 94.0
+[Training] 500/174/200 -> Loss: 0.09436842799186707 Accu: 97.0
+epoch 174 loss 0.04208005592226982
+[Testing] -/174/200 -> Accuracy: 69.54497354497354 % 18900 13144
+epoch 175 started
+[Training] 0/175/200 -> Loss: 0.017959626391530037 Accu: 100.0
+[Training] 100/175/200 -> Loss: 0.08816184103488922 Accu: 96.0
+[Training] 200/175/200 -> Loss: 0.15084479749202728 Accu: 97.0
+[Training] 300/175/200 -> Loss: 0.007818550802767277 Accu: 100.0
+[Training] 400/175/200 -> Loss: 0.09136819839477539 Accu: 98.0
+[Training] 500/175/200 -> Loss: 0.0561392679810524 Accu: 99.0
+epoch 175 loss 0.1346758008003235
+[Testing] -/175/200 -> Accuracy: 69.96296296296296 % 18900 13223
+epoch 176 started
+[Training] 0/176/200 -> Loss: 0.22452284395694733 Accu: 94.0
+[Training] 100/176/200 -> Loss: 0.1757276952266693 Accu: 95.0
+[Training] 200/176/200 -> Loss: 0.15797461569309235 Accu: 98.0
+[Training] 300/176/200 -> Loss: 0.12809628248214722 Accu: 94.0
+[Training] 400/176/200 -> Loss: 0.11662039905786514 Accu: 97.0
+[Training] 500/176/200 -> Loss: 0.3634868562221527 Accu: 92.0
+epoch 176 loss 0.13072702288627625
+[Testing] -/176/200 -> Accuracy: 69.62962962962963 % 18900 13160
+epoch 177 started
+[Training] 0/177/200 -> Loss: 0.11258354038000107 Accu: 97.0
+[Training] 100/177/200 -> Loss: 0.23911739885807037 Accu: 96.0
+[Training] 200/177/200 -> Loss: 0.019258184358477592 Accu: 99.0
+[Training] 300/177/200 -> Loss: 0.11949025839567184 Accu: 95.0
+[Training] 400/177/200 -> Loss: 0.21832267940044403 Accu: 95.0
+[Training] 500/177/200 -> Loss: 0.15253227949142456 Accu: 94.0
+epoch 177 loss 0.185445174574852
+[Testing] -/177/200 -> Accuracy: 68.93650793650794 % 18900 13029
+epoch 178 started
+[Training] 0/178/200 -> Loss: 0.004770438186824322 Accu: 100.0
+[Training] 100/178/200 -> Loss: 0.08341632783412933 Accu: 98.0
+[Training] 200/178/200 -> Loss: 0.020793475210666656 Accu: 100.0
+[Training] 300/178/200 -> Loss: 0.1270350217819214 Accu: 98.0
+[Training] 400/178/200 -> Loss: 0.228797048330307 Accu: 95.0
+[Training] 500/178/200 -> Loss: 0.11268974095582962 Accu: 98.0
+epoch 178 loss 0.04530138149857521
+[Testing] -/178/200 -> Accuracy: 70.39153439153439 % 18900 13304
+epoch 179 started
+[Training] 0/179/200 -> Loss: 0.05506797879934311 Accu: 97.0
+[Training] 100/179/200 -> Loss: 0.031000204384326935 Accu: 99.0
+[Training] 200/179/200 -> Loss: 0.21072930097579956 Accu: 93.0
+[Training] 300/179/200 -> Loss: 0.04381882771849632 Accu: 98.0
+[Training] 400/179/200 -> Loss: 0.1708153933286667 Accu: 97.0
+[Training] 500/179/200 -> Loss: 0.052216414362192154 Accu: 96.0
+epoch 179 loss 0.020681047812104225
+[Testing] -/179/200 -> Accuracy: 70.18518518518519 % 18900 13265
+epoch 180 started
+[Training] 0/180/200 -> Loss: 0.010642307810485363 Accu: 100.0
+[Training] 100/180/200 -> Loss: 0.026419319212436676 Accu: 100.0
+[Training] 200/180/200 -> Loss: 0.1774924099445343 Accu: 97.0
+[Training] 300/180/200 -> Loss: 0.01411822997033596 Accu: 99.0
+[Training] 400/180/200 -> Loss: 0.03467709943652153 Accu: 99.0
+[Training] 500/180/200 -> Loss: 0.05073486641049385 Accu: 99.0
+epoch 180 loss 0.12520557641983032
+[Testing] -/180/200 -> Accuracy: 69.56084656084656 % 18900 13147
+epoch 181 started
+[Training] 0/181/200 -> Loss: 0.11197499930858612 Accu: 96.0
+[Training] 100/181/200 -> Loss: 0.10043521225452423 Accu: 97.0
+[Training] 200/181/200 -> Loss: 0.01796633191406727 Accu: 99.0
+[Training] 300/181/200 -> Loss: 0.18254943192005157 Accu: 99.0
+[Training] 400/181/200 -> Loss: 0.13269108533859253 Accu: 99.0
+[Training] 500/181/200 -> Loss: 0.1033676266670227 Accu: 98.0
+epoch 181 loss 0.011914397589862347
+[Testing] -/181/200 -> Accuracy: 70.23280423280424 % 18900 13274
+epoch 182 started
+[Training] 0/182/200 -> Loss: 0.2408055067062378 Accu: 96.0
+[Training] 100/182/200 -> Loss: 0.09501978009939194 Accu: 96.0
+[Training] 200/182/200 -> Loss: 0.15692105889320374 Accu: 95.0
+[Training] 300/182/200 -> Loss: 0.03121066652238369 Accu: 98.0
+[Training] 400/182/200 -> Loss: 0.09584737569093704 Accu: 96.0
+[Training] 500/182/200 -> Loss: 0.17878545820713043 Accu: 95.0
+epoch 182 loss 0.10248146951198578
+[Testing] -/182/200 -> Accuracy: 69.61375661375662 % 18900 13157
+epoch 183 started
+[Training] 0/183/200 -> Loss: 0.10960039496421814 Accu: 95.0
+[Training] 100/183/200 -> Loss: 0.2273469716310501 Accu: 93.0
+[Training] 200/183/200 -> Loss: 0.1322256326675415 Accu: 98.0
+[Training] 300/183/200 -> Loss: 0.1765870451927185 Accu: 96.0
+[Training] 400/183/200 -> Loss: 0.006687675602734089 Accu: 100.0
+[Training] 500/183/200 -> Loss: 0.06299638003110886 Accu: 98.0
+epoch 183 loss 0.09591197967529297
+[Testing] -/183/200 -> Accuracy: 69.35449735449735 % 18900 13108
+epoch 184 started
+[Training] 0/184/200 -> Loss: 0.0804504007101059 Accu: 97.0
+[Training] 100/184/200 -> Loss: 0.06662928313016891 Accu: 98.0
+[Training] 200/184/200 -> Loss: 0.1558588445186615 Accu: 95.0
+[Training] 300/184/200 -> Loss: 0.10496953129768372 Accu: 99.0
+[Training] 400/184/200 -> Loss: 0.190238356590271 Accu: 96.0
+[Training] 500/184/200 -> Loss: 0.07274279743432999 Accu: 97.0
+epoch 184 loss 0.05652908980846405
+[Testing] -/184/200 -> Accuracy: 69.94708994708995 % 18900 13220
+epoch 185 started
+[Training] 0/185/200 -> Loss: 0.09403061121702194 Accu: 97.0
+[Training] 100/185/200 -> Loss: 0.03478454053401947 Accu: 99.0
+[Training] 200/185/200 -> Loss: 0.05865270644426346 Accu: 97.0
+[Training] 300/185/200 -> Loss: 0.08660871535539627 Accu: 97.0
+[Training] 400/185/200 -> Loss: 0.1357600837945938 Accu: 95.0
+[Training] 500/185/200 -> Loss: 0.15591879189014435 Accu: 96.0
+epoch 185 loss 0.11336874961853027
+[Testing] -/185/200 -> Accuracy: 69.35978835978835 % 18900 13109
+epoch 186 started
+[Training] 0/186/200 -> Loss: 0.12415624409914017 Accu: 97.0
+[Training] 100/186/200 -> Loss: 0.13542279601097107 Accu: 97.0
+[Training] 200/186/200 -> Loss: 0.08713573217391968 Accu: 99.0
+[Training] 300/186/200 -> Loss: 0.14131979644298553 Accu: 96.0
+[Training] 400/186/200 -> Loss: 0.1600579470396042 Accu: 97.0
+[Training] 500/186/200 -> Loss: 0.06716784089803696 Accu: 98.0
+epoch 186 loss 0.08786133676767349
+[Testing] -/186/200 -> Accuracy: 69.83597883597884 % 18900 13199
+epoch 187 started
+[Training] 0/187/200 -> Loss: 0.15019837021827698 Accu: 97.0
+[Training] 100/187/200 -> Loss: 0.02384987659752369 Accu: 99.0
+[Training] 200/187/200 -> Loss: 0.05698814243078232 Accu: 99.0
+[Training] 300/187/200 -> Loss: 0.17038683593273163 Accu: 93.0
+[Training] 400/187/200 -> Loss: 0.13164283335208893 Accu: 95.0
+[Training] 500/187/200 -> Loss: 0.053290147334337234 Accu: 99.0
+epoch 187 loss 0.2457747608423233
+[Testing] -/187/200 -> Accuracy: 70.0 % 18900 13230
+epoch 188 started
+[Training] 0/188/200 -> Loss: 0.04843049868941307 Accu: 99.0
+[Training] 100/188/200 -> Loss: 0.029472485184669495 Accu: 99.0
+[Training] 200/188/200 -> Loss: 0.28169500827789307 Accu: 94.0
+[Training] 300/188/200 -> Loss: 0.17175087332725525 Accu: 95.0
+[Training] 400/188/200 -> Loss: 0.0654246062040329 Accu: 97.0
+[Training] 500/188/200 -> Loss: 0.2264706790447235 Accu: 96.0
+epoch 188 loss 0.17304563522338867
+[Testing] -/188/200 -> Accuracy: 69.78306878306879 % 18900 13189
+epoch 189 started
+[Training] 0/189/200 -> Loss: 0.015996510162949562 Accu: 100.0
+[Training] 100/189/200 -> Loss: 0.0505746454000473 Accu: 98.0
+[Training] 200/189/200 -> Loss: 0.13512639701366425 Accu: 97.0
+[Training] 300/189/200 -> Loss: 0.02432773821055889 Accu: 99.0
+[Training] 400/189/200 -> Loss: 0.15411438047885895 Accu: 94.0
+[Training] 500/189/200 -> Loss: 0.13103629648685455 Accu: 97.0
+epoch 189 loss 0.24049672484397888
+[Testing] -/189/200 -> Accuracy: 69.03174603174604 % 18900 13047
+epoch 190 started
+[Training] 0/190/200 -> Loss: 0.10784189403057098 Accu: 97.0
+[Training] 100/190/200 -> Loss: 0.05576763302087784 Accu: 99.0
+[Training] 200/190/200 -> Loss: 0.03570644557476044 Accu: 98.0
+[Training] 300/190/200 -> Loss: 0.12466683983802795 Accu: 96.0
+[Training] 400/190/200 -> Loss: 0.23789571225643158 Accu: 97.0
+[Training] 500/190/200 -> Loss: 0.10628021508455276 Accu: 97.0
+epoch 190 loss 0.13317663967609406
+[Testing] -/190/200 -> Accuracy: 69.42328042328042 % 18900 13121
+epoch 191 started
+[Training] 0/191/200 -> Loss: 0.23408731818199158 Accu: 96.0
+[Training] 100/191/200 -> Loss: 0.18091672658920288 Accu: 96.0
+[Training] 200/191/200 -> Loss: 0.11237995326519012 Accu: 96.0
+[Training] 300/191/200 -> Loss: 0.08415092527866364 Accu: 96.0
+[Training] 400/191/200 -> Loss: 0.06129654869437218 Accu: 99.0
+[Training] 500/191/200 -> Loss: 0.1792861521244049 Accu: 96.0
+epoch 191 loss 0.12494900077581406
+[Testing] -/191/200 -> Accuracy: 69.15343915343915 % 18900 13070
+epoch 192 started
+[Training] 0/192/200 -> Loss: 0.05820192024111748 Accu: 98.0
+[Training] 100/192/200 -> Loss: 0.13105015456676483 Accu: 98.0
+[Training] 200/192/200 -> Loss: 0.1399872899055481 Accu: 95.0
+[Training] 300/192/200 -> Loss: 0.015640314668416977 Accu: 99.0
+[Training] 400/192/200 -> Loss: 0.28781116008758545 Accu: 95.0
+[Training] 500/192/200 -> Loss: 0.08175457268953323 Accu: 97.0
+epoch 192 loss 0.09484830498695374
+[Testing] -/192/200 -> Accuracy: 69.75132275132275 % 18900 13183
+epoch 193 started
+[Training] 0/193/200 -> Loss: 0.047243982553482056 Accu: 98.0
+[Training] 100/193/200 -> Loss: 0.12710069119930267 Accu: 97.0
+[Training] 200/193/200 -> Loss: 0.006438941229134798 Accu: 100.0
+[Training] 300/193/200 -> Loss: 0.06265955418348312 Accu: 99.0
+[Training] 400/193/200 -> Loss: 0.1714085340499878 Accu: 94.0
+[Training] 500/193/200 -> Loss: 0.033666424453258514 Accu: 98.0
+epoch 193 loss 0.18007266521453857
+[Testing] -/193/200 -> Accuracy: 69.96296296296296 % 18900 13223
+epoch 194 started
+[Training] 0/194/200 -> Loss: 0.0395565927028656 Accu: 98.0
+[Training] 100/194/200 -> Loss: 0.07954426854848862 Accu: 97.0
+[Training] 200/194/200 -> Loss: 0.11373700946569443 Accu: 96.0
+[Training] 300/194/200 -> Loss: 0.045263346284627914 Accu: 98.0
+[Training] 400/194/200 -> Loss: 0.25400272011756897 Accu: 93.0
+[Training] 500/194/200 -> Loss: 0.22316110134124756 Accu: 94.0
+epoch 194 loss 0.10891775041818619
+[Testing] -/194/200 -> Accuracy: 70.07407407407408 % 18900 13244
+epoch 195 started
+[Training] 0/195/200 -> Loss: 0.11577042937278748 Accu: 95.0
+[Training] 100/195/200 -> Loss: 0.1553318351507187 Accu: 96.0
+[Training] 200/195/200 -> Loss: 0.16239303350448608 Accu: 96.0
+[Training] 300/195/200 -> Loss: 0.05762585997581482 Accu: 96.0
+[Training] 400/195/200 -> Loss: 0.03192403167486191 Accu: 97.0
+[Training] 500/195/200 -> Loss: 0.02256399393081665 Accu: 100.0
+epoch 195 loss 0.27879664301872253
+[Testing] -/195/200 -> Accuracy: 69.65079365079364 % 18900 13164
+epoch 196 started
+[Training] 0/196/200 -> Loss: 0.2364356964826584 Accu: 94.0
+[Training] 100/196/200 -> Loss: 0.029225092381238937 Accu: 99.0
+[Training] 200/196/200 -> Loss: 0.22714324295520782 Accu: 93.0
+[Training] 300/196/200 -> Loss: 0.32025155425071716 Accu: 96.0
+[Training] 400/196/200 -> Loss: 0.08745425939559937 Accu: 97.0
+[Training] 500/196/200 -> Loss: 0.10758128017187119 Accu: 97.0
+epoch 196 loss 0.14190323650836945
+[Testing] -/196/200 -> Accuracy: 70.01587301587303 % 18900 13233
+epoch 197 started
+[Training] 0/197/200 -> Loss: 0.013307545334100723 Accu: 100.0
+[Training] 100/197/200 -> Loss: 0.005879872478544712 Accu: 100.0
+[Training] 200/197/200 -> Loss: 0.05937597155570984 Accu: 99.0
+[Training] 300/197/200 -> Loss: 0.09268798679113388 Accu: 99.0
+[Training] 400/197/200 -> Loss: 0.2599833607673645 Accu: 98.0
+[Training] 500/197/200 -> Loss: 0.1649383157491684 Accu: 98.0
+epoch 197 loss 0.11657080054283142
+[Testing] -/197/200 -> Accuracy: 69.7037037037037 % 18900 13174
+epoch 198 started
+[Training] 0/198/200 -> Loss: 0.024750275537371635 Accu: 99.0
+[Training] 100/198/200 -> Loss: 0.047423288226127625 Accu: 98.0
+[Training] 200/198/200 -> Loss: 0.0017325174994766712 Accu: 100.0
+[Training] 300/198/200 -> Loss: 0.06305380165576935 Accu: 96.0
+[Training] 400/198/200 -> Loss: 0.012959938496351242 Accu: 100.0
+[Training] 500/198/200 -> Loss: 0.3637867271900177 Accu: 96.0
+epoch 198 loss 0.05293963849544525
+[Testing] -/198/200 -> Accuracy: 69.75132275132275 % 18900 13183
+epoch 199 started
+[Training] 0/199/200 -> Loss: 0.18820661306381226 Accu: 96.0
+[Training] 100/199/200 -> Loss: 0.12318920344114304 Accu: 97.0
+[Training] 200/199/200 -> Loss: 0.017199113965034485 Accu: 99.0
+[Training] 300/199/200 -> Loss: 0.14640986919403076 Accu: 96.0
+[Training] 400/199/200 -> Loss: 0.1382823884487152 Accu: 96.0
+[Training] 500/199/200 -> Loss: 0.3298330307006836 Accu: 94.0
+epoch 199 loss 0.18286775052547455
+[Testing] -/199/200 -> Accuracy: 70.21164021164022 % 18900 13270

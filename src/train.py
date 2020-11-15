@@ -4,7 +4,7 @@ from torch.utils import tensorboard as tb
 from model.sketchanet import SketchANet,Net
 import data.dataset as DataSet
 from torch.utils.data import DataLoader
-
+from model.resnet import getResnet
 from torchvision import transforms
 import data.datautil as util
 
@@ -28,21 +28,24 @@ def load_checkpoint(path,model,optimizer):
 
 def main():
     # batch_size = 100
-    batch_size = 1
+    batch_size = 100
     print("here")
     sk_root = '../256x256/sketch/tx_000000000000'
-    sk_root ='../test'
-    train_dataset = DataSet.ImageDataset(sk_root, transform=Compose([Resize(225), ToTensor()]))
+   # sk_root ='../test'
+    in_size = 225
+    in_size = 224
+    train_dataset = DataSet.ImageDataset(sk_root, transform=Compose([Resize(in_size), ToTensor()]))
     train_dataloader = DataLoader(train_dataset, batch_size=batch_size, pin_memory=True, num_workers=os.cpu_count(),
                          shuffle=True, drop_last=True)
 
-    test_dataset = DataSet.ImageDataset(sk_root, transform=Compose([Resize([225, 225]), ToTensor()]),train=False)
+    test_dataset = DataSet.ImageDataset(sk_root, transform=Compose([Resize(in_size), ToTensor()]),train=False)
     test_dataloader = DataLoader(test_dataset, batch_size=batch_size, pin_memory=True, num_workers=os.cpu_count(),
                          shuffle=True, drop_last=True)
 
-
-    model = SketchANet(num_classes=3)
+    num_class = len(train_dataset.classes)
+    model = SketchANet(num_classes=num_class)
     model = Net()
+    model = getResnet(num_class=num_class,pretrain=True)
     model.train()
     if torch.cuda.is_available():
         model = model.cuda()
@@ -55,7 +58,7 @@ def main():
 
     count = 0
     epochs = 200
-    prints_interval = 1
+    prints_interval = 100
     for e in range(epochs):
         print('epoch',e,'started')
         for i, (X, Y) in enumerate(train_dataloader):
@@ -65,14 +68,11 @@ def main():
 
             optim.zero_grad()
             to_image = transforms.ToPILImage()
-            image = to_image(X[0])
-            util.showImage(image)
-            print(train_dataset.class_to_idx)
-            print(Y)
             output = model(X)
             #print(output,Y)
             loss = crit(output, Y)
-            
+            if i == 0:
+                print(loss)
             if i % prints_interval == 0:
                 print(f'[Training] {i}/{e}/{epochs} -> Loss: {loss.item()}')
                 # writer.add_scalar('train-loss', loss.item(), count)

@@ -1,6 +1,6 @@
 import torchvision.models as models
 import torch.nn as nn
-def getResnet(num_class = 125, pretain=False):
+def getResnet(num_class = 125, pretrain=False):
     model = models.resnet18(pretrained=pretain)
     # for name, child in model.named_children():
     #     for name2, params in child.named_parameters():
