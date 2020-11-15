@@ -34,21 +34,20 @@ def load_checkpoint(path, model, optimizer):
 
 def main():
     # batch_size = 100
-    batch_size = 1
+    batch_size = 100
+    balanced = True
     print("here")
     sk_root = '../256x256/sketch/tx_000000000000'
     # sk_root ='../test'
     in_size = 225
     in_size = 224
     tmp_root ='../test_pair/photo'
-    util.train_test_split(tmp_root,split=(1,0.,0.))
     sketch_root = '../test_pair/sketch'
-    util.train_test_split(sketch_root, split=(1, 0, 0))
-    train_dataset = DataSet.PairedDataset(photo_root=tmp_root,sketch_root=sketch_root,transform=Compose([Resize(in_size), ToTensor()]))
+    train_dataset = DataSet.PairedDataset(photo_root=tmp_root,sketch_root=sketch_root,transform=Compose([Resize(in_size), ToTensor()]),balanced=balanced)
     train_dataloader = DataLoader(train_dataset, batch_size=batch_size, pin_memory=True, num_workers=os.cpu_count(),
                                   shuffle=True, drop_last=True)
-    # test_dataset = DataSet.PairedDataset(photo_root=tmp_root,sketch_root=sketch_root,transform=Compose([Resize(in_size), ToTensor()]),train=False)
-    test_dataloader = DataLoader(train_dataset, batch_size=batch_size, pin_memory=True, num_workers=os.cpu_count(),
+    test_dataset = DataSet.PairedDataset(photo_root=tmp_root,sketch_root=sketch_root,transform=Compose([Resize(in_size), ToTensor()]),train=False)
+    test_dataloader = DataLoader(test_dataset, batch_size=batch_size, pin_memory=True, num_workers=os.cpu_count(),
                                   shuffle=True, drop_last=True)
 
     num_class = len(train_dataset.classes)
@@ -59,7 +58,7 @@ def main():
 
 
     method = 'metric'
-    # method = "classify"
+    method = "classify"
 
 
     if method is 'classify':
@@ -96,18 +95,17 @@ def main():
                 output=classifier(*output)
                 loss = crit(output, Y)
             else:
-                temp = Y 
+                temp = Y
                 Y = torch.where(Y != 3, 1, 0)
                 loss = crit(*output,Y)
-            if loss >= 0.09:
-                print('here',Y)
-                for i in range(sketch.shape[0]):
-                    image =to_image(sketch[i])
-                    util.showImage(image)
-                    image =to_image(photo[i])
-                    util.showImage(image)
-                    print(temp)
-                    print(train_dataset.classes)
+            # if loss == 0.0:
+            #     print('here',Y)
+            #     for i in range(sketch.shape[0]):
+            #         image =to_image(sketch[i])
+            #         util.showImage(image)
+            #         image =to_image(photo[i])
+            #         util.showImage(image)
+            #         print(train_dataset.classes)
             avg_loss+=loss.item()
             if i % prints_interval == 0:
                 # print(output,Y)
@@ -144,8 +142,9 @@ def eval_loss(test_dataloader,model,e,epochs,crit,train_dataset):
 
 
 def eval_accu(test_dataloader,model,e,epochs,classifier):
+    correct, total, accuracy = 0, 0, 0
     for i, (X, Y) in enumerate(test_dataloader):
-        correct, total, accuracy = 0, 0, 0
+
         if torch.cuda.is_available():
             X, Y = X.cuda(), Y.cuda()
         output = model(*X)

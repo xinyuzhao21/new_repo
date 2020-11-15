@@ -30,9 +30,9 @@ class ImageDataset(torchvision.datasets.ImageFolder):
 
 class PairedDataset(torch.utils.data.Dataset):
     'Characterizes a dataset for PyTorch'
-    def __init__(self,sketch_root,photo_root,transform=None,train=True,eval=False, fine_grain=False):
+    def __init__(self,sketch_root,photo_root,transform=None,train=True,eval=False, fine_grain=False, balanced = False):
         'Initialization'
-
+        self.balanced = balanced
         self.sketch_root = sketch_root
         self.photo_root = photo_root
         self.train_sketch,self.train_photo = [],[]
@@ -131,30 +131,34 @@ class PairedDataset(torch.utils.data.Dataset):
     def __getitem__(self, index):
         'Generates one sample of data'
         # Select sample
-        random_state = np.random.RandomState(123)
+
         target = np.random.randint(0, 2)
+        if self.balanced:
+            uni_prob = 1/len(self.classes)
+            target = np.random.choice([0,1],p=[uni_prob,1-uni_prob])
         label_s,sketch = self.train_sketch[index]
         label = label_s
         if self.train:
             if target ==1:
-                photo_index = random_state.choice(self.label_to_indx_photo[label_s])
+                photo_index = np.random.choice(self.label_to_indx_photo[label_s])
                 label_p,photo = self.train_photo[photo_index]
             else:
-                neg_class = random_state.choice(list(self.classes_set-set([self.classes[label_s]])))
+                neg_class = np.random.choice(list(self.classes_set-set([self.classes[label_s]])))
                 neg_class = self.class_to_index[neg_class]
-                photo_index = random_state.choice(self.label_to_indx_photo[neg_class])
+                photo_index = np.random.choice(self.label_to_indx_photo[neg_class])
                 label_p,photo = self.train_photo[photo_index]
                 label = self.class_to_index['unmatched']
         else:
             random_state = np.random.RandomState(29)
+            label_s, sketch = self.test_sketch[index]
             if target ==1:
                 photo_index = random_state.choice(self.label_to_indx_photo[label_s])
-                label_p,photo = self.train_photo[photo_index]
+                label_p,photo = self.test_photo[photo_index]
             else:
                 neg_class = random_state.choice(list(self.classes_set-set([self.classes[label_s]])))
                 neg_class = self.class_to_index[neg_class]
                 photo_index = random_state.choice(self.label_to_indx_photo[neg_class])
-                label_p,photo = self.train_photo[photo_index]
+                label_p,photo = self.test_photo[photo_index]
                 label = self.class_to_index['unmatched']
         sketch =self.pil_loader(sketch)
         photo = self.pil_loader(photo)
