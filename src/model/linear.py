@@ -6,9 +6,9 @@ class ClassificationNet(nn.Module):
     def __init__(self, insize, n_classes):
         super(ClassificationNet, self).__init__()
         self.net1 = nn.Sequential(
-            nn.Linear(insize, 4096),
+            nn.Linear(insize, 200),
             nn.ReLU(inplace=True),
-            nn.Linear(4096, n_classes)
+            nn.Linear(200, n_classes)
 
         )
 

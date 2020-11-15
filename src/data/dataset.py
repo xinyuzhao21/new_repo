@@ -32,6 +32,7 @@ class PairedDataset(torch.utils.data.Dataset):
     'Characterizes a dataset for PyTorch'
     def __init__(self,sketch_root,photo_root,transform=None,train=True,eval=False, fine_grain=False):
         'Initialization'
+
         self.sketch_root = sketch_root
         self.photo_root = photo_root
         self.train_sketch,self.train_photo = [],[]
@@ -119,8 +120,9 @@ class PairedDataset(torch.utils.data.Dataset):
 
 
         self.classes_set = set(self.classes)
-        self.class_to_index['unmatched'] = class_i
         self.classes.append('unmatched')
+        self.class_to_index['unmatched'] = len(self.classes)-1
+
 
     def __len__(self):
         'Denotes the total number of samples'
@@ -129,17 +131,18 @@ class PairedDataset(torch.utils.data.Dataset):
     def __getitem__(self, index):
         'Generates one sample of data'
         # Select sample
+        random_state = np.random.RandomState(123)
         target = np.random.randint(0, 2)
         label_s,sketch = self.train_sketch[index]
         label = label_s
         if self.train:
             if target ==1:
-                photo_index = np.random.choice(self.label_to_indx_photo[label_s])
+                photo_index = random_state.choice(self.label_to_indx_photo[label_s])
                 label_p,photo = self.train_photo[photo_index]
             else:
-                neg_class = np.random.choice(list(self.classes_set-set([label_s])))
+                neg_class = random_state.choice(list(self.classes_set-set([self.classes[label_s]])))
                 neg_class = self.class_to_index[neg_class]
-                photo_index = np.random.choice(self.label_to_indx_photo[neg_class])
+                photo_index = random_state.choice(self.label_to_indx_photo[neg_class])
                 label_p,photo = self.train_photo[photo_index]
                 label = self.class_to_index['unmatched']
         else:
@@ -148,7 +151,7 @@ class PairedDataset(torch.utils.data.Dataset):
                 photo_index = random_state.choice(self.label_to_indx_photo[label_s])
                 label_p,photo = self.train_photo[photo_index]
             else:
-                neg_class = random_state.choice(list(self.classes_set-set([label_s])))
+                neg_class = random_state.choice(list(self.classes_set-set([self.classes[label_s]])))
                 neg_class = self.class_to_index[neg_class]
                 photo_index = random_state.choice(self.label_to_indx_photo[neg_class])
                 label_p,photo = self.train_photo[photo_index]
@@ -158,4 +161,6 @@ class PairedDataset(torch.utils.data.Dataset):
         if self.transform is not None:
             sketch=self.transform(sketch)
             photo = self.transform(photo)
-        return (sketch,photo), label
+        # return (sketch,photo,label_s,label_p), (label, target)
+
+        return (sketch, photo), label

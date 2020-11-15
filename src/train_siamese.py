@@ -54,13 +54,12 @@ def main():
     num_class = len(train_dataset.classes)
     embedding_size = 30
     net1 = getResnet(num_class=embedding_size,pretrain=True)
-    net1 = Net(num_class=embedding_size)
     margin = 1
     model = SiameseNet(net1,net1)
 
 
     method = 'metric'
-    method = "classify"
+    # method = "classify"
 
 
     if method is 'classify':
@@ -80,7 +79,7 @@ def main():
     count = 0
     epochs = 200
     prints_interval = 100
-    prints_interval = 1
+    prints_interval = 100
     for e in range(epochs):
         print('epoch', e, 'started')
         avg_loss = 0
@@ -88,7 +87,7 @@ def main():
 
             if torch.cuda.is_available():
                 X, Y = X.cuda(), Y.cuda()
-
+            sketch,photo =X
             optim.zero_grad()
             to_image = transforms.ToPILImage()
             output = model(*X)
@@ -97,9 +96,21 @@ def main():
                 output=classifier(*output)
                 loss = crit(output, Y)
             else:
+                temp = Y 
+                Y = torch.where(Y != 3, 1, 0)
                 loss = crit(*output,Y)
+            if loss >= 0.09:
+                print('here',Y)
+                for i in range(sketch.shape[0]):
+                    image =to_image(sketch[i])
+                    util.showImage(image)
+                    image =to_image(photo[i])
+                    util.showImage(image)
+                    print(temp)
+                    print(train_dataset.classes)
             avg_loss+=loss.item()
             if i % prints_interval == 0:
+                # print(output,Y)
                 print(f'[Training] {i}/{e}/{epochs} -> Loss: {avg_loss/(i+1)}')
                 # writer.add_scalar('train-loss', loss.item(), count)
             loss.backward()
@@ -107,28 +118,30 @@ def main():
             optim.step()
 
             count += 1
-        print('epoch', e, 'loss', avg_loss/len(train_dataloader))
+        print('epoch', e, 'Avg loss', avg_loss/len(train_dataloader))
         if method is 'classify':
             eval_accu(test_dataloader,model,e,epochs,classifier)
         else:
-            eval_loss(test_dataloader,model,e,epochs)
+            eval_loss(test_dataloader,model,e,epochs,crit,train_dataset)
         # model.eval()
 
         # model.train()
-def eval_loss(test_dataloader,model,e,epochs,crit):
+def eval_loss(test_dataloader,model,e,epochs,crit,train_dataset):
     avg_loss = 0
     for i, (X, Y) in enumerate(test_dataloader):
 
         if torch.cuda.is_available():
             X, Y = X.cuda(), Y.cuda()
-
+        Y = (Y != train_dataset.class_to_index['unmatched'])
         to_image = transforms.ToPILImage()
         output = model(*X)
 
         # print(output,Y)
         loss = crit(*output, Y)
         avg_loss += loss.item()
-    print('epoch', e, 'loss', avg_loss / len(test_dataloader))
+    print(f'[Testing] -/{e}/{epochs} -> Avg Loss: {avg_loss / len(test_dataloader)} %')
+
+
 
 def eval_accu(test_dataloader,model,e,epochs,classifier):
     for i, (X, Y) in enumerate(test_dataloader):

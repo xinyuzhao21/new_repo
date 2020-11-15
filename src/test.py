@@ -27,23 +27,24 @@ sk_root ='../rendered_256x256/256x256/sketch/tx_000000000000'
 #     print(y_batch)
 
 # Test PairedDataSet
-# tmp_root ='../testpair/photo'
-# util.train_test_split(tmp_root,split=(0.8,0.1,0.1))
-# sketch_root = '../testpair/sketch'
-# train_data = DataSet.PairedDataset(photo_root=tmp_root,sketch_root=sketch_root,transform=transforms.ToTensor())
-# train_loader = DataLoader(dataset=train_data, batch_size=2,shuffle=True)
+tmp_root ='../test_pair/photo'
+util.train_test_split(tmp_root,split=(1,0.0,0.0))
+sketch_root = '../test_pair/sketch'
+train_data = DataSet.PairedDataset(photo_root=tmp_root,sketch_root=sketch_root,transform=transforms.ToTensor())
+train_loader = DataLoader(dataset=train_data, batch_size=1,shuffle=True)
 #
-# for x_batch, y_batch in train_loader:
-#     print(x_batch[0].shape,)
-    # to_image = transforms.ToPILImage()
-    # sketch,photo=x_batch
-    # for i in range(sketch.shape[0]):
-    #     image =to_image(sketch[i])
-    #     util.showImage(image)
-    #     image =to_image(photo[i])
-    #     util.showImage(image)
-    # print(train_data.class_to_index)
-    # print(y_batch)
+for e in range(10):
+    for x_batch, y_batch in train_loader:
+        print(x_batch[0].shape,)
+        to_image = transforms.ToPILImage()
+        sketch,photo,l1,l2=x_batch
+        for i in range(sketch.shape[0]):
+            image =to_image(sketch[i])
+            util.showImage(image)
+            image =to_image(photo[i])
+            util.showImage(image)
+        print(train_data.class_to_index)
+        print(y_batch,l1,l2)
 
 import torch, os
 from loss.contrastive import ContrastiveLoss
@@ -146,5 +147,5 @@ def main():
         # print(f'[Testing] -/{e}/{epochs} -> Accuracy: {accuracy} %', total, correct)
         model.train()
 
-if __name__ == '__main__':
-    main()
+# if __name__ == '__main__':
+#     main()
