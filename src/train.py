@@ -28,10 +28,11 @@ def load_checkpoint(path,model,optimizer):
 
 def main():
     # batch_size = 100
-    batch_size = 100
+    batch_size = 1
     print("here")
     sk_root = '../256x256/sketch/tx_000000000000'
-   # sk_root ='../test'
+    sk_root = '../256x256/photo/tx_000000000000'
+    sk_root ='../test_pair/sketch'
     in_size = 225
     in_size = 224
     train_dataset = DataSet.ImageDataset(sk_root, transform=Compose([Resize(in_size), ToTensor()]))
@@ -43,9 +44,9 @@ def main():
                          shuffle=True, drop_last=True)
 
     num_class = len(train_dataset.classes)
-    model = SketchANet(num_classes=num_class)
-    model = Net()
-    model = getResnet(num_class=num_class,pretrain=True)
+    embed_size = -1
+    model = getResnet(num_class=num_class,embed_size=embed_size,pretrain=True)
+    print(model)
     model.train()
     if torch.cuda.is_available():
         model = model.cuda()
@@ -58,7 +59,7 @@ def main():
 
     count = 0
     epochs = 200
-    prints_interval = 100
+    prints_interval = 1
     for e in range(epochs):
         print('epoch',e,'started')
         avg_loss = 0
@@ -83,7 +84,7 @@ def main():
             optim.step()
 
             count += 1
-        print('epoch',e,'loss',loss.item())
+        print('epoch',e,'loss',avg_loss/len(train_dataloader))
         correct, total, accuracy= 0, 0, 0
         # model.eval()
         for i, (X, Y) in enumerate(test_dataloader):
