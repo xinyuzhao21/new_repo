@@ -42,11 +42,17 @@ def main():
     in_size = 224
     tmp_root = '../256x256/photo/tx_000000000000'
     sketch_root = '../256x256/sketch/tx_000000000000'
+    # tmp_root = '../rendered_256x256/256x256/photo/tx_000000000000'
+    # sketch_root = '../rendered_256x256/256x256/sketch/tx_000000000000'
     train_dataset = DataSet.PairedDataset(photo_root=tmp_root,sketch_root=sketch_root,transform=Compose([Resize(in_size), ToTensor()]),balanced=balanced)
     train_dataloader = DataLoader(train_dataset, batch_size=batch_size, pin_memory=True, num_workers=os.cpu_count(),
                                   shuffle=True, drop_last=True)
 
     test_dataset = DataSet.ImageDataset(sketch_root, transform=Compose([Resize(in_size), ToTensor()]),train=False)
+    # print(test_dataset.classes)
+    # print(train_dataset.classes)
+    # print(test_dataset.class_to_idx)
+    # print(train_dataset.class_to_index)
     test_dataloader = DataLoader(test_dataset, batch_size=batch_size, pin_memory=True, num_workers=os.cpu_count(),
                          shuffle=True, drop_last=True)
 
