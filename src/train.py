@@ -8,31 +8,33 @@ from model.resnet import getResnet
 from torchvision import transforms
 import data.datautil as util
 
-def set_checkpoint(epoch,model,optimizer,metric,loss,path):
+def set_checkpoint(epoch,model,optimizer,train_loss,accurate,path):
     torch.save({
         'epoch': epoch,
         'model_state_dict': model.state_dict(),
         'optimizer_state_dict': optimizer.state_dict(),
-        'loss': loss,
+        'accurate': accurate,
+        'train_loss':train_loss
     }, path)
-
+    print("Checkpoint saved",'epoch',epoch,'train_loss',train_loss,'accurate',accurate)
 def load_checkpoint(path,model,optimizer):
     checkpoint = torch.load(path)
     model.load_state_dict(checkpoint['model_state_dict'])
     optimizer.load_state_dict(checkpoint['optimizer_state_dict'])
     epoch = checkpoint['epoch']
-    loss = checkpoint['loss']
-    print("Checkpoint loaded",'epoch',epoch,'loss',loss)
+    accurate = checkpoint['accurate']
+    train_loss = checkpoint['train_loss']
+    print("Checkpoint loaded",'epoch',epoch,'train_loss',train_loss,'accurate',accurate)
 
 
 
 def main():
     # batch_size = 100
-    batch_size = 1
+    batch_size = 100
     print("here")
     sk_root = '../256x256/sketch/tx_000000000000'
     sk_root = '../256x256/photo/tx_000000000000'
-    sk_root ='../test_pair/sketch'
+    # sk_root ='../test_pair/sketch'
     in_size = 225
     in_size = 224
     train_dataset = DataSet.ImageDataset(sk_root, transform=Compose([Resize(in_size), ToTensor()]))
@@ -60,6 +62,9 @@ def main():
     count = 0
     epochs = 200
     prints_interval = 1
+    max_chpt = 3
+    max_acu = -1
+    chpt_num = 0
     for e in range(epochs):
         print('epoch',e,'started')
         avg_loss = 0
@@ -101,6 +106,13 @@ def main():
 
         print(f'[Testing] -/{e}/{epochs} -> Accuracy: {accuracy} %',total,correct)
         # model.train()
+        if accuracy >= max_acu:
+            path = 'checkpoint'+str(chpt_num)+'.pt'
+            max_acu = accuracy
+            chpt_num= (chpt_num+1)%max_chpt
+            set_checkpoint(epoch=e,model=model,optimizer=optim,train_loss=avg_loss/len(train_dataloader),accurate=accuracy,path=path)
+            path = 'best.pt'
+            set_checkpoint(epoch=e,model=model,optimizer=optim,train_loss=avg_loss/len(train_dataloader),accurate=accuracy,path=path)
 if __name__ == '__main__':
 #     import argparse
 #
