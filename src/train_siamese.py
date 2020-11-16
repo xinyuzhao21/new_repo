@@ -13,7 +13,7 @@ import data.datautil as util
 import torchvision
 from model.linear import ClassificationNet
 
-def set_checkpoint(epoch, model, optimizer, metric, loss, path):
+def set_checkpoint(epoch, model, optimizer, loss, path):
     torch.save({
         'epoch': epoch,
         'model_state_dict': model.state_dict(),
@@ -78,6 +78,8 @@ def main():
     count = 0
     epochs = 200
     prints_interval = 1
+    max_chpt = 3
+    max_loss = -1
     for e in range(epochs):
         print('epoch', e, 'started')
         avg_loss = 0
@@ -124,7 +126,7 @@ def eval_loss(test_dataloader,model,e,epochs,crit,train_dataset):
         loss = crit(*output, Y)
         avg_loss += loss.item()
     print(f'[Testing] -/{e}/{epochs} -> Avg Loss: {avg_loss / len(test_dataloader)} %')
-
+    return  avg_loss
 
 
 def eval_accu(test_dataloader,model,e,epochs):

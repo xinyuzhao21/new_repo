@@ -35,7 +35,7 @@ class PairedDataset(torch.utils.data.Dataset):
         self.balanced = balanced
         self.sketch_root = sketch_root
         self.photo_root = photo_root
-        self.train_sketch,self.train_photo = [],[]
+        self.sketch_data, self.photo_data = [], []
         self.test_sketch,self.test_photo = [],[]
         self.label_to_indx_sketch = {}
         self.label_to_indx_photo = {}
@@ -56,68 +56,41 @@ class PairedDataset(torch.utils.data.Dataset):
         self.class_to_index = {}
         self.length = 0
         if self.train:
-            train_links= self.sketch_root+'/train.txt'
-
-            class_i =0
-            with open(train_links) as f:
-                for i,line in enumerate(f):
-                    label,path = line.split()
-
-                    if label not in self.class_to_index:
-                        self.class_to_index[label] = class_i
-                        self.classes.append(label)
-                        class_i+=1
-                    label = self.class_to_index[label]
-                    self.train_sketch.append((label, path))
-
-                    if label not in self.label_to_indx_sketch:
-                        self.label_to_indx_sketch[label]=[]
-
-                    self.label_to_indx_sketch[label].append(i)
-
-            self.length = len(self.train_sketch)
-            train_links= self.photo_root+'/train.txt'
-            with open(train_links) as f:
-                for i,line in enumerate(f):
-                    label, path = line.split()
-                    label = self.class_to_index[label]
-                    if label not in self.label_to_indx_photo:
-                        self.label_to_indx_photo[label] = []
-                    self.label_to_indx_photo[label].append(i)
-                    self.train_photo.append((label, path))
+            links= self.sketch_root+'/train.txt'
         else:
-            # generate fixed pairs for testing
-            test_links = self.sketch_root + '/test.txt'
+            links = self.sketch_root+'/test.txt'
+        class_i =0
+        with open(links) as f:
+            for i,line in enumerate(f):
+                label,path = line.split()
 
-            class_i = 0
-            with open(test_links) as f:
-                for i, line in enumerate(f):
-                    label, path = line.split()
-                    if label not in self.class_to_index:
-                        self.class_to_index[label] = class_i
-                        self.classes.append(label)
-                        class_i += 1
-                    label = self.class_to_index[label]
-                    self.test_sketch.append((label, path))
+                if label not in self.class_to_index:
+                    self.class_to_index[label] = class_i
+                    self.classes.append(label)
+                    class_i+=1
+                label = self.class_to_index[label]
+                self.sketch_data.append((label, path))
 
-                    if label not in self.label_to_indx_sketch:
-                        self.label_to_indx_sketch[label] = []
+                if label not in self.label_to_indx_sketch:
+                    self.label_to_indx_sketch[label]=[]
 
-                    self.label_to_indx_sketch[label].append(i)
-            self.length = len(self.test_sketch)
-            test_links = self.photo_root + '/test.txt'
-            with open(test_links) as f:
-                for i, line in enumerate(f):
-                    label, path = line.split()
-                    label = self.class_to_index[label]
-                    if label not in self.label_to_indx_photo:
-                        self.label_to_indx_photo[label] = []
-                    self.label_to_indx_photo[label].append(i)
-                    self.test_photo.append((label, path))
+                self.label_to_indx_sketch[label].append(i)
 
+        self.length = len(self.sketch_data)
 
+        if self.train:
+            links = self.photo_root + '/train.txt'
+        else:
+            links = self.photo_root + '/test.txt'
 
-
+        with open(links) as f:
+            for i,line in enumerate(f):
+                label, path = line.split()
+                label = self.class_to_index[label]
+                if label not in self.label_to_indx_photo:
+                    self.label_to_indx_photo[label] = []
+                self.label_to_indx_photo[label].append(i)
+                self.photo_data.append((label, path))
         self.classes_set = set(self.classes)
         self.classes.append('unmatched')
         self.class_to_index['unmatched'] = len(self.classes)-1
@@ -130,35 +103,27 @@ class PairedDataset(torch.utils.data.Dataset):
     def __getitem__(self, index):
         'Generates one sample of data'
         # Select sample
-
+        if not self.train:
+            np.random.seed(0)
+        else:
+            np.random.seed()
         target = np.random.randint(0, 2)
         if self.balanced:
             uni_prob = 1/len(self.classes)
             target = np.random.choice([0,1],p=[uni_prob,1-uni_prob])
-        label_s,sketch = self.train_sketch[index]
+        label_s,sketch = self.sketch_data[index]
         label = label_s
-        if self.train:
-            if target ==1:
-                photo_index = np.random.choice(self.label_to_indx_photo[label_s])
-                label_p,photo = self.train_photo[photo_index]
-            else:
-                neg_class = np.random.choice(list(self.classes_set-set([self.classes[label_s]])))
-                neg_class = self.class_to_index[neg_class]
-                photo_index = np.random.choice(self.label_to_indx_photo[neg_class])
-                label_p,photo = self.train_photo[photo_index]
-                label = self.class_to_index['unmatched']
+
+        if target ==1:
+            photo_index = np.random.choice(self.label_to_indx_photo[label_s])
+            label_p,photo = self.photo_data[photo_index]
         else:
-            random_state = np.random.RandomState(29)
-            label_s, sketch = self.test_sketch[index]
-            if target ==1:
-                photo_index = random_state.choice(self.label_to_indx_photo[label_s])
-                label_p,photo = self.test_photo[photo_index]
-            else:
-                neg_class = random_state.choice(list(self.classes_set-set([self.classes[label_s]])))
-                neg_class = self.class_to_index[neg_class]
-                photo_index = random_state.choice(self.label_to_indx_photo[neg_class])
-                label_p,photo = self.test_photo[photo_index]
-                label = self.class_to_index['unmatched']
+            neg_class = np.random.choice(list(self.classes_set-set([self.classes[label_s]])))
+            neg_class = self.class_to_index[neg_class]
+            photo_index = np.random.choice(self.label_to_indx_photo[neg_class])
+            label_p,photo = self.photo_data[photo_index]
+            label = self.class_to_index['unmatched']
+
         sketch =self.pil_loader(sketch)
         photo = self.pil_loader(photo)
         if self.transform is not None:
