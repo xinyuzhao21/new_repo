@@ -3,20 +3,24 @@ import torch
 from  torch import  nn
 from model.linear import ClassificationNet
 class SiameseNet(nn.Module):
-    def __init__(self, embedding_net):
+    def __init__(self, embedding_net,normal=True):
         super(SiameseNet, self).__init__()
         self.embedding_net = embedding_net
+        self.normal = normal
 
     def forward(self, x1, x2):
         output1 = self.embedding_net(x1)
-
         output2 = self.embedding_net(x2)
-
-        return output1/output1.pow(2).sum(1, keepdim=True).sqrt(), output2/output2.pow(2).sum(1, keepdim=True).sqrt()
+        if self.normal:
+            output1/=output1.pow(2).sum(1, keepdim=True).sqrt()
+            output2 /= output2.pow(2).sum(1, keepdim=True).sqrt()
+        return output1, output2
 
     def get_embedding(self, x):
         embed = self.embedding_net(x)
-        return embed/embed.pow(2).sum(1, keepdim=True).sqrt()
+        if self.normal:
+            embed /= embed.pow(2).sum(1, keepdim=True).sqrt()
+        return embed
 
 class ParallelNet(nn.Module):
         def __init__(self, photonet,sketchnet):

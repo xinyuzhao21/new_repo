@@ -30,11 +30,11 @@ def load_checkpoint(path,model,optimizer):
 
 def main():
     # batch_size = 100
-    batch_size = 100
+    batch_size = 1
     print("here")
     sk_root = '../256x256/sketch/tx_000000000000'
     sk_root = '../256x256/photo/tx_000000000000'
-    # sk_root ='../test_pair/sketch'
+    sk_root ='../test_pair/sketch'
     in_size = 225
     in_size = 224
     train_dataset = DataSet.ImageDataset(sk_root, transform=Compose([Resize(in_size), ToTensor()]))
@@ -48,7 +48,6 @@ def main():
     num_class = len(train_dataset.classes)
     embed_size = -1
     model = getResnet(num_class=num_class,embed_size=embed_size,pretrain=True)
-    print(model)
     model.train()
     if torch.cuda.is_available():
         model = model.cuda()
@@ -59,16 +58,31 @@ def main():
     # Tensorboard stuff
     # writer = tb.SummaryWriter('./logs')
 
+
+
     count = 0
     epochs = 200
     prints_interval = 1
     max_chpt = 3
     max_acu = -1
     chpt_num = 0
+    activation = {}
+    def get_activation(name):
+        def hook(model, input, output):
+            activation[name] = output
+
+        return hook
+
+    model.avgpool.register_forward_hook(get_activation('avgpool'))
     for e in range(epochs):
         print('epoch',e,'started')
         avg_loss = 0
         for i, (X, Y) in enumerate(train_dataloader):
+
+            activation = {}
+
+
+
 
             if torch.cuda.is_available():
                 X, Y = X.cuda(), Y.cuda()
@@ -76,7 +90,7 @@ def main():
             optim.zero_grad()
             to_image = transforms.ToPILImage()
             output = model(X)
-            #print(output,Y)
+            print(activation['avgpool'].shape)
             loss = crit(output, Y)
             avg_loss += loss.item()
             if i == 0:
