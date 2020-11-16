@@ -82,7 +82,7 @@ def main():
         for i, (X, Y) in enumerate(train_dataloader):
 
             if torch.cuda.is_available():
-                X, Y =(X[0].cuda(),X[1].cuda()), Y.cuda()
+                X, Y =(X[0].cuda(),X[1].cuda()), (Y[0].cuda(),Y[1].cuda(),Y[2].cuda)
             sketch,photo =X
             optim.zero_grad()
             to_image = transforms.ToPILImage()
