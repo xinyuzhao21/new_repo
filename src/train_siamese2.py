@@ -34,7 +34,7 @@ def load_checkpoint(path, model, optimizer):
 
 def main():
     # batch_size = 100
-    batch_size = 100
+    batch_size = 1
     balanced = True
     print("here")
     sk_root = '../256x256/sketch/tx_000000000000'
@@ -51,14 +51,13 @@ def main():
                                   shuffle=True, drop_last=True)
 
     num_class = len(train_dataset.classes)
-    embedding_size = 30
+    embedding_size = 2
     net1 = getResnet(num_class=embedding_size,pretrain=True)
     margin = 1
-    model = SiameseNet(net1,net1)
+    model = SiameseNet(net1)
 
 
     method = 'metric'
-    method = "classify"
 
 
     if method is 'classify':
@@ -78,34 +77,23 @@ def main():
     count = 0
     epochs = 200
     prints_interval = 100
-    prints_interval = 100
+    prints_interval = 1
     for e in range(epochs):
         print('epoch', e, 'started')
         avg_loss = 0
         for i, (X, Y) in enumerate(train_dataloader):
 
             if torch.cuda.is_available():
-                X, Y = X.cuda(), Y.cuda()
-            sketch,photo =X
+                X, Y = (X[0].cuda(), X[1].cuda()), (Y[0].cuda(), Y[1].cuda(), Y[2].cuda)
+            output = model(*X)
+            # print(output,Y)
+            sketch,photo = X
             optim.zero_grad()
             to_image = transforms.ToPILImage()
             output = model(*X)
-            # print(output,Y)
-            if method is 'classify':
-                output=classifier(*output)
-                loss = crit(output, Y)
-            else:
-                temp = Y
-                Y = torch.where(Y != 3, 1, 0)
-                loss = crit(*output,Y)
-            # if loss == 0.0:
-            #     print('here',Y)
-            #     for i in range(sketch.shape[0]):
-            #         image =to_image(sketch[i])
-            #         util.showImage(image)
-            #         image =to_image(photo[i])
-            #         util.showImage(image)
-            #         print(train_dataset.classes)
+            (Y,label_s,label_p) = Y
+            Y = torch.where(Y != 3, 1, 0)
+            loss = crit(*output,Y)
             avg_loss+=loss.item()
             if i % prints_interval == 0:
                 # print(output,Y)
@@ -117,10 +105,7 @@ def main():
 
             count += 1
         print('epoch', e, 'Avg loss', avg_loss/len(train_dataloader))
-        if method is 'classify':
-            eval_accu(test_dataloader,model,e,epochs,classifier)
-        else:
-            eval_loss(test_dataloader,model,e,epochs,crit,train_dataset)
+        eval_loss(train_dataloader,model,e,epochs,crit,train_dataset)
         # model.eval()
 
         # model.train()
@@ -130,7 +115,10 @@ def eval_loss(test_dataloader,model,e,epochs,crit,train_dataset):
 
         if torch.cuda.is_available():
             X, Y = X.cuda(), Y.cuda()
-        Y = (Y != train_dataset.class_to_index['unmatched'])
+
+        to_image = transforms.ToPILImage()
+        (Y, label_s, label_p) = Y
+        Y = torch.where(Y != 3, 1, 0)
         to_image = transforms.ToPILImage()
         output = model(*X)
 

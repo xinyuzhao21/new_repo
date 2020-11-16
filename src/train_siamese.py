@@ -34,7 +34,7 @@ def load_checkpoint(path, model, optimizer):
 
 def main():
     # batch_size = 100
-    batch_size = 100
+    batch_size = 1
     balanced = False
     print("here")
     # sk_root ='../test'
@@ -44,11 +44,13 @@ def main():
     sketch_root = '../256x256/sketch/tx_000000000000'
     # tmp_root = '../rendered_256x256/256x256/photo/tx_000000000000'
     # sketch_root = '../rendered_256x256/256x256/sketch/tx_000000000000'
+    tmp_root = '../test_pair/photo'
+    sketch_root = '../test_pair/sketch'
     train_dataset = DataSet.PairedDataset(photo_root=tmp_root,sketch_root=sketch_root,transform=Compose([Resize(in_size), ToTensor()]),balanced=balanced)
     train_dataloader = DataLoader(train_dataset, batch_size=batch_size, pin_memory=True, num_workers=os.cpu_count(),
                                   shuffle=True, drop_last=True)
 
-    test_dataset = DataSet.ImageDataset(sketch_root, transform=Compose([Resize(in_size), ToTensor()]),train=False)
+    test_dataset = DataSet.ImageDataset(sketch_root, transform=Compose([Resize(in_size), ToTensor()]),train=True)
     # print(test_dataset.classes)
     # print(train_dataset.classes)
     # print(test_dataset.class_to_idx)
@@ -59,7 +61,7 @@ def main():
     num_class = len(train_dataset.classes)
     embedding_size = 200
     net1 = getResnet(num_class=embedding_size,pretrain=True)
-    model = SiaClassNet(net1,net1,embedding_size,num_class)
+    model = SiaClassNet(net1,embedding_size,num_class)
 
     method = "classify"
     crit = torch.nn.CrossEntropyLoss()
@@ -75,7 +77,7 @@ def main():
 
     count = 0
     epochs = 200
-    prints_interval = 200
+    prints_interval = 1
     for e in range(epochs):
         print('epoch', e, 'started')
         avg_loss = 0
@@ -93,7 +95,7 @@ def main():
             loss = crit(output, label_s)
             avg_loss+=loss.item()
             if i % prints_interval == 0:
-               # print(output,Y)
+                print(output,label_s)
                 print(f'[Training] {i}/{e}/{epochs} -> Loss: {avg_loss/(i+1)}')
                 # writer.add_scalar('train-loss', loss.item(), count)
             loss.backward()

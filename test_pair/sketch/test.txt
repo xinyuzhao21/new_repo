@@ -1,0 +1,3 @@
+airplane ../test_pair/sketch\airplane\n02691156_58-1.png
+alarm_clock ../test_pair/sketch\alarm_clock\n02694662_92-1.png
+ant ../test_pair/sketch\ant\n02219486_22538-3.png

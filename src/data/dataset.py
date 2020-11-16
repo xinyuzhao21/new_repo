@@ -93,7 +93,6 @@ class PairedDataset(torch.utils.data.Dataset):
             with open(test_links) as f:
                 for i, line in enumerate(f):
                     label, path = line.split()
-
                     if label not in self.class_to_index:
                         self.class_to_index[label] = class_i
                         self.classes.append(label)

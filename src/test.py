@@ -27,9 +27,10 @@ sk_root ='../rendered_256x256/256x256/sketch/tx_000000000000'
 #     print(y_batch)
 
 # Test PairedDataSet
-tmp_root ='../test_pair/photo'
-util.train_test_split(tmp_root,split=(1,0.0,0.0))
+tmp_root ='../test_pair/sketch'
+util.train_test_split(tmp_root,split=(0.5,0.0,0.5))
 sketch_root = '../test_pair/sketch'
+util.train_test_split(tmp_root,split=(0.5,0.0,0.5))
 train_data = DataSet.PairedDataset(photo_root=tmp_root,sketch_root=sketch_root,transform=transforms.ToTensor())
 train_loader = DataLoader(dataset=train_data, batch_size=1,shuffle=True)
 #
