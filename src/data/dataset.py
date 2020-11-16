@@ -167,4 +167,4 @@ class PairedDataset(torch.utils.data.Dataset):
             photo = self.transform(photo)
         # return (sketch,photo,label_s,label_p), (label, target)
 
-        return (sketch, photo), label
+        return (sketch, photo), (label, label_p, label_s)

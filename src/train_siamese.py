@@ -88,16 +88,9 @@ def main():
             to_image = transforms.ToPILImage()
             #output = model(*X)
             output = model(sketch,sketch)
-            # print(output,Y)
-            loss = crit(output, Y)
-            # if loss == 0.0:
-            #     print('here',Y)
-            #     for i in range(sketch.shape[0]):
-            #         image =to_image(sketch[i])
-            #         util.showImage(image)
-            #         image =to_image(photo[i])
-            #         util.showImage(image)
-            #         print(train_dataset.classes)
+            (Y,label_s,label_p) = Y
+            # loss = crit(output, Y)
+            loss = crit(output, label_s)
             avg_loss+=loss.item()
             if i % prints_interval == 0:
                # print(output,Y)
