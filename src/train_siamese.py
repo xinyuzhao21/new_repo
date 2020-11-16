@@ -35,7 +35,7 @@ def load_checkpoint(path, model, optimizer):
 def main():
     # batch_size = 100
     batch_size = 100
-    balanced = True
+    balanced = False
     print("here")
     # sk_root ='../test'
     in_size = 225
@@ -75,19 +75,19 @@ def main():
 
     count = 0
     epochs = 200
-    prints_interval = 100
-    prints_interval = 1
+    prints_interval = 200
     for e in range(epochs):
         print('epoch', e, 'started')
         avg_loss = 0
         for i, (X, Y) in enumerate(train_dataloader):
 
             if torch.cuda.is_available():
-                X, Y = X.cuda(), Y.cuda()
+                X, Y =(X[0].cuda(),X[1].cuda()), Y.cuda()
             sketch,photo =X
             optim.zero_grad()
             to_image = transforms.ToPILImage()
-            output = model(*X)
+            #output = model(*X)
+            output = model(sketch,sketch)
             # print(output,Y)
             loss = crit(output, Y)
             # if loss == 0.0:
@@ -100,7 +100,7 @@ def main():
             #         print(train_dataset.classes)
             avg_loss+=loss.item()
             if i % prints_interval == 0:
-                print(output,Y)
+               # print(output,Y)
                 print(f'[Training] {i}/{e}/{epochs} -> Loss: {avg_loss/(i+1)}')
                 # writer.add_scalar('train-loss', loss.item(), count)
             loss.backward()
@@ -138,7 +138,7 @@ def eval_accu(test_dataloader,model,e,epochs):
 
         if torch.cuda.is_available():
             X, Y = X.cuda(), Y.cuda()
-        output = model(*X)
+        output = model(X,X)
         _, predicted = torch.max(output, 1)
         total += Y.size(0)
         correct += (predicted == Y).sum().item()

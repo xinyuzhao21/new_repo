@@ -1,0 +1,26 @@
+here
+epoch 0 started
+[Training] 0/0/200 -> Loss: 4.859704494476318
+[Training] 200/0/200 -> Loss: 1.682582026097312
+[Training] 400/0/200 -> Loss: 1.1433678640243121
+epoch 0 Avg loss 0.9285164811442383
+[Testing] -/0/200 -> Accuracy: 1.529100529100529 % 18900 289
+epoch 1 started
+[Training] 0/1/200 -> Loss: 0.21092791855335236
+[Training] 200/1/200 -> Loss: 0.3032058266857963
+[Training] 400/1/200 -> Loss: 0.2784739923558925
+epoch 1 Avg loss 0.26293120505535494
+[Testing] -/1/200 -> Accuracy: 1.328042328042328 % 18900 251
+epoch 2 started
+[Training] 0/2/200 -> Loss: 0.18680810928344727
+[Training] 200/2/200 -> Loss: 0.16654604640024812
+[Training] 400/2/200 -> Loss: 0.16911996134610247
+epoch 2 Avg loss 0.16722176977622827
+[Testing] -/2/200 -> Accuracy: 1.2592592592592593 % 18900 238
+epoch 3 started
+[Training] 0/3/200 -> Loss: 0.16949979960918427
+[Training] 200/3/200 -> Loss: 0.15094463095365473
+[Training] 400/3/200 -> Loss: 0.15148845929977603
+epoch 3 Avg loss 0.14366908212217083
+[Testing] -/3/200 -> Accuracy: 1.439153439153439 % 18900 272
+epoch 4 started
