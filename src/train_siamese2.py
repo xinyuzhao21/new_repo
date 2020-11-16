@@ -61,7 +61,9 @@ def main():
 
 
     num_class = len(train_dataset.classes)
-    embedding_size = 2
+    embedding_size = 10242
+    embedding_size = 1024
+    embedding_size = 512
     net1 = getResnet(num_class=embedding_size,pretrain=True)
     margin = 0.2
     model = SiameseNet(net1)
@@ -79,7 +81,7 @@ def main():
     # writer = tb.SummaryWriter('./logs')
 
     count = 0
-    epochs = 10
+    epochs = 100
     prints_interval = 100
     prints_interval = 100
     max_chpt = 3
@@ -89,19 +91,21 @@ def main():
         print('epoch', e, 'started')
         avg_loss = 0
         for i, (X, Y) in enumerate(train_dataloader):
-
+            one = torch.ones(Y[0].shape)
+            zero = torch.zeros(Y[0].shape)
             if torch.cuda.is_available():
-                X, Y = (X[0].cuda(), X[1].cuda()), (Y[0].cuda(), Y[1].cuda(), Y[2].cuda)
+                X, Y = (X[0].cuda(), X[1].cuda()), (Y[0].cuda(), Y[1].cuda(), Y[2].cuda())
+                one,zero = one.cuda(),zero.cuda()
             output = model(*X)
             # print(output,Y)
             sketch,photo = X
-            print(sketch.shape)
+            #print(sketch.shape)
             optim.zero_grad()
             to_image = transforms.ToPILImage()
             output = model(*X)
-            print(output[0])
+            #print(output[0])
             (Y,label_s,label_p) = Y
-            Y = torch.where(Y != train_dataset.class_to_index['unmatched'], 1, 0)
+            Y = torch.where(Y != train_dataset.class_to_index['unmatched'], one, zero)
             loss = crit(*output,Y)
             avg_loss+=loss.item()
             if i % prints_interval == 0:
@@ -138,14 +142,16 @@ def main():
 def eval_loss(test_dataloader,model,e,epochs,crit,train_dataset):
     avg_loss = 0
     for i, (X, Y) in enumerate(test_dataloader):
-
+        one = torch.ones(Y[0].shape)
+        zero = torch.zeros(Y[0].shape)
+ 
         if torch.cuda.is_available():
-            X, Y = X.cuda(), Y.cuda()
-
+            X, Y = (X[0].cuda(), X[1].cuda()), (Y[0].cuda(), Y[1].cuda(), Y[2].cuda)
+            one,zero = one.cuda(),zero.cuda()
         to_image = transforms.ToPILImage()
         (Y, label_s, label_p) = Y
-        Y = torch.where(Y != train_dataset.class_to_index['unmatched'], 1, 0)
         to_image = transforms.ToPILImage()
+        Y = torch.where(Y != train_dataset.class_to_index['unmatched'], one, zero)
         output = model(*X)
 
         # print(output,Y)
