@@ -44,7 +44,7 @@ def main():
                          shuffle=True, drop_last=True)
 
     num_class = len(train_dataset.classes)
-    embed_size = 514
+    embed_size = -1
     model = getResnet(num_class=num_class,embed_size=embed_size,pretrain=True)
     print(model)
     model.train()
