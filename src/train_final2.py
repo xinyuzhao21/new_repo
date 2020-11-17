@@ -1,6 +1,5 @@
 import torch, os
 from torchvision.transforms import ToTensor, Compose, Resize, Grayscale
-from torch.utils import tensorboard as tb
 from torch.nn import functional as F
 from loss.contrastive import ContrastiveLoss
 from loss.softmax import SoftMax
@@ -47,8 +46,8 @@ def main():
     in_size = 224
     tmp_root = '../test_pair/photo'
     sketch_root = '../test_pair/sketch'
-    # tmp_root = '../256x256/photo/tx_000000000000'
-    # sketch_root = '../256x256/sketch/tx_000000000000'
+    tmp_root = '../256x256/photo/tx_000000000000'
+    sketch_root = '../256x256/sketch/tx_000000000000'
 
     train_dataset = DataSet.PairedDataset(photo_root=tmp_root, sketch_root=sketch_root,
                                           transform=Compose([Resize(in_size), ToTensor()]), balanced=balanced)
@@ -63,7 +62,7 @@ def main():
     embed_size = -1
     sketch_net = getResnet(num_class=num_class, pretrain=True,feature_extract=True)
     softmax_loss = SoftMax(embed_size=512, num_class=num_class)
-    hinge_loss = ContrastiveLoss(margin=0.7)
+    hinge_loss = ContrastiveLoss(margin=2)
     optim = torch.optim.Adam(list(sketch_net.parameters()) + list(softmax_loss.parameters()))
     sketch_net.train()
     photo_net = getResnet(num_class=num_class, pretrain=True, feature_extract=True)
@@ -73,7 +72,7 @@ def main():
     if torch.cuda.is_available():
         sketch_net = sketch_net.cuda()
         softmax_loss =softmax_loss.cuda()
-
+        photo_net=photo_net.cuda()
     count = 0
     epochs = 200
     max_chpt = 3
@@ -131,29 +130,29 @@ def eval_model(e,epochs,sketch_net,photo_net,softmax_loss, hinge_loss, dataloade
         logits,class_loss = softmax_loss(embeding_sketch, label_s)
         avg_class_loss += class_loss.item()
 
-        if not train:
-            _, predicted = torch.max(logits, 1)
-            total += Y.size(0)
-            correct += (predicted == Y).sum().item()
+
+        _, predicted = torch.max(logits, 1)
+        total += Y.size(0)
+        correct += (predicted == label_s).sum().item()
 
         embeding_photo = photo_net(photo)
         embeding_sketch = F.normalize(embeding_sketch, p=2, dim=1)
         embeding_photo = F.normalize(embeding_photo, p=2, dim=1)
 
         contrastive_loss = hinge_loss(embeding_sketch, embeding_photo, Y)
-        avg_hinge_loss += class_loss.item()
+        avg_hinge_loss += contrastive_loss.item()
         loss = contrastive_loss + class_loss
         avg_loss += loss.item()
         if i % prints_interval == 0 and train:
             print(
-                f'[Training] {i}/{e}/{epochs} -> Loss: {avg_loss / (i + 1)} hinge loss: {avg_hinge_loss / (i + 1)} NLL: {avg_class_loss / (i + 1)}')
+                    f'[Training] {i}/{e}/{epochs} -> Acuracy: {correct/total}Loss: {avg_loss / (i + 1)} hinge loss: {avg_hinge_loss / (i + 1)} NLL: {avg_class_loss / (i + 1)}')
             # writer.add_scalar('train-loss', loss.item(), count)
         if train:
             loss.backward()
             optim.step()
-    if not train:
-        accuracy = (correct / (total+0.5)) * 100
-    N=len(dataloaders)
+    
+    accuracy = (correct / (total+0.5)) * 100
+    N=len(dataloader)
     avg_loss/=N
     avg_class_loss/=N
     avg_hinge_loss/=N
