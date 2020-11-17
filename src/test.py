@@ -86,7 +86,7 @@ def main():
     model = SketchANet(num_classes=3)
     model = Net()
     crit = torch.nn.CrossEntropyLoss()
-    net1 = getResnet(num_class=100,pretain=True)
+    net1 = getResnet(num_class=100)
     margin = 1
     model = SiameseNet(net1,net1)
     crit = ContrastiveLoss(margin)

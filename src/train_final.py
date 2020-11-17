@@ -41,7 +41,7 @@ def load_checkpoint(path, model, optimizer):
 
 def main():
     # batch_size = 100
-    batch_size = 100
+    batch_size = 1
     balanced = False
     print("Start Training")
 
@@ -50,8 +50,8 @@ def main():
     in_size = 224
     tmp_root = '../test_pair/photo'
     sketch_root = '../test_pair/sketch'
-    tmp_root = '../256x256/photo/tx_000000000000'
-    sketch_root = '../256x256/sketch/tx_000000000000'
+    # tmp_root = '../256x256/photo/tx_000000000000'
+    # sketch_root = '../256x256/sketch/tx_000000000000'
 
     transform = transforms.Compose([
         transforms.RandomResizedCrop(224),
@@ -61,7 +61,7 @@ def main():
                              std=[0.229, 0.224, 0.225]),
     ])
     train_dataset = DataSet.PairedDataset(photo_root=tmp_root, sketch_root=sketch_root,
-                                          transform=transform, balanced=balanced)
+                                          transform=Compose([Resize(in_size), ToTensor()]), balanced=balanced)
     train_dataloader = DataLoader(train_dataset, batch_size=batch_size, pin_memory=True, num_workers=os.cpu_count(),
                                   shuffle=True, drop_last=True)
     test_dataset = DataSet.PairedDataset(photo_root=tmp_root, sketch_root=sketch_root,
@@ -71,19 +71,21 @@ def main():
 
     embedding_size = 512
     margin = 1
-    num_class = len(train_dataset.classes)
+    num_class = len(train_dataset.classes)-1
     photo_net = getResnet(num_class=num_class, pretrain=True, feature_extract=True)
 
     for param in photo_net.parameters():
         param.requires_grad = False
 
-    sketch_net = getResnet(num_class=num_class, embed_size=embedding_size, pretrain=True, feature_extract=True)
+    sketch_net = getResnet(num_class=num_class, pretrain=True, feature_extract=False)
     softmax_loss = SoftMax(embed_size=embedding_size, num_class=num_class)
     optim = torch.optim.Adam(list(sketch_net.parameters()) + list(softmax_loss.parameters()))
-    model = ParallelNet(sketch_net, photo_net)
-
+    optim = torch.optim.Adam(list(sketch_net.parameters()))
+    model = ParallelNet(sketch_net=sketch_net, photo_net=photo_net)
+    print(sketch_net)
     contrastive_loss = ContrastiveLoss(margin)
 
+    cross = torch.nn.CrossEntropyLoss()
     if torch.cuda.is_available():
         model = model.cuda()
 
@@ -92,7 +94,7 @@ def main():
     # writer = tb.SummaryWriter('./logs')
 
     epochs = 100
-    prints_interval = 100
+    prints_interval = 1
     max_chpt = 3
     min_loss = 100000
     chpt_num = 0
@@ -105,40 +107,48 @@ def main():
             if torch.cuda.is_available():
                 X, Y = (X[0].cuda(), X[1].cuda()), (Y[0].cuda(), Y[1].cuda(), Y[2].cuda())
                 one, zero = one.cuda(), zero.cuda()
-
-            sketch, photo = X
-            embedding_sketch, embedding_photo = model(sketch, photo)
-
             optim.zero_grad()
 
+            sketch, photo = X
             (Y, label_s, label_p) = Y
+            embedding_sketch = sketch_net(sketch)
+            embedding_photo = photo_net(photo)
+            loss=cross(embedding_sketch,label_s)
+            sloss = 0
+            # sloss = softmax_loss(embedding_sketch, label_s)
+            # sketch_feature = normalize(embedding_sketch)
+            # phtot_feature = normalize(embedding_photo)
+
+
             Y = torch.where(Y != train_dataset.class_to_index['unmatched'], one, zero)
 
-            closs = contrastive_loss(embedding_sketch, embedding_photo, Y)
-            sloss = softmax_loss(embedding_sketch, label_s)
-            loss = 0.5 * closs + 0.5 * sloss
+            closs = 0
+            # closs = contrastive_loss(sketch_feature, phtot_feature, Y)
+
+            # loss = 0.0 * closs + 1* sloss
 
             avg_loss += loss.item()
             if i % prints_interval == 0:
                 print(
-                    f'[Training] {i}/{e}/{epochs} -> Loss: {avg_loss / (i + 1)} Contrastive: {closs.item()} SoftMax: {sloss.item()}')
+                    f'[Training] {i}/{e}/{epochs} -> Loss: {avg_loss / (i + 1)} Contrastive: {closs} SoftMax: {sloss}')
             loss.backward()
 
             optim.step()
 
         print('epoch', e, 'end', 'Avg loss', avg_loss / len(train_dataloader))
-        valid_loss = eval_loss(test_dataloader, model, e, epochs, contrastive_loss, train_dataset, contrastive_loss,
-                               softmax_loss)
-        if valid_loss <= min_loss:
-            path = 'checkpoint' + str(chpt_num) + '.pt'
-            min_loss = valid_loss
-            chpt_num = (chpt_num + 1) % max_chpt
-            set_checkpoint(epoch=e, model=model, optimizer=optim, train_loss=avg_loss / len(train_dataloader),
-                           loss=valid_loss, path=path)
-            path = 'best.pt'
-            set_checkpoint(epoch=e, model=model, optimizer=optim, train_loss=avg_loss / len(train_dataloader),
-                           loss=valid_loss, path=path)
-
+        # valid_loss = eval_loss(test_dataloader, model, e, epochs, contrastive_loss, train_dataset, contrastive_loss,
+        #                        softmax_loss)
+        # if valid_loss <= min_loss:
+        #     path = 'checkpoint' + str(chpt_num) + '.pt'
+        #     min_loss = valid_loss
+        #     chpt_num = (chpt_num + 1) % max_chpt
+        #     set_checkpoint(epoch=e, model=model, optimizer=optim, train_loss=avg_loss / len(train_dataloader),
+        #                    loss=valid_loss, path=path)
+        #     path = 'best.pt'
+        #     set_checkpoint(epoch=e, model=model, optimizer=optim, train_loss=avg_loss / len(train_dataloader),
+        #                    loss=valid_loss, path=path)
+def normalize(x):
+    return x / x.norm(dim=1, keepdim=True)
 
 def eval_loss(test_dataloader, model, e, epochs, crit, train_dataset, contrastive_loss, softmax_loss):
     avg_loss, avg_closs, avg_sloss = 0, 0, 0
@@ -148,15 +158,18 @@ def eval_loss(test_dataloader, model, e, epochs, crit, train_dataset, contrastiv
         if torch.cuda.is_available():
             X, Y = (X[0].cuda(), X[1].cuda()), (Y[0].cuda(), Y[1].cuda(), Y[2].cuda())
             one, zero = one.cuda(), zero.cuda()
-
         sketch, photo = X
+        (Y, label_s, label_p) = Y
         embedding_sketch, embedding_photo = model(sketch, photo)
 
-        (Y, label_s, label_p) = Y
+        sloss = softmax_loss(embedding_sketch, label_s)
+        sketch_feature = normalize(embedding_sketch)
+        phtot_feature = normalize(embedding_photo)
+
         Y = torch.where(Y != train_dataset.class_to_index['unmatched'], one, zero)
 
-        closs = contrastive_loss(embedding_sketch, embedding_photo, Y)
-        sloss = softmax_loss(embedding_sketch, label_s)
+        closs = contrastive_loss(sketch_feature, phtot_feature, Y)
+
         loss = 0.5 * closs + 0.5 * sloss
         avg_closs += closs.item()
         avg_sloss += sloss.item()

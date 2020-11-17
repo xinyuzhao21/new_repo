@@ -23,10 +23,10 @@ class SiameseNet(nn.Module):
         return embed
 
 class ParallelNet(nn.Module):
-        def __init__(self, photonet,sketchnet):
+        def __init__(self, photo_net=None,sketch_net=None):
             super(ParallelNet, self).__init__()
-            self.photonet = photonet
-            self.sketchnet = sketchnet
+            self.photonet = photo_net
+            self.sketchnet = sketch_net
 
         def forward(self, x1, x2):
             output1 = self.photonet(x1)

@@ -47,7 +47,7 @@ def main():
 
     num_class = len(train_dataset.classes)
     embed_size = -1
-    model = getResnet(num_class=num_class,embed_size=embed_size,pretrain=True)
+    model = getResnet(num_class=num_class, pretrain=True)
     model.train()
     if torch.cuda.is_available():
         model = model.cuda()

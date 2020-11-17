@@ -15,6 +15,6 @@ class SoftMax(nn.Module):
         self.crit = nn.CrossEntropyLoss()
 
     def forward(self, x,y):
-        x = self.fc(x)
-        loss = self.crit(x,y)
-        return loss
+        logits = self.fc(x)
+        loss = self.crit(logits,y)
+        return logits,loss

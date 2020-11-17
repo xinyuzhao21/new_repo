@@ -60,7 +60,7 @@ def main():
 
     num_class = len(train_dataset.classes)
     embedding_size = 200
-    net1 = getResnet(num_class=embedding_size,pretrain=True)
+    net1 = getResnet(num_class=embedding_size, pretrain=True)
     model = SiaClassNet(net1,embedding_size,num_class)
 
     method = "classify"

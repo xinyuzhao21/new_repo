@@ -64,7 +64,7 @@ def main():
     embedding_size = 10242
     embedding_size = 1024
     embedding_size = 512
-    net1 = getResnet(num_class=embedding_size,pretrain=True)
+    net1 = getResnet(num_class=embedding_size, pretrain=True)
     margin = 1
     model = SiameseNet(net1)
 

@@ -1,7 +1,7 @@
 import torchvision.models as models
 import torch.nn as nn
 import torch.nn.functional as F
-def getResnet(num_class = 125, embed_size=-1, pretrain=False, feature_extract=False):
+def getResnet(num_class=125, pretrain=False, feature_extract=False):
     model = models.resnet18(pretrained=pretrain)
     # for name, child in model.named_children():
     #     for name2, params in child.named_parameters():

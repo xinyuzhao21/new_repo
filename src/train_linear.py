@@ -28,7 +28,7 @@ def load_checkpoint(path, model, optimizer):
 
 
 embedding_size = 2
-net1 = getResnet(num_class=embedding_size,pretrain=True)
+net1 = getResnet(num_class=embedding_size, pretrain=True)
 margin = 10
 model = SiameseNet(net1)
 path = 'best.pt'

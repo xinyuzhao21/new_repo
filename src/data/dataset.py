@@ -92,9 +92,6 @@ class PairedDataset(torch.utils.data.Dataset):
                 self.label_to_indx_photo[label].append(i)
                 self.photo_data.append((label, path))
         self.classes_set = set(self.classes)
-        self.classes.append('unmatched')
-        self.class_to_index['unmatched'] = len(self.classes)-1
-
 
     def __len__(self):
         'Denotes the total number of samples'
@@ -104,7 +101,7 @@ class PairedDataset(torch.utils.data.Dataset):
         'Generates one sample of data'
         # Select sample
         if not self.train:
-            np.random.seed(0)
+            np.random.seed(682)
         else:
             np.random.seed()
         target = np.random.randint(0, 2)
@@ -112,7 +109,7 @@ class PairedDataset(torch.utils.data.Dataset):
             uni_prob = 1/len(self.classes)
             target = np.random.choice([0,1],p=[uni_prob,1-uni_prob])
         label_s,sketch = self.sketch_data[index]
-        label = label_s
+
 
         if target ==1:
             photo_index = np.random.choice(self.label_to_indx_photo[label_s])
@@ -122,7 +119,7 @@ class PairedDataset(torch.utils.data.Dataset):
             neg_class = self.class_to_index[neg_class]
             photo_index = np.random.choice(self.label_to_indx_photo[neg_class])
             label_p,photo = self.photo_data[photo_index]
-            label = self.class_to_index['unmatched']
+
 
         sketch =self.pil_loader(sketch)
         photo = self.pil_loader(photo)
@@ -131,4 +128,4 @@ class PairedDataset(torch.utils.data.Dataset):
             photo = self.transform(photo)
         # return (sketch,photo,label_s,label_p), (label, target)
 
-        return (sketch, photo), (label, label_p, label_s)
+        return (sketch, photo), (target, label_s, label_p )
