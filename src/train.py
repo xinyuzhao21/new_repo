@@ -61,7 +61,7 @@ def main():
 
 
     count = 0
-    epochs = 200
+    epochs = 2
     prints_interval = 1
     max_chpt = 3
     max_acu = -1
@@ -72,6 +72,7 @@ def main():
             activation[name] = output
 
         return hook
+
 
     model.avgpool.register_forward_hook(get_activation('avgpool'))
     for e in range(epochs):
